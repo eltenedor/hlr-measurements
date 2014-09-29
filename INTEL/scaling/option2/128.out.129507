@@ -1,0 +1,204 @@
+Sender: LSF System <lsfadmin@hai0001>
+Subject: Job 129507: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/128.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/128.out.%J; #BSUB -n 256;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 128 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/128.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/128.out.%J; #BSUB -n 256;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 128 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hai0001>, in queue <big2>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hai0012>
+                            <16*hai0010>
+                            <16*hai0011>
+                            <16*hai0021>
+                            <16*hai0007>
+                            <16*hai0003>
+                            <16*han0008>
+                            <16*han0019>
+                            <16*han0007>
+                            <16*han0040>
+                            <16*han0041>
+                            <16*han0011>
+                            <16*han0016>
+                            <16*han0001>
+                            <16*han0020>
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/scaling/option2> was used as the working directory.
+Started at Sun Sep 28 22:06:16 2014
+Results reported at Sun Sep 28 22:06:43 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/128.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/128.out.%J
+
+#BSUB -n 256
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 128 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               260.08 sec.
+    Max Memory :             16 MB
+    Average Memory :         16.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               889 MB
+
+    Max Processes :          36
+    Max Threads :            36
+
+The output (if any) follows:
+
+Number of MPI processes 128
+Process 0 hai0001
+Process 1 hai0001
+Process 2 hai0001
+Process 3 hai0001
+Process 4 hai0001
+Process 5 hai0001
+Process 6 hai0001
+Process 7 hai0001
+Process 8 hai0012
+Process 9 hai0012
+Process 10 hai0012
+Process 11 hai0012
+Process 12 hai0012
+Process 13 hai0012
+Process 14 hai0012
+Process 15 hai0012
+Process 16 hai0010
+Process 17 hai0010
+Process 18 hai0010
+Process 19 hai0010
+Process 20 hai0010
+Process 21 hai0010
+Process 22 hai0010
+Process 23 hai0010
+Process 24 hai0011
+Process 25 hai0011
+Process 26 hai0011
+Process 27 hai0011
+Process 28 hai0011
+Process 29 hai0011
+Process 30 hai0011
+Process 31 hai0011
+Process 32 hai0021
+Process 33 hai0021
+Process 34 hai0021
+Process 35 hai0021
+Process 36 hai0021
+Process 37 hai0021
+Process 38 hai0021
+Process 39 hai0021
+Process 40 hai0007
+Process 41 hai0007
+Process 42 hai0007
+Process 43 hai0007
+Process 44 hai0007
+Process 45 hai0007
+Process 46 hai0007
+Process 47 hai0007
+Process 48 hai0003
+Process 49 hai0003
+Process 50 hai0003
+Process 51 hai0003
+Process 52 hai0003
+Process 53 hai0003
+Process 54 hai0003
+Process 55 hai0003
+Process 56 han0008
+Process 57 han0008
+Process 58 han0008
+Process 59 han0008
+Process 60 han0008
+Process 61 han0008
+Process 62 han0008
+Process 63 han0008
+Process 64 han0019
+Process 65 han0019
+Process 66 han0019
+Process 67 han0019
+Process 68 han0019
+Process 69 han0019
+Process 70 han0019
+Process 71 han0019
+Process 72 han0007
+Process 73 han0007
+Process 74 han0007
+Process 75 han0007
+Process 76 han0007
+Process 77 han0007
+Process 78 han0007
+Process 79 han0007
+Process 80 han0040
+Process 81 han0040
+Process 82 han0040
+Process 83 han0040
+Process 84 han0040
+Process 85 han0040
+Process 86 han0040
+Process 87 han0040
+Process 88 han0041
+Process 89 han0041
+Process 90 han0041
+Process 91 han0041
+Process 92 han0041
+Process 93 han0041
+Process 94 han0041
+Process 95 han0041
+Process 96 han0011
+Process 97 han0011
+Process 98 han0011
+Process 99 han0011
+Process 100 han0011
+Process 101 han0011
+Process 102 han0011
+Process 103 han0011
+Process 104 han0016
+Process 105 han0016
+Process 106 han0016
+Process 107 han0016
+Process 108 han0016
+Process 109 han0016
+Process 110 han0016
+Process 111 han0016
+Process 112 han0001
+Process 113 han0001
+Process 114 han0001
+Process 115 han0001
+Process 116 han0001
+Process 117 han0001
+Process 118 han0001
+Process 119 han0001
+Process 120 han0020
+Process 121 han0020
+Process 122 han0020
+Process 123 han0020
+Process 124 han0020
+Process 125 han0020
+Process 126 han0020
+Process 127 han0020
+Function      Rate (MB/s) 
+Copy:      888761.7246
+Scale:     892883.1068
+Add:       1109336.2431
+Triad:     1067178.6671
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option2/128.err.129507> for stderr output of this job.
+

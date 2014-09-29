@@ -1,0 +1,10 @@
+GNU
+INTEL
+  -128_128
+  -128_1024
+  -256_256
+  -scaling: different options for petsc streams benchmark
+    -option1: -report-bindings
+    -option2: -report-bindings -map-by ppr:8:node -map-by ppr:4:socket (Reihenfolge der Mapbefehle beachten!!) 
+    -option3: -report-bindings --map-by ppr:4:node -map-by ppr:2:socket (Reihenfolge der Mapbefehle beachten!!)
+RAND

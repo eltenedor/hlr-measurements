@@ -1,0 +1,18 @@
+Modules: loading openmpi/intel/1.8.1
+/work/local/89533_0/tmp/ifortqoypIw.o: In function `MAIN__':
+caffa3d.MB.f:(.text+0x88): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+caffa3d.MB.f:(.text+0x1e52): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+caffa3d.MB.f:(.text+0x30c6): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+caffa3d.MB.f:(.text+0x30fc): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+caffa3d.MB.f:(.text+0x41fa): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+/work/local/89533_0/tmp/ifortqoypIw.o: In function `calcp_..0':
+caffa3d.MB.f:(.text+0x6ae0): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+/work/local/89533_0/tmp/ifortqoypIw.o: In function `solvesys_':
+caffa3d.MB.f:(.text+0x98ce): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+caffa3d.MB.f:(.text+0x98e3): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+caffa3d.MB.f:(.text+0x9af9): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+/work/local/89533_0/tmp/ifortqoypIw.o: In function `calcp_':
+caffa3d.MB.f:(.text+0x1940a): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/89533_0/tmp/ifortqoypIw.o
+/work/local/89533_0/tmp/ifortqoypIw.o: In function `bcin_':
+caffa3d.MB.f:(.text+0x1c39b): additional relocation overflows omitted from the output
+make: *** [opt-intel-analytical] Error 1

@@ -1,0 +1,266 @@
+Sender: LSF System <lsfadmin@hpa0580>
+Subject: Job 89565: <INTEL_128_1024_1024> in cluster <lichtenberg> Exited
+
+Job <INTEL_128_1024_1024> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0580>, in queue <deflt>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0670>
+                            <16*hpa0688>
+                            <16*hpa0557>
+                            <16*hpa0563>
+                            <16*hpa0562>
+                            <16*hpa0565>
+                            <16*hpa0656>
+                            <16*hpa0697>
+                            <16*hpa0624>
+                            <16*hpa0649>
+                            <16*hpa0643>
+                            <16*hpa0692>
+                            <16*hpa0704>
+                            <16*hpa0691>
+                            <16*hpa0558>
+                            <16*hpa0616>
+                            <16*hpa0570>
+                            <16*hpa0639>
+                            <16*hpa0674>
+                            <16*hpa0626>
+                            <16*hpa0661>
+                            <16*hpa0701>
+                            <16*hpa0617>
+                            <16*hpa0640>
+                            <16*hpa0700>
+                            <16*hpa0581>
+                            <16*hpa0591>
+                            <16*hpa0635>
+                            <16*hpa0573>
+                            <16*hpa0663>
+                            <16*hpa0594>
+                            <16*hpa0583>
+                            <16*hpa0613>
+                            <16*hpa0585>
+                            <16*hpa0576>
+                            <16*hpa0561>
+                            <16*hpa0659>
+                            <16*hpa0645>
+                            <16*hpa0559>
+                            <16*hpa0667>
+                            <16*hpa0684>
+                            <16*hpa0549>
+                            <16*hpa0647>
+                            <16*hpa0605>
+                            <16*hpa0633>
+                            <16*hpa0696>
+                            <16*hpa0680>
+                            <16*hpa0602>
+                            <16*hpa0685>
+                            <16*hpa0564>
+                            <16*hpa0698>
+                            <16*hpa0569>
+                            <16*hpa0683>
+                            <16*hpa0634>
+                            <16*hpa0574>
+                            <16*hpa0650>
+                            <16*hpa0628>
+                            <16*hpa0646>
+                            <16*hpa0588>
+                            <16*hpa0584>
+                            <16*hpa0676>
+                            <16*hpa0595>
+                            <16*hpa0545>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/performance/128_1024/128_1024_1024> was used as the working directory.
+Started at Mon Sep  8 04:13:21 2014
+Results reported at Tue Sep  9 04:23:46 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_128_1024_1024
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/128_1024/128_1024_1024.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/128_1024/128_1024_1024.out.%J
+
+#BSUB -n 1024
+#BSUB -W 24:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.1
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/128_1024/128_1024_1024/
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+cd caffa.MTM
+#git checkout master
+#git pull origin master
+cd caffa3d.MB
+cp ../../param3d.inc .
+cp control.cin ../../.
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+cd ${MYWORKDIR}
+
+mpirun -report-bindings -n 1024 ./caffa3d.MB.lnx -log_summary /home/gu08vomo/output/INTEL/128_1024/128_1024_1024.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/128_1024/128_1024_1024/
+/work/scratch/gu08vomo/performance/128_1024/128_1024_1024
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/128_1024/128_1024_1024/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr/lib -lpetsc
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+ 0000002  0.4104E+00  0.4104E+00  0.4065E+00  0.5636E+00
+ 0000003  0.2072E+00  0.2072E+00  0.2030E+00  0.4899E+00
+ 0000004  0.1284E+00  0.1284E+00  0.1262E+00  0.3155E+00
+ 0000005  0.9672E-01  0.9672E-01  0.9490E-01  0.2137E+00
+ 0000006  0.7981E-01  0.7981E-01  0.7830E-01  0.1585E+00
+ 0000007  0.6920E-01  0.6920E-01  0.6791E-01  0.1927E+00
+ 0000008  0.6061E-01  0.6061E-01  0.5960E-01  0.1169E+00
+ 0000009  0.5496E-01  0.5496E-01  0.5406E-01  0.7763E-01
+ 0000010  0.5059E-01  0.5059E-01  0.4976E-01  0.5684E-01
+ 0000011  0.4707E-01  0.4707E-01  0.4628E-01  0.4372E-01
+ 0000012  0.4414E-01  0.4414E-01  0.4340E-01  0.3468E-01
+ 0000013  0.4167E-01  0.4167E-01  0.4097E-01  0.2820E-01
+ 0000014  0.3956E-01  0.3956E-01  0.3890E-01  0.2343E-01
+ 0000015  0.3772E-01  0.3772E-01  0.3710E-01  0.1987E-01
+ 0000016  0.3611E-01  0.3611E-01  0.3552E-01  0.1717E-01
+ 0000017  0.3469E-01  0.3469E-01  0.3412E-01  0.1510E-01
+ 0000018  0.3341E-01  0.3341E-01  0.3288E-01  0.1350E-01
+ 0000019  0.3227E-01  0.3227E-01  0.3176E-01  0.1223E-01
+ 0000020  0.3124E-01  0.3124E-01  0.3074E-01  0.1122E-01
+ 0000021  0.3030E-01  0.3030E-01  0.2982E-01  0.1041E-01
+ 0000022  0.2944E-01  0.2944E-01  0.2898E-01  0.9736E-02
+ 0000023  0.2865E-01  0.2865E-01  0.2821E-01  0.9180E-02
+ 0000024  0.2792E-01  0.2792E-01  0.2749E-01  0.8712E-02
+ 0000025  0.2725E-01  0.2725E-01  0.2684E-01  0.8312E-02
+ 0000026  0.2663E-01  0.2663E-01  0.2622E-01  0.7966E-02
+ 0000027  0.2605E-01  0.2605E-01  0.2565E-01  0.7664E-02
+ 0000028  0.2550E-01  0.2550E-01  0.2512E-01  0.7397E-02
+ 0000029  0.2500E-01  0.2500E-01  0.2462E-01  0.7158E-02
+ 0000030  0.2452E-01  0.2452E-01  0.2415E-01  0.6944E-02
+ 0000031  0.2407E-01  0.2407E-01  0.2371E-01  0.6749E-02
+ 0000032  0.2365E-01  0.2365E-01  0.2330E-01  0.6571E-02
+ 0000033  0.2325E-01  0.2325E-01  0.2291E-01  0.6407E-02
+ 0000034  0.2288E-01  0.2288E-01  0.2254E-01  0.6256E-02
+ 0000035  0.2252E-01  0.2252E-01  0.2219E-01  0.6101E-01
+ 0000036  0.2086E-01  0.2086E-01  0.2200E-01  0.1048E+00
+ 0000037  0.2071E-01  0.2071E-01  0.2057E-01  0.6882E-01
+ 0000038  0.2034E-01  0.2034E-01  0.2015E-01  0.4818E-01
+ 0000039  0.1998E-01  0.1998E-01  0.1980E-01  0.3590E-01
+ 0000040  0.1964E-01  0.1964E-01  0.1947E-01  0.2752E-01
+ 0000041  0.1931E-01  0.1931E-01  0.1916E-01  0.2140E-01
+ 0000042  0.1901E-01  0.1901E-01  0.1886E-01  0.1678E-01
+ 0000043  0.1871E-01  0.1871E-01  0.1857E-01  0.1324E-01
+ 0000044  0.1842E-01  0.1842E-01  0.1829E-01  0.1052E-01
+ 0000045  0.1815E-01  0.1815E-01  0.1802E-01  0.8423E-02
+ 0000046  0.1788E-01  0.1788E-01  0.1775E-01  0.6798E-02
+ 0000047  0.1762E-01  0.1762E-01  0.1750E-01  0.5544E-02
+ 0000048  0.1737E-01  0.1737E-01  0.1726E-01  0.4581E-02
+ 0000049  0.1713E-01  0.1713E-01  0.1702E-01  0.3845E-02
+ 0000050  0.1689E-01  0.1689E-01  0.1679E-01  0.3287E-02
+ 0000051  0.1666E-01  0.1666E-01  0.1656E-01  0.2868E-02
+ 0000052  0.1644E-01  0.1644E-01  0.1634E-01  0.2555E-02
+ 0000053  0.1622E-01  0.1622E-01  0.1613E-01  0.2322E-02
+ 0000054  0.1601E-01  0.1601E-01  0.1592E-01  0.2148E-02
+ 0000055  0.1581E-01  0.1581E-01  0.1572E-01  0.2018E-02
+ 0000056  0.1561E-01  0.1561E-01  0.1552E-01  0.1918E-02
+ 0000057  0.1541E-01  0.1541E-01  0.1533E-01  0.1839E-02
+ 0000058  0.1522E-01  0.1522E-01  0.1514E-01  0.1776E-02
+ 0000059  0.1503E-01  0.1503E-01  0.1496E-01  0.1723E-02
+ 0000060  0.1485E-01  0.1485E-01  0.1478E-01  0.1677E-02
+ 0000061  0.1468E-01  0.1468E-01  0.1460E-01  0.1637E-02
+ 0000062  0.1450E-01  0.1450E-01  0.1443E-01  0.1601E-02
+ 0000063  0.1434E-01  0.1434E-01  0.1427E-01  0.1568E-02
+ 0000064  0.1417E-01  0.1417E-01  0.1410E-01  0.1538E-02
+ 0000065  0.1401E-01  0.1401E-01  0.1394E-01  0.1509E-02
+ 0000066  0.1385E-01  0.1385E-01  0.1379E-01  0.1481E-02
+ 0000067  0.1370E-01  0.1370E-01  0.1364E-01  0.1455E-02
+ 0000068  0.1355E-01  0.1355E-01  0.1349E-01  0.1429E-02
+ 0000069  0.1340E-01  0.1340E-01  0.1334E-01  0.1405E-02
+ 0000070  0.1325E-01  0.1325E-01  0.1320E-01  0.1381E-02
+ 0000071  0.1311E-01  0.1311E-01  0.1306E-01  0.1359E-02
+ 0000072  0.1297E-01  0.1297E-01  0.1292E-01  0.1337E-02
+ 0000073  0.1284E-01  0.1284E-01  0.1278E-01  0.1315E-02
+ 0000074  0.1270E-01  0.1270E-01  0.1265E-01  0.1294E-02
+ 0000075  0.1257E-01  0.1257E-01  0.1252E-01  0.1274E-02
+ 0000076  0.1244E-01  0.1244E-01  0.1239E-01  0.1254E-02
+ 0000077  0.1232E-01  0.1232E-01  0.1227E-01  0.1235E-02
+ 0000078  0.1219E-01  0.1219E-01  0.1215E-01  0.1216E-02
+ 0000079  0.1207E-01  0.1207E-01  0.1203E-01  0.1198E-02
+ 0000080  0.1196E-01  0.1196E-01  0.1191E-01  0.1180E-02
+ 0000081  0.1184E-01  0.1184E-01  0.1179E-01  0.1163E-02
+ 0000082  0.1172E-01  0.1172E-01  0.1168E-01  0.1146E-02
+ 0000083  0.1161E-01  0.1161E-01  0.1156E-01  0.1129E-02
+ 0000084  0.1150E-01  0.1150E-01  0.1146E-01  0.1113E-02
+ 0000085  0.1139E-01  0.1139E-01  0.1135E-01  0.1097E-02
+ 0000086  0.1129E-01  0.1129E-01  0.1124E-01  0.1082E-02
+ 0000087  0.1118E-01  0.1118E-01  0.1114E-01  0.1066E-02
+ 0000088  0.1108E-01  0.1108E-01  0.1103E-01  0.1052E-02
+ 0000089  0.1098E-01  0.1098E-01  0.1093E-01  0.1037E-02
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 15 in communicator MPI_COMM_WORLD 
+with errorcode 59.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+The InfiniBand retry count between two MPI processes has been
+exceeded.  "Retry count" is defined in the InfiniBand spec 1.2
+(section 12.7.38):
+
+    The total number of times that the sender wishes the receiver to
+    retry timeout, packet sequence, etc. errors before posting a
+    completion error.
+
+This error typically means that there is something awry within the
+InfiniBand fabric itself.  You should note the hosts on which this
+error has occurred; it has been observed that rebooting or removing a
+particular host from the job can sometimes resolve this issue.
+
+Two MCA parameters can be used to control Open MPI's behavior with
+respect to the retry count:
+
+* btl_openib_ib_retry_count - The number of times the sender will
+  attempt to retry (defaulted to 7, the maximum value).
+* btl_openib_ib_timeout - The local ACK timeout parameter (defaulted
+  to 20).  The actual timeout value used is calculated as:
+
+     4.096 microseconds * (2^btl_openib_ib_timeout)
+
+  See the InfiniBand spec 1.2 (section 12.7.34) for more details.
+
+Below is some information about the host that raised the error and the
+peer to which it was connected:
+
+  Local host:   hpa0696
+  Local device: mlx4_0
+  Peer host:    hpa0645
+
+You may need to consult with your system administrator to get this
+problem fixed.
+--------------------------------------------------------------------------
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/128_1024/128_1024_1024.err.89565> for stderr output of this job.
+

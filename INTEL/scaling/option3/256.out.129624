@@ -1,0 +1,380 @@
+Sender: LSF System <lsfadmin@hpa0691>
+Subject: Job 129624: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option3/256.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option3/256.out.%J; #BSUB -n 1024;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:4:node -map-by ppr:2:socket -report-bindings -n 256 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option3/256.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option3/256.out.%J; #BSUB -n 1024;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:4:node -map-by ppr:2:socket -report-bindings -n 256 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0691>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0562>
+                            <16*hpa0548>
+                            <16*hpa0684>
+                            <16*hpa0561>
+                            <16*hpa0585>
+                            <16*hpa0618>
+                            <16*hpa0557>
+                            <16*hpa0559>
+                            <16*hpa0672>
+                            <16*hpa0671>
+                            <16*hpa0552>
+                            <16*hpa0547>
+                            <16*hpa0558>
+                            <16*hpa0596>
+                            <16*hpa0579>
+                            <16*hpa0605>
+                            <16*hpa0686>
+                            <16*hpa0565>
+                            <16*hpa0628>
+                            <16*hpa0606>
+                            <16*hpa0587>
+                            <16*hpa0640>
+                            <16*hpa0560>
+                            <16*hpa0643>
+                            <16*hpa0649>
+                            <16*hpa0608>
+                            <16*hpa0586>
+                            <16*hpa0553>
+                            <16*hpa0697>
+                            <16*hpa0580>
+                            <16*hpa0623>
+                            <16*hpa0652>
+                            <16*hpa0662>
+                            <16*hpa0619>
+                            <16*hpa0688>
+                            <16*hpa0638>
+                            <16*hpa0654>
+                            <16*hpa0620>
+                            <16*hpa0650>
+                            <16*hpa0577>
+                            <16*hpa0689>
+                            <16*hpa0624>
+                            <16*hpa0609>
+                            <16*hpa0700>
+                            <16*hpa0584>
+                            <16*hpa0611>
+                            <16*hpa0698>
+                            <16*hpa0617>
+                            <16*hpa0633>
+                            <16*hpa0641>
+                            <16*hpa0614>
+                            <16*hpa0673>
+                            <16*hpa0599>
+                            <16*hpa0631>
+                            <16*hpa0574>
+                            <16*hpa0703>
+                            <16*hpa0656>
+                            <16*hpa0642>
+                            <16*hpa0644>
+                            <16*hpa0622>
+                            <16*hpa0699>
+                            <16*hpa0651>
+                            <16*hpa0627>
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/scaling/option3> was used as the working directory.
+Started at Mon Sep 29 12:58:55 2014
+Results reported at Mon Sep 29 12:59:17 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option3/256.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option3/256.out.%J
+
+#BSUB -n 1024
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:4:node -map-by ppr:2:socket -report-bindings -n 256 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               708.67 sec.
+    Max Memory :             35 MB
+    Average Memory :         35.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               1559 MB
+
+    Max Processes :          9
+    Max Threads :            19
+
+The output (if any) follows:
+
+Number of MPI processes 256
+Process 0 hpa0691
+Process 1 hpa0691
+Process 2 hpa0691
+Process 3 hpa0691
+Process 4 hpa0562
+Process 5 hpa0562
+Process 6 hpa0562
+Process 7 hpa0562
+Process 8 hpa0548
+Process 9 hpa0548
+Process 10 hpa0548
+Process 11 hpa0548
+Process 12 hpa0684
+Process 13 hpa0684
+Process 14 hpa0684
+Process 15 hpa0684
+Process 16 hpa0561
+Process 17 hpa0561
+Process 18 hpa0561
+Process 19 hpa0561
+Process 20 hpa0585
+Process 21 hpa0585
+Process 22 hpa0585
+Process 23 hpa0585
+Process 24 hpa0618
+Process 25 hpa0618
+Process 26 hpa0618
+Process 27 hpa0618
+Process 28 hpa0557
+Process 29 hpa0557
+Process 30 hpa0557
+Process 31 hpa0557
+Process 32 hpa0559
+Process 33 hpa0559
+Process 34 hpa0559
+Process 35 hpa0559
+Process 36 hpa0672
+Process 37 hpa0672
+Process 38 hpa0672
+Process 39 hpa0672
+Process 40 hpa0671
+Process 41 hpa0671
+Process 42 hpa0671
+Process 43 hpa0671
+Process 44 hpa0552
+Process 45 hpa0552
+Process 46 hpa0552
+Process 47 hpa0552
+Process 48 hpa0547
+Process 49 hpa0547
+Process 50 hpa0547
+Process 51 hpa0547
+Process 52 hpa0558
+Process 53 hpa0558
+Process 54 hpa0558
+Process 55 hpa0558
+Process 56 hpa0596
+Process 57 hpa0596
+Process 58 hpa0596
+Process 59 hpa0596
+Process 60 hpa0579
+Process 61 hpa0579
+Process 62 hpa0579
+Process 63 hpa0579
+Process 64 hpa0605
+Process 65 hpa0605
+Process 66 hpa0605
+Process 67 hpa0605
+Process 68 hpa0686
+Process 69 hpa0686
+Process 70 hpa0686
+Process 71 hpa0686
+Process 72 hpa0565
+Process 73 hpa0565
+Process 74 hpa0565
+Process 75 hpa0565
+Process 76 hpa0628
+Process 77 hpa0628
+Process 78 hpa0628
+Process 79 hpa0628
+Process 80 hpa0606
+Process 81 hpa0606
+Process 82 hpa0606
+Process 83 hpa0606
+Process 84 hpa0587
+Process 85 hpa0587
+Process 86 hpa0587
+Process 87 hpa0587
+Process 88 hpa0640
+Process 89 hpa0640
+Process 90 hpa0640
+Process 91 hpa0640
+Process 92 hpa0560
+Process 93 hpa0560
+Process 94 hpa0560
+Process 95 hpa0560
+Process 96 hpa0643
+Process 97 hpa0643
+Process 98 hpa0643
+Process 99 hpa0643
+Process 100 hpa0649
+Process 101 hpa0649
+Process 102 hpa0649
+Process 103 hpa0649
+Process 104 hpa0608
+Process 105 hpa0608
+Process 106 hpa0608
+Process 107 hpa0608
+Process 108 hpa0586
+Process 109 hpa0586
+Process 110 hpa0586
+Process 111 hpa0586
+Process 112 hpa0553
+Process 113 hpa0553
+Process 114 hpa0553
+Process 115 hpa0553
+Process 116 hpa0697
+Process 117 hpa0697
+Process 118 hpa0697
+Process 119 hpa0697
+Process 120 hpa0580
+Process 121 hpa0580
+Process 122 hpa0580
+Process 123 hpa0580
+Process 124 hpa0623
+Process 125 hpa0623
+Process 126 hpa0623
+Process 127 hpa0623
+Process 128 hpa0652
+Process 129 hpa0652
+Process 130 hpa0652
+Process 131 hpa0652
+Process 132 hpa0662
+Process 133 hpa0662
+Process 134 hpa0662
+Process 135 hpa0662
+Process 136 hpa0619
+Process 137 hpa0619
+Process 138 hpa0619
+Process 139 hpa0619
+Process 140 hpa0688
+Process 141 hpa0688
+Process 142 hpa0688
+Process 143 hpa0688
+Process 144 hpa0638
+Process 145 hpa0638
+Process 146 hpa0638
+Process 147 hpa0638
+Process 148 hpa0654
+Process 149 hpa0654
+Process 150 hpa0654
+Process 151 hpa0654
+Process 152 hpa0620
+Process 153 hpa0620
+Process 154 hpa0620
+Process 155 hpa0620
+Process 156 hpa0650
+Process 157 hpa0650
+Process 158 hpa0650
+Process 159 hpa0650
+Process 160 hpa0577
+Process 161 hpa0577
+Process 162 hpa0577
+Process 163 hpa0577
+Process 164 hpa0689
+Process 165 hpa0689
+Process 166 hpa0689
+Process 167 hpa0689
+Process 168 hpa0624
+Process 169 hpa0624
+Process 170 hpa0624
+Process 171 hpa0624
+Process 172 hpa0609
+Process 173 hpa0609
+Process 174 hpa0609
+Process 175 hpa0609
+Process 176 hpa0700
+Process 177 hpa0700
+Process 178 hpa0700
+Process 179 hpa0700
+Process 180 hpa0584
+Process 181 hpa0584
+Process 182 hpa0584
+Process 183 hpa0584
+Process 184 hpa0611
+Process 185 hpa0611
+Process 186 hpa0611
+Process 187 hpa0611
+Process 188 hpa0698
+Process 189 hpa0698
+Process 190 hpa0698
+Process 191 hpa0698
+Process 192 hpa0617
+Process 193 hpa0617
+Process 194 hpa0617
+Process 195 hpa0617
+Process 196 hpa0633
+Process 197 hpa0633
+Process 198 hpa0633
+Process 199 hpa0633
+Process 200 hpa0641
+Process 201 hpa0641
+Process 202 hpa0641
+Process 203 hpa0641
+Process 204 hpa0614
+Process 205 hpa0614
+Process 206 hpa0614
+Process 207 hpa0614
+Process 208 hpa0673
+Process 209 hpa0673
+Process 210 hpa0673
+Process 211 hpa0673
+Process 212 hpa0599
+Process 213 hpa0599
+Process 214 hpa0599
+Process 215 hpa0599
+Process 216 hpa0631
+Process 217 hpa0631
+Process 218 hpa0631
+Process 219 hpa0631
+Process 220 hpa0574
+Process 221 hpa0574
+Process 222 hpa0574
+Process 223 hpa0574
+Process 224 hpa0703
+Process 225 hpa0703
+Process 226 hpa0703
+Process 227 hpa0703
+Process 228 hpa0656
+Process 229 hpa0656
+Process 230 hpa0656
+Process 231 hpa0656
+Process 232 hpa0642
+Process 233 hpa0642
+Process 234 hpa0642
+Process 235 hpa0642
+Process 236 hpa0644
+Process 237 hpa0644
+Process 238 hpa0644
+Process 239 hpa0644
+Process 240 hpa0622
+Process 241 hpa0622
+Process 242 hpa0622
+Process 243 hpa0622
+Process 244 hpa0699
+Process 245 hpa0699
+Process 246 hpa0699
+Process 247 hpa0699
+Process 248 hpa0651
+Process 249 hpa0651
+Process 250 hpa0651
+Process 251 hpa0651
+Process 252 hpa0627
+Process 253 hpa0627
+Process 254 hpa0627
+Process 255 hpa0627
+Function      Rate (MB/s) 
+Copy:      2557331.0889
+Scale:     2014338.3277
+Add:       2500253.1305
+Triad:     2488555.8275
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option3/256.err.129624> for stderr output of this job.
+

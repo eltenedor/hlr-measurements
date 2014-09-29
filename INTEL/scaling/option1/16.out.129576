@@ -1,0 +1,59 @@
+Sender: LSF System <lsfadmin@hpa0017>
+Subject: Job 129576: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/16.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/16.out.%J; #BSUB -n 16;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 16 ./MPIVersion> in cluster <lichtenberg> Exited
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/16.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/16.out.%J; #BSUB -n 16;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 16 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0017>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/scaling/option1> was used as the working directory.
+Started at Sun Sep 28 20:03:16 2014
+Results reported at Sun Sep 28 20:03:18 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/16.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/16.out.%J
+
+#BSUB -n 16
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -report-bindings -n 16 ./MPIVersion
+
+------------------------------------------------------------
+
+Exited with exit code 132.
+
+Resource usage summary:
+
+    CPU time :               0.38 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+
+The output (if any) follows:
+
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./MPIVersion
+Node: hpa0017
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+16 total processes failed to start
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option1/16.err.129576> for stderr output of this job.
+

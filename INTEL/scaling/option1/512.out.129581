@@ -1,0 +1,96 @@
+Sender: LSF System <lsfadmin@hai0009>
+Subject: Job 129581: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/512.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/512.out.%J; #BSUB -n 512;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 512 ./MPIVersion> in cluster <lichtenberg> Exited
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/512.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/512.out.%J; #BSUB -n 512;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 512 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hai0009>, in queue <big2>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hai0006>
+                            <16*hai0004>
+                            <16*hai0023>
+                            <16*hai0022>
+                            <16*hai0016>
+                            <16*hai0007>
+                            <16*hai0010>
+                            <16*hai0017>
+                            <16*hai0001>
+                            <16*hai0024>
+                            <16*hai0015>
+                            <16*hai0020>
+                            <16*hai0008>
+                            <16*hai0021>
+                            <16*hai0011>
+                            <16*hai0012>
+                            <16*hai0018>
+                            <16*hai0003>
+                            <16*han0040>
+                            <16*han0030>
+                            <16*han0001>
+                            <16*han0023>
+                            <16*han0010>
+                            <16*han0035>
+                            <16*han0032>
+                            <16*han0016>
+                            <16*han0041>
+                            <16*han0019>
+                            <16*han0012>
+                            <16*han0011>
+                            <16*han0007>
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/scaling/option1> was used as the working directory.
+Started at Sun Sep 28 21:11:26 2014
+Results reported at Sun Sep 28 21:11:37 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/512.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/512.out.%J
+
+#BSUB -n 512
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -report-bindings -n 512 ./MPIVersion
+
+------------------------------------------------------------
+
+Exited with exit code 132.
+
+Resource usage summary:
+
+    CPU time :               5.38 sec.
+    Max Memory :             16 MB
+    Average Memory :         16.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               1305 MB
+
+    Max Processes :          49
+    Max Threads :            49
+
+The output (if any) follows:
+
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./MPIVersion
+Node: hai0009
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+464 total processes failed to start
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option1/512.err.129581> for stderr output of this job.
+

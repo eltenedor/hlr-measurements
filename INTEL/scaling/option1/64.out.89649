@@ -1,0 +1,128 @@
+Sender: LSF System <lsfadmin@hpa0609>
+Subject: Job 89649: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/64.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/64.out.%J; #BSUB -n 64;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.1;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 64 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/64.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/64.out.%J; #BSUB -n 64;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.1;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 64 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0609>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0672>
+                            <16*hpa0547>
+                            <16*hpa0639>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling> was used as the working directory.
+Started at Sun Sep  7 18:27:38 2014
+Results reported at Sun Sep  7 18:27:54 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/64.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/64.out.%J
+
+#BSUB -n 64
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.1
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr
+
+mpirun -report-bindings -n 64 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               242.30 sec.
+    Max Memory :             4 MB
+    Average Memory :         4.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               138 MB
+
+    Max Processes :          6
+    Max Threads :            6
+
+The output (if any) follows:
+
+Number of MPI processes 64
+Process 0 hpa0609
+Process 1 hpa0609
+Process 2 hpa0609
+Process 3 hpa0609
+Process 4 hpa0609
+Process 5 hpa0609
+Process 6 hpa0609
+Process 7 hpa0609
+Process 8 hpa0609
+Process 9 hpa0609
+Process 10 hpa0609
+Process 11 hpa0609
+Process 12 hpa0609
+Process 13 hpa0609
+Process 14 hpa0609
+Process 15 hpa0609
+Process 16 hpa0672
+Process 17 hpa0672
+Process 18 hpa0672
+Process 19 hpa0672
+Process 20 hpa0672
+Process 21 hpa0672
+Process 22 hpa0672
+Process 23 hpa0672
+Process 24 hpa0672
+Process 25 hpa0672
+Process 26 hpa0672
+Process 27 hpa0672
+Process 28 hpa0672
+Process 29 hpa0672
+Process 30 hpa0672
+Process 31 hpa0672
+Process 32 hpa0547
+Process 33 hpa0547
+Process 34 hpa0547
+Process 35 hpa0547
+Process 36 hpa0547
+Process 37 hpa0547
+Process 38 hpa0547
+Process 39 hpa0547
+Process 40 hpa0547
+Process 41 hpa0547
+Process 42 hpa0547
+Process 43 hpa0547
+Process 44 hpa0547
+Process 45 hpa0547
+Process 46 hpa0547
+Process 47 hpa0547
+Process 48 hpa0639
+Process 49 hpa0639
+Process 50 hpa0639
+Process 51 hpa0639
+Process 52 hpa0639
+Process 53 hpa0639
+Process 54 hpa0639
+Process 55 hpa0639
+Process 56 hpa0639
+Process 57 hpa0639
+Process 58 hpa0639
+Process 59 hpa0639
+Process 60 hpa0639
+Process 61 hpa0639
+Process 62 hpa0639
+Process 63 hpa0639
+Function      Rate (MB/s) 
+Copy:      230812.4713
+Scale:     277068.4716
+Add:       283952.3486
+Triad:     283432.9381
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/64.err.89649> for stderr output of this job.
+

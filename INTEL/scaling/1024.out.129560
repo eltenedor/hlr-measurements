@@ -1,0 +1,122 @@
+Sender: LSF System <lsfadmin@hpa0652>
+Subject: Job 129560: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/1024.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/1024.out.%J; #BSUB -n 1024;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 1024 ./MPIVersion> in cluster <lichtenberg> Exited
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/1024.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/1024.out.%J; #BSUB -n 1024;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 1024 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0652>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0697>
+                            <16*hpa0633>
+                            <16*hpa0624>
+                            <16*hpa0596>
+                            <16*hpa0672>
+                            <16*hpa0691>
+                            <16*hpa0608>
+                            <16*hpa0577>
+                            <16*hpa0662>
+                            <16*hpa0580>
+                            <16*hpa0638>
+                            <16*hpa0649>
+                            <16*hpa0643>
+                            <16*hpa0579>
+                            <16*hpa0671>
+                            <16*hpa0605>
+                            <16*hpa0586>
+                            <16*hpa0619>
+                            <16*hpa0650>
+                            <16*hpa0609>
+                            <16*hpa0628>
+                            <16*hpa0688>
+                            <16*hpa0686>
+                            <16*hpa0684>
+                            <16*hpa0623>
+                            <16*hpa0620>
+                            <16*hpa0565>
+                            <16*hpa0700>
+                            <16*hpa0561>
+                            <16*hpa0585>
+                            <16*hpa0614>
+                            <16*hpa0611>
+                            <16*hpa0599>
+                            <16*hpa0552>
+                            <16*hpa0584>
+                            <16*hpa0606>
+                            <16*hpa0587>
+                            <16*hpa0656>
+                            <16*hpa0618>
+                            <16*hpa0673>
+                            <16*hpa0640>
+                            <16*hpa0703>
+                            <16*hpa0560>
+                            <16*hpa0631>
+                            <16*hpa0547>
+                            <16*hpa0559>
+                            <16*hpa0558>
+                            <16*hpa0557>
+                            <16*hpa0642>
+                            <16*hpa0641>
+                            <16*hpa0562>
+                            <16*hpa0548>
+                            <16*hpa0654>
+                            <16*hpa0622>
+                            <16*hpa0574>
+                            <16*hpa0644>
+                            <16*hpa0689>
+                            <16*hpa0553>
+                            <16*hpa0698>
+                            <16*hpa0617>
+                            <16*hpa0699>
+                            <16*hpa0651>
+                            <16*hpa0627>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling/option1> was used as the working directory.
+Started at Mon Sep 29 12:57:22 2014
+Results reported at Mon Sep 29 12:57:24 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/1024.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/1024.out.%J
+
+#BSUB -n 1024
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -report-bindings -n 1024 ./MPIVersion
+
+------------------------------------------------------------
+
+Exited with exit code 132.
+
+Resource usage summary:
+
+    CPU time :               6.95 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+
+The output (if any) follows:
+
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./MPIVersion
+Node: hpa0652
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+512 total processes failed to start
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/1024.err.129560> for stderr output of this job.
+

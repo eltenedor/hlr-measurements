@@ -1,0 +1,80 @@
+Sender: LSF System <lsfadmin@hpa0047>
+Subject: Job 129481: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/16.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/16.out.%J; #BSUB -n 64;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 16 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/16.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/16.out.%J; #BSUB -n 64;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 16 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0047>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0048>
+                            <16*hpa0049>
+                            <16*hpa0050>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling/option2> was used as the working directory.
+Started at Sun Sep 28 18:04:03 2014
+Results reported at Sun Sep 28 18:04:10 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/16.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/16.out.%J
+
+#BSUB -n 64
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 16 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               24.42 sec.
+    Max Memory :             3 MB
+    Average Memory :         3.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               155 MB
+
+    Max Processes :          10
+    Max Threads :            10
+
+The output (if any) follows:
+
+Number of MPI processes 16
+Process 0 hpa0047
+Process 1 hpa0047
+Process 2 hpa0047
+Process 3 hpa0047
+Process 4 hpa0047
+Process 5 hpa0047
+Process 6 hpa0047
+Process 7 hpa0047
+Process 8 hpa0048
+Process 9 hpa0048
+Process 10 hpa0048
+Process 11 hpa0048
+Process 12 hpa0048
+Process 13 hpa0048
+Process 14 hpa0048
+Process 15 hpa0048
+Function      Rate (MB/s) 
+Copy:      114836.8823
+Scale:     115349.2247
+Add:       141730.3717
+Triad:     139338.9116
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option2/16.err.129481> for stderr output of this job.
+

@@ -1,0 +1,196 @@
+Sender: LSF System <lsfadmin@hpa0623>
+Subject: Job 89650: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/128.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/128.out.%J; #BSUB -n 128;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.1;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 128 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/128.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/128.out.%J; #BSUB -n 128;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.1;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 128 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0623>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0555>
+                            <16*hpa0615>
+                            <16*hpa0656>
+                            <16*hpa0605>
+                            <16*hpa0580>
+                            <16*hpa0594>
+                            <16*hpa0684>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling> was used as the working directory.
+Started at Sun Sep  7 18:27:38 2014
+Results reported at Sun Sep  7 18:27:57 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/128.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/128.out.%J
+
+#BSUB -n 128
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.1
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr
+
+mpirun -report-bindings -n 128 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               583.75 sec.
+    Max Memory :             4 MB
+    Average Memory :         4.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               138 MB
+
+    Max Processes :          6
+    Max Threads :            6
+
+The output (if any) follows:
+
+Number of MPI processes 128
+Process 0 hpa0623
+Process 1 hpa0623
+Process 2 hpa0623
+Process 3 hpa0623
+Process 4 hpa0623
+Process 5 hpa0623
+Process 6 hpa0623
+Process 7 hpa0623
+Process 8 hpa0623
+Process 9 hpa0623
+Process 10 hpa0623
+Process 11 hpa0623
+Process 12 hpa0623
+Process 13 hpa0623
+Process 14 hpa0623
+Process 15 hpa0623
+Process 16 hpa0555
+Process 17 hpa0555
+Process 18 hpa0555
+Process 19 hpa0555
+Process 20 hpa0555
+Process 21 hpa0555
+Process 22 hpa0555
+Process 23 hpa0555
+Process 24 hpa0555
+Process 25 hpa0555
+Process 26 hpa0555
+Process 27 hpa0555
+Process 28 hpa0555
+Process 29 hpa0555
+Process 30 hpa0555
+Process 31 hpa0555
+Process 32 hpa0615
+Process 33 hpa0615
+Process 34 hpa0615
+Process 35 hpa0615
+Process 36 hpa0615
+Process 37 hpa0615
+Process 38 hpa0615
+Process 39 hpa0615
+Process 40 hpa0615
+Process 41 hpa0615
+Process 42 hpa0615
+Process 43 hpa0615
+Process 44 hpa0615
+Process 45 hpa0615
+Process 46 hpa0615
+Process 47 hpa0615
+Process 48 hpa0656
+Process 49 hpa0656
+Process 50 hpa0656
+Process 51 hpa0656
+Process 52 hpa0656
+Process 53 hpa0656
+Process 54 hpa0656
+Process 55 hpa0656
+Process 56 hpa0656
+Process 57 hpa0656
+Process 58 hpa0656
+Process 59 hpa0656
+Process 60 hpa0656
+Process 61 hpa0656
+Process 62 hpa0656
+Process 63 hpa0656
+Process 64 hpa0605
+Process 65 hpa0605
+Process 66 hpa0605
+Process 67 hpa0605
+Process 68 hpa0605
+Process 69 hpa0605
+Process 70 hpa0605
+Process 71 hpa0605
+Process 72 hpa0605
+Process 73 hpa0605
+Process 74 hpa0605
+Process 75 hpa0605
+Process 76 hpa0605
+Process 77 hpa0605
+Process 78 hpa0605
+Process 79 hpa0605
+Process 80 hpa0580
+Process 81 hpa0580
+Process 82 hpa0580
+Process 83 hpa0580
+Process 84 hpa0580
+Process 85 hpa0580
+Process 86 hpa0580
+Process 87 hpa0580
+Process 88 hpa0580
+Process 89 hpa0580
+Process 90 hpa0580
+Process 91 hpa0580
+Process 92 hpa0580
+Process 93 hpa0580
+Process 94 hpa0580
+Process 95 hpa0580
+Process 96 hpa0594
+Process 97 hpa0594
+Process 98 hpa0594
+Process 99 hpa0594
+Process 100 hpa0594
+Process 101 hpa0594
+Process 102 hpa0594
+Process 103 hpa0594
+Process 104 hpa0594
+Process 105 hpa0594
+Process 106 hpa0594
+Process 107 hpa0594
+Process 108 hpa0594
+Process 109 hpa0594
+Process 110 hpa0594
+Process 111 hpa0594
+Process 112 hpa0684
+Process 113 hpa0684
+Process 114 hpa0684
+Process 115 hpa0684
+Process 116 hpa0684
+Process 117 hpa0684
+Process 118 hpa0684
+Process 119 hpa0684
+Process 120 hpa0684
+Process 121 hpa0684
+Process 122 hpa0684
+Process 123 hpa0684
+Process 124 hpa0684
+Process 125 hpa0684
+Process 126 hpa0684
+Process 127 hpa0684
+Function      Rate (MB/s) 
+Copy:      457273.3606
+Scale:     547541.6900
+Add:       564146.1612
+Triad:     561495.2270
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/128.err.89650> for stderr output of this job.
+

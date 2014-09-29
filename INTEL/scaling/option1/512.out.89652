@@ -1,0 +1,604 @@
+Sender: LSF System <lsfadmin@hpa0656>
+Subject: Job 89652: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/512.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/512.out.%J; #BSUB -n 512;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.1;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 512 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/512.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/512.out.%J; #BSUB -n 512;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.1;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 512 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0656>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0594>
+                            <16*hpa0623>
+                            <16*hpa0580>
+                            <16*hpa0609>
+                            <16*hpa0659>
+                            <16*hpa0691>
+                            <16*hpa0574>
+                            <16*hpa0567>
+                            <16*hpa0644>
+                            <16*hpa0629>
+                            <16*hpa0561>
+                            <16*hpa0619>
+                            <16*hpa0684>
+                            <16*hpa0677>
+                            <16*hpa0555>
+                            <16*hpa0596>
+                            <16*hpa0573>
+                            <16*hpa0617>
+                            <16*hpa0564>
+                            <16*hpa0588>
+                            <16*hpa0627>
+                            <16*hpa0625>
+                            <16*hpa0547>
+                            <16*hpa0681>
+                            <16*hpa0652>
+                            <16*hpa0639>
+                            <16*hpa0605>
+                            <16*hpa0602>
+                            <16*hpa0569>
+                            <16*hpa0657>
+                            <16*hpa0647>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling> was used as the working directory.
+Started at Sun Sep  7 18:37:25 2014
+Results reported at Sun Sep  7 18:38:16 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/512.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/512.out.%J
+
+#BSUB -n 512
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.1
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr
+
+mpirun -report-bindings -n 512 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               4016.63 sec.
+    Max Memory :             3 MB
+    Average Memory :         3.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               109 MB
+
+    Max Processes :          5
+    Max Threads :            5
+
+The output (if any) follows:
+
+Number of MPI processes 512
+Process 0 hpa0656
+Process 1 hpa0656
+Process 2 hpa0656
+Process 3 hpa0656
+Process 4 hpa0656
+Process 5 hpa0656
+Process 6 hpa0656
+Process 7 hpa0656
+Process 8 hpa0656
+Process 9 hpa0656
+Process 10 hpa0656
+Process 11 hpa0656
+Process 12 hpa0656
+Process 13 hpa0656
+Process 14 hpa0656
+Process 15 hpa0656
+Process 16 hpa0594
+Process 17 hpa0594
+Process 18 hpa0594
+Process 19 hpa0594
+Process 20 hpa0594
+Process 21 hpa0594
+Process 22 hpa0594
+Process 23 hpa0594
+Process 24 hpa0594
+Process 25 hpa0594
+Process 26 hpa0594
+Process 27 hpa0594
+Process 28 hpa0594
+Process 29 hpa0594
+Process 30 hpa0594
+Process 31 hpa0594
+Process 32 hpa0623
+Process 33 hpa0623
+Process 34 hpa0623
+Process 35 hpa0623
+Process 36 hpa0623
+Process 37 hpa0623
+Process 38 hpa0623
+Process 39 hpa0623
+Process 40 hpa0623
+Process 41 hpa0623
+Process 42 hpa0623
+Process 43 hpa0623
+Process 44 hpa0623
+Process 45 hpa0623
+Process 46 hpa0623
+Process 47 hpa0623
+Process 48 hpa0580
+Process 49 hpa0580
+Process 50 hpa0580
+Process 51 hpa0580
+Process 52 hpa0580
+Process 53 hpa0580
+Process 54 hpa0580
+Process 55 hpa0580
+Process 56 hpa0580
+Process 57 hpa0580
+Process 58 hpa0580
+Process 59 hpa0580
+Process 60 hpa0580
+Process 61 hpa0580
+Process 62 hpa0580
+Process 63 hpa0580
+Process 64 hpa0609
+Process 65 hpa0609
+Process 66 hpa0609
+Process 67 hpa0609
+Process 68 hpa0609
+Process 69 hpa0609
+Process 70 hpa0609
+Process 71 hpa0609
+Process 72 hpa0609
+Process 73 hpa0609
+Process 74 hpa0609
+Process 75 hpa0609
+Process 76 hpa0609
+Process 77 hpa0609
+Process 78 hpa0609
+Process 79 hpa0609
+Process 80 hpa0659
+Process 81 hpa0659
+Process 82 hpa0659
+Process 83 hpa0659
+Process 84 hpa0659
+Process 85 hpa0659
+Process 86 hpa0659
+Process 87 hpa0659
+Process 88 hpa0659
+Process 89 hpa0659
+Process 90 hpa0659
+Process 91 hpa0659
+Process 92 hpa0659
+Process 93 hpa0659
+Process 94 hpa0659
+Process 95 hpa0659
+Process 96 hpa0691
+Process 97 hpa0691
+Process 98 hpa0691
+Process 99 hpa0691
+Process 100 hpa0691
+Process 101 hpa0691
+Process 102 hpa0691
+Process 103 hpa0691
+Process 104 hpa0691
+Process 105 hpa0691
+Process 106 hpa0691
+Process 107 hpa0691
+Process 108 hpa0691
+Process 109 hpa0691
+Process 110 hpa0691
+Process 111 hpa0691
+Process 112 hpa0574
+Process 113 hpa0574
+Process 114 hpa0574
+Process 115 hpa0574
+Process 116 hpa0574
+Process 117 hpa0574
+Process 118 hpa0574
+Process 119 hpa0574
+Process 120 hpa0574
+Process 121 hpa0574
+Process 122 hpa0574
+Process 123 hpa0574
+Process 124 hpa0574
+Process 125 hpa0574
+Process 126 hpa0574
+Process 127 hpa0574
+Process 128 hpa0567
+Process 129 hpa0567
+Process 130 hpa0567
+Process 131 hpa0567
+Process 132 hpa0567
+Process 133 hpa0567
+Process 134 hpa0567
+Process 135 hpa0567
+Process 136 hpa0567
+Process 137 hpa0567
+Process 138 hpa0567
+Process 139 hpa0567
+Process 140 hpa0567
+Process 141 hpa0567
+Process 142 hpa0567
+Process 143 hpa0567
+Process 144 hpa0644
+Process 145 hpa0644
+Process 146 hpa0644
+Process 147 hpa0644
+Process 148 hpa0644
+Process 149 hpa0644
+Process 150 hpa0644
+Process 151 hpa0644
+Process 152 hpa0644
+Process 153 hpa0644
+Process 154 hpa0644
+Process 155 hpa0644
+Process 156 hpa0644
+Process 157 hpa0644
+Process 158 hpa0644
+Process 159 hpa0644
+Process 160 hpa0629
+Process 161 hpa0629
+Process 162 hpa0629
+Process 163 hpa0629
+Process 164 hpa0629
+Process 165 hpa0629
+Process 166 hpa0629
+Process 167 hpa0629
+Process 168 hpa0629
+Process 169 hpa0629
+Process 170 hpa0629
+Process 171 hpa0629
+Process 172 hpa0629
+Process 173 hpa0629
+Process 174 hpa0629
+Process 175 hpa0629
+Process 176 hpa0561
+Process 177 hpa0561
+Process 178 hpa0561
+Process 179 hpa0561
+Process 180 hpa0561
+Process 181 hpa0561
+Process 182 hpa0561
+Process 183 hpa0561
+Process 184 hpa0561
+Process 185 hpa0561
+Process 186 hpa0561
+Process 187 hpa0561
+Process 188 hpa0561
+Process 189 hpa0561
+Process 190 hpa0561
+Process 191 hpa0561
+Process 192 hpa0619
+Process 193 hpa0619
+Process 194 hpa0619
+Process 195 hpa0619
+Process 196 hpa0619
+Process 197 hpa0619
+Process 198 hpa0619
+Process 199 hpa0619
+Process 200 hpa0619
+Process 201 hpa0619
+Process 202 hpa0619
+Process 203 hpa0619
+Process 204 hpa0619
+Process 205 hpa0619
+Process 206 hpa0619
+Process 207 hpa0619
+Process 208 hpa0684
+Process 209 hpa0684
+Process 210 hpa0684
+Process 211 hpa0684
+Process 212 hpa0684
+Process 213 hpa0684
+Process 214 hpa0684
+Process 215 hpa0684
+Process 216 hpa0684
+Process 217 hpa0684
+Process 218 hpa0684
+Process 219 hpa0684
+Process 220 hpa0684
+Process 221 hpa0684
+Process 222 hpa0684
+Process 223 hpa0684
+Process 224 hpa0677
+Process 225 hpa0677
+Process 226 hpa0677
+Process 227 hpa0677
+Process 228 hpa0677
+Process 229 hpa0677
+Process 230 hpa0677
+Process 231 hpa0677
+Process 232 hpa0677
+Process 233 hpa0677
+Process 234 hpa0677
+Process 235 hpa0677
+Process 236 hpa0677
+Process 237 hpa0677
+Process 238 hpa0677
+Process 239 hpa0677
+Process 240 hpa0555
+Process 241 hpa0555
+Process 242 hpa0555
+Process 243 hpa0555
+Process 244 hpa0555
+Process 245 hpa0555
+Process 246 hpa0555
+Process 247 hpa0555
+Process 248 hpa0555
+Process 249 hpa0555
+Process 250 hpa0555
+Process 251 hpa0555
+Process 252 hpa0555
+Process 253 hpa0555
+Process 254 hpa0555
+Process 255 hpa0555
+Process 256 hpa0596
+Process 257 hpa0596
+Process 258 hpa0596
+Process 259 hpa0596
+Process 260 hpa0596
+Process 261 hpa0596
+Process 262 hpa0596
+Process 263 hpa0596
+Process 264 hpa0596
+Process 265 hpa0596
+Process 266 hpa0596
+Process 267 hpa0596
+Process 268 hpa0596
+Process 269 hpa0596
+Process 270 hpa0596
+Process 271 hpa0596
+Process 272 hpa0573
+Process 273 hpa0573
+Process 274 hpa0573
+Process 275 hpa0573
+Process 276 hpa0573
+Process 277 hpa0573
+Process 278 hpa0573
+Process 279 hpa0573
+Process 280 hpa0573
+Process 281 hpa0573
+Process 282 hpa0573
+Process 283 hpa0573
+Process 284 hpa0573
+Process 285 hpa0573
+Process 286 hpa0573
+Process 287 hpa0573
+Process 288 hpa0617
+Process 289 hpa0617
+Process 290 hpa0617
+Process 291 hpa0617
+Process 292 hpa0617
+Process 293 hpa0617
+Process 294 hpa0617
+Process 295 hpa0617
+Process 296 hpa0617
+Process 297 hpa0617
+Process 298 hpa0617
+Process 299 hpa0617
+Process 300 hpa0617
+Process 301 hpa0617
+Process 302 hpa0617
+Process 303 hpa0617
+Process 304 hpa0564
+Process 305 hpa0564
+Process 306 hpa0564
+Process 307 hpa0564
+Process 308 hpa0564
+Process 309 hpa0564
+Process 310 hpa0564
+Process 311 hpa0564
+Process 312 hpa0564
+Process 313 hpa0564
+Process 314 hpa0564
+Process 315 hpa0564
+Process 316 hpa0564
+Process 317 hpa0564
+Process 318 hpa0564
+Process 319 hpa0564
+Process 320 hpa0588
+Process 321 hpa0588
+Process 322 hpa0588
+Process 323 hpa0588
+Process 324 hpa0588
+Process 325 hpa0588
+Process 326 hpa0588
+Process 327 hpa0588
+Process 328 hpa0588
+Process 329 hpa0588
+Process 330 hpa0588
+Process 331 hpa0588
+Process 332 hpa0588
+Process 333 hpa0588
+Process 334 hpa0588
+Process 335 hpa0588
+Process 336 hpa0627
+Process 337 hpa0627
+Process 338 hpa0627
+Process 339 hpa0627
+Process 340 hpa0627
+Process 341 hpa0627
+Process 342 hpa0627
+Process 343 hpa0627
+Process 344 hpa0627
+Process 345 hpa0627
+Process 346 hpa0627
+Process 347 hpa0627
+Process 348 hpa0627
+Process 349 hpa0627
+Process 350 hpa0627
+Process 351 hpa0627
+Process 352 hpa0625
+Process 353 hpa0625
+Process 354 hpa0625
+Process 355 hpa0625
+Process 356 hpa0625
+Process 357 hpa0625
+Process 358 hpa0625
+Process 359 hpa0625
+Process 360 hpa0625
+Process 361 hpa0625
+Process 362 hpa0625
+Process 363 hpa0625
+Process 364 hpa0625
+Process 365 hpa0625
+Process 366 hpa0625
+Process 367 hpa0625
+Process 368 hpa0547
+Process 369 hpa0547
+Process 370 hpa0547
+Process 371 hpa0547
+Process 372 hpa0547
+Process 373 hpa0547
+Process 374 hpa0547
+Process 375 hpa0547
+Process 376 hpa0547
+Process 377 hpa0547
+Process 378 hpa0547
+Process 379 hpa0547
+Process 380 hpa0547
+Process 381 hpa0547
+Process 382 hpa0547
+Process 383 hpa0547
+Process 384 hpa0681
+Process 385 hpa0681
+Process 386 hpa0681
+Process 387 hpa0681
+Process 388 hpa0681
+Process 389 hpa0681
+Process 390 hpa0681
+Process 391 hpa0681
+Process 392 hpa0681
+Process 393 hpa0681
+Process 394 hpa0681
+Process 395 hpa0681
+Process 396 hpa0681
+Process 397 hpa0681
+Process 398 hpa0681
+Process 399 hpa0681
+Process 400 hpa0652
+Process 401 hpa0652
+Process 402 hpa0652
+Process 403 hpa0652
+Process 404 hpa0652
+Process 405 hpa0652
+Process 406 hpa0652
+Process 407 hpa0652
+Process 408 hpa0652
+Process 409 hpa0652
+Process 410 hpa0652
+Process 411 hpa0652
+Process 412 hpa0652
+Process 413 hpa0652
+Process 414 hpa0652
+Process 415 hpa0652
+Process 416 hpa0639
+Process 417 hpa0639
+Process 418 hpa0639
+Process 419 hpa0639
+Process 420 hpa0639
+Process 421 hpa0639
+Process 422 hpa0639
+Process 423 hpa0639
+Process 424 hpa0639
+Process 425 hpa0639
+Process 426 hpa0639
+Process 427 hpa0639
+Process 428 hpa0639
+Process 429 hpa0639
+Process 430 hpa0639
+Process 431 hpa0639
+Process 432 hpa0605
+Process 433 hpa0605
+Process 434 hpa0605
+Process 435 hpa0605
+Process 436 hpa0605
+Process 437 hpa0605
+Process 438 hpa0605
+Process 439 hpa0605
+Process 440 hpa0605
+Process 441 hpa0605
+Process 442 hpa0605
+Process 443 hpa0605
+Process 444 hpa0605
+Process 445 hpa0605
+Process 446 hpa0605
+Process 447 hpa0605
+Process 448 hpa0602
+Process 449 hpa0602
+Process 450 hpa0602
+Process 451 hpa0602
+Process 452 hpa0602
+Process 453 hpa0602
+Process 454 hpa0602
+Process 455 hpa0602
+Process 456 hpa0602
+Process 457 hpa0602
+Process 458 hpa0602
+Process 459 hpa0602
+Process 460 hpa0602
+Process 461 hpa0602
+Process 462 hpa0602
+Process 463 hpa0602
+Process 464 hpa0569
+Process 465 hpa0569
+Process 466 hpa0569
+Process 467 hpa0569
+Process 468 hpa0569
+Process 469 hpa0569
+Process 470 hpa0569
+Process 471 hpa0569
+Process 472 hpa0569
+Process 473 hpa0569
+Process 474 hpa0569
+Process 475 hpa0569
+Process 476 hpa0569
+Process 477 hpa0569
+Process 478 hpa0569
+Process 479 hpa0569
+Process 480 hpa0657
+Process 481 hpa0657
+Process 482 hpa0657
+Process 483 hpa0657
+Process 484 hpa0657
+Process 485 hpa0657
+Process 486 hpa0657
+Process 487 hpa0657
+Process 488 hpa0657
+Process 489 hpa0657
+Process 490 hpa0657
+Process 491 hpa0657
+Process 492 hpa0657
+Process 493 hpa0657
+Process 494 hpa0657
+Process 495 hpa0657
+Process 496 hpa0647
+Process 497 hpa0647
+Process 498 hpa0647
+Process 499 hpa0647
+Process 500 hpa0647
+Process 501 hpa0647
+Process 502 hpa0647
+Process 503 hpa0647
+Process 504 hpa0647
+Process 505 hpa0647
+Process 506 hpa0647
+Process 507 hpa0647
+Process 508 hpa0647
+Process 509 hpa0647
+Process 510 hpa0647
+Process 511 hpa0647
+Function      Rate (MB/s) 
+Copy:      1817409.0487
+Scale:     2152441.8646
+Add:       2235559.0276
+Triad:     2229271.0844
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/512.err.89652> for stderr output of this job.
+

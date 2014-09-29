@@ -1,0 +1,132 @@
+Sender: LSF System <lsfadmin@hpa0046>
+Subject: Job 129506: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/64.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/64.out.%J; #BSUB -n 128;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 64 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/64.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/64.out.%J; #BSUB -n 128;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 64 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0046>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0050>
+                            <16*hpa0045>
+                            <16*hpa0047>
+                            <16*hpa0048>
+                            <16*hpa0044>
+                            <16*hpa0049>
+                            <16*hpa0043>
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/scaling/option2> was used as the working directory.
+Started at Sun Sep 28 19:55:42 2014
+Results reported at Sun Sep 28 19:56:08 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/64.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/64.out.%J
+
+#BSUB -n 128
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 64 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               109.94 sec.
+    Max Memory :             8 MB
+    Average Memory :         8.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               455 MB
+
+    Max Processes :          20
+    Max Threads :            20
+
+The output (if any) follows:
+
+Number of MPI processes 64
+Process 0 hpa0046
+Process 1 hpa0046
+Process 2 hpa0046
+Process 3 hpa0046
+Process 4 hpa0046
+Process 5 hpa0046
+Process 6 hpa0046
+Process 7 hpa0046
+Process 8 hpa0050
+Process 9 hpa0050
+Process 10 hpa0050
+Process 11 hpa0050
+Process 12 hpa0050
+Process 13 hpa0050
+Process 14 hpa0050
+Process 15 hpa0050
+Process 16 hpa0045
+Process 17 hpa0045
+Process 18 hpa0045
+Process 19 hpa0045
+Process 20 hpa0045
+Process 21 hpa0045
+Process 22 hpa0045
+Process 23 hpa0045
+Process 24 hpa0047
+Process 25 hpa0047
+Process 26 hpa0047
+Process 27 hpa0047
+Process 28 hpa0047
+Process 29 hpa0047
+Process 30 hpa0047
+Process 31 hpa0047
+Process 32 hpa0048
+Process 33 hpa0048
+Process 34 hpa0048
+Process 35 hpa0048
+Process 36 hpa0048
+Process 37 hpa0048
+Process 38 hpa0048
+Process 39 hpa0048
+Process 40 hpa0044
+Process 41 hpa0044
+Process 42 hpa0044
+Process 43 hpa0044
+Process 44 hpa0044
+Process 45 hpa0044
+Process 46 hpa0044
+Process 47 hpa0044
+Process 48 hpa0049
+Process 49 hpa0049
+Process 50 hpa0049
+Process 51 hpa0049
+Process 52 hpa0049
+Process 53 hpa0049
+Process 54 hpa0049
+Process 55 hpa0049
+Process 56 hpa0043
+Process 57 hpa0043
+Process 58 hpa0043
+Process 59 hpa0043
+Process 60 hpa0043
+Process 61 hpa0043
+Process 62 hpa0043
+Process 63 hpa0043
+Function      Rate (MB/s) 
+Copy:      445094.9987
+Scale:     452561.3460
+Add:       559054.7516
+Triad:     539511.7039
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option2/64.err.129506> for stderr output of this job.
+

@@ -1,0 +1,19 @@
+Modules: loading openmpi/intel/1.8.1
+/work/local/89534_0/tmp/ifortd0ninP.o: In function `MAIN__':
+caffa3d.MB.f:(.text+0x303e): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/89534_0/tmp/ifortd0ninP.o
+caffa3d.MB.f:(.text+0x3076): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/89534_0/tmp/ifortd0ninP.o
+caffa3d.MB.f:(.text+0x416d): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/89534_0/tmp/ifortd0ninP.o
+/work/local/89534_0/tmp/ifortd0ninP.o: In function `bcin_':
+caffa3d.MB.f:(.text+0x1bd3b): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/89534_0/tmp/ifortd0ninP.o
+/work/local/89534_0/tmp/ifortd0ninP.o: In function `distributeload_':
+caffa3d.MB.f:(.text+0x26c12): relocation truncated to fit: R_X86_64_PC32 against symbol `indexl_' defined in COMMON section in /work/local/89534_0/tmp/ifortd0ninP.o
+/work/local/89534_0/tmp/ifortd0ninP.o: In function `readgrids_':
+caffa3d.MB.f:(.text+0x2a005): relocation truncated to fit: R_X86_64_PC32 against symbol `indexl_' defined in COMMON section in /work/local/89534_0/tmp/ifortd0ninP.o
+/shared/apps/intel/2013sp1/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__io_return':
+for_diags_intel.c:(.text+0xa71): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /shared/apps/intel/2013sp1/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xbe2): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /shared/apps/intel/2013sp1/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xbf1): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /shared/apps/intel/2013sp1/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libifcore.a(for_diags_intel.o)
+for_diags_intel.c:(.text+0xc4a): relocation truncated to fit: R_X86_64_PC32 against symbol `message_catalog' defined in COMMON section in /shared/apps/intel/2013sp1/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libifcore.a(for_diags_intel.o)
+/shared/apps/intel/2013sp1/composer_xe_2013_sp1.2.144/compiler/lib/intel64/libifcore.a(for_diags_intel.o): In function `for__issue_diagnostic':
+for_diags_intel.c:(.text+0xd59): additional relocation overflows omitted from the output
+make: *** [opt-intel-analytical] Error 1

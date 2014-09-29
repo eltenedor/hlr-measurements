@@ -1,0 +1,72 @@
+Sender: LSF System <lsfadmin@hpa0043>
+Subject: Job 129568: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/128.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/128.out.%J; #BSUB -n 128;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 128 ./MPIVersion> in cluster <lichtenberg> Exited
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/128.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/128.out.%J; #BSUB -n 128;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 128 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0043>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0049>
+                            <16*hpa0050>
+                            <16*hpa0045>
+                            <16*hpa0046>
+                            <16*hpa0047>
+                            <16*hpa0048>
+                            <16*hpa0044>
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/scaling/option1> was used as the working directory.
+Started at Sun Sep 28 20:03:40 2014
+Results reported at Sun Sep 28 20:03:47 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/128.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/128.out.%J
+
+#BSUB -n 128
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -report-bindings -n 128 ./MPIVersion
+
+------------------------------------------------------------
+
+Exited with exit code 132.
+
+Resource usage summary:
+
+    CPU time :               1.56 sec.
+    Max Memory :             1 MB
+    Average Memory :         1.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               221 MB
+
+    Max Processes :          20
+    Max Threads :            20
+
+The output (if any) follows:
+
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./MPIVersion
+Node: hpa0043
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+80 total processes failed to start
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option1/128.err.129568> for stderr output of this job.
+

@@ -1,0 +1,88 @@
+Sender: LSF System <lsfadmin@hpa0490>
+Subject: Job 89567: <INTEL_128_1024_2> in cluster <lichtenberg> Exited
+
+Job <INTEL_128_1024_2> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <2*hpa0490>, in queue <deflt>, as user <gu08vomo> in cluster <lichtenberg>.
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/performance/128_1024/128_1024_2> was used as the working directory.
+Started at Sun Sep  7 16:54:16 2014
+Results reported at Sun Sep  7 16:54:27 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_128_1024_2
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/128_1024/128_1024_2.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/128_1024/128_1024_2.out.%J
+
+#BSUB -n 2
+#BSUB -W 24:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.1
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/128_1024/128_1024_2/
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+cd caffa.MTM
+#git checkout master
+#git pull origin master
+cd caffa3d.MB
+cp ../../param3d.inc .
+cp control.cin ../../.
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+cd ${MYWORKDIR}
+
+mpirun -report-bindings -n 2 ./caffa3d.MB.lnx -log_summary /home/gu08vomo/output/INTEL/128_1024/128_1024_2.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Exited with exit code 132.
+
+Resource usage summary:
+
+    CPU time :               7.26 sec.
+    Max Memory :             9 MB
+    Average Memory :         9.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               184 MB
+
+    Max Processes :          8
+    Max Threads :            10
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/128_1024/128_1024_2/
+/work/scratch/gu08vomo/performance/128_1024/128_1024_2
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/128_1024/128_1024_2/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.1/build/arch-openmpi-opt-intel-hlr/lib -lpetsc
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./caffa3d.MB.lnx
+Node: hpa0490
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+2 total processes failed to start
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/128_1024/128_1024_2.err.89567> for stderr output of this job.
+

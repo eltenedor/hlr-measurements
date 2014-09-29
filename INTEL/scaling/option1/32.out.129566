@@ -1,0 +1,66 @@
+Sender: LSF System <lsfadmin@hpa0047>
+Subject: Job 129566: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/32.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/32.out.%J; #BSUB -n 32;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 32 ./MPIVersion> in cluster <lichtenberg> Exited
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/32.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/32.out.%J; #BSUB -n 32;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -report-bindings -n 32 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0047>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0048>
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/scaling/option1> was used as the working directory.
+Started at Sun Sep 28 20:03:12 2014
+Results reported at Sun Sep 28 20:03:17 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option1/32.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option1/32.out.%J
+
+#BSUB -n 32
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -report-bindings -n 32 ./MPIVersion
+
+------------------------------------------------------------
+
+Exited with exit code 132.
+
+Resource usage summary:
+
+    CPU time :               0.54 sec.
+    Max Memory :             3 MB
+    Average Memory :         3.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               113 MB
+
+    Max Processes :          6
+    Max Threads :            6
+
+The output (if any) follows:
+
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./MPIVersion
+Node: hpa0047
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+32 total processes failed to start
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option1/32.err.129566> for stderr output of this job.
+

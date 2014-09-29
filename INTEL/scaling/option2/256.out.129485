@@ -1,0 +1,348 @@
+Sender: LSF System <lsfadmin@hai0020>
+Subject: Job 129485: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/256.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/256.out.%J; #BSUB -n 512;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 256 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/256.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/256.out.%J; #BSUB -n 512;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 256 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hai0020>, in queue <big2>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hai0004>
+                            <16*hai0007>
+                            <16*hai0023>
+                            <16*hai0022>
+                            <16*hai0002>
+                            <16*hai0017>
+                            <16*hai0008>
+                            <16*hai0011>
+                            <16*hai0010>
+                            <16*hai0003>
+                            <16*hai0012>
+                            <16*hai0015>
+                            <16*hai0016>
+                            <16*hai0021>
+                            <16*hai0009>
+                            <16*hai0001>
+                            <16*hai0018>
+                            <16*han0035>
+                            <16*han0010>
+                            <16*han0023>
+                            <16*han0011>
+                            <16*han0032>
+                            <16*han0019>
+                            <16*han0040>
+                            <16*han0007>
+                            <16*han0008>
+                            <16*han0016>
+                            <16*han0004>
+                            <16*han0012>
+                            <16*han0001>
+                            <16*han0030>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling/option2> was used as the working directory.
+Started at Sun Sep 28 18:15:35 2014
+Results reported at Sun Sep 28 18:16:08 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option2/256.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option2/256.out.%J
+
+#BSUB -n 512
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:8:node -map-by ppr:4:socket -report-bindings -n 256 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               639.49 sec.
+    Max Memory :             16 MB
+    Average Memory :         16.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               1305 MB
+
+    Max Processes :          49
+    Max Threads :            49
+
+The output (if any) follows:
+
+Number of MPI processes 256
+Process 0 hai0020
+Process 1 hai0020
+Process 2 hai0020
+Process 3 hai0020
+Process 4 hai0020
+Process 5 hai0020
+Process 6 hai0020
+Process 7 hai0020
+Process 8 hai0004
+Process 9 hai0004
+Process 10 hai0004
+Process 11 hai0004
+Process 12 hai0004
+Process 13 hai0004
+Process 14 hai0004
+Process 15 hai0004
+Process 16 hai0007
+Process 17 hai0007
+Process 18 hai0007
+Process 19 hai0007
+Process 20 hai0007
+Process 21 hai0007
+Process 22 hai0007
+Process 23 hai0007
+Process 24 hai0023
+Process 25 hai0023
+Process 26 hai0023
+Process 27 hai0023
+Process 28 hai0023
+Process 29 hai0023
+Process 30 hai0023
+Process 31 hai0023
+Process 32 hai0022
+Process 33 hai0022
+Process 34 hai0022
+Process 35 hai0022
+Process 36 hai0022
+Process 37 hai0022
+Process 38 hai0022
+Process 39 hai0022
+Process 40 hai0002
+Process 41 hai0002
+Process 42 hai0002
+Process 43 hai0002
+Process 44 hai0002
+Process 45 hai0002
+Process 46 hai0002
+Process 47 hai0002
+Process 48 hai0017
+Process 49 hai0017
+Process 50 hai0017
+Process 51 hai0017
+Process 52 hai0017
+Process 53 hai0017
+Process 54 hai0017
+Process 55 hai0017
+Process 56 hai0008
+Process 57 hai0008
+Process 58 hai0008
+Process 59 hai0008
+Process 60 hai0008
+Process 61 hai0008
+Process 62 hai0008
+Process 63 hai0008
+Process 64 hai0011
+Process 65 hai0011
+Process 66 hai0011
+Process 67 hai0011
+Process 68 hai0011
+Process 69 hai0011
+Process 70 hai0011
+Process 71 hai0011
+Process 72 hai0010
+Process 73 hai0010
+Process 74 hai0010
+Process 75 hai0010
+Process 76 hai0010
+Process 77 hai0010
+Process 78 hai0010
+Process 79 hai0010
+Process 80 hai0003
+Process 81 hai0003
+Process 82 hai0003
+Process 83 hai0003
+Process 84 hai0003
+Process 85 hai0003
+Process 86 hai0003
+Process 87 hai0003
+Process 88 hai0012
+Process 89 hai0012
+Process 90 hai0012
+Process 91 hai0012
+Process 92 hai0012
+Process 93 hai0012
+Process 94 hai0012
+Process 95 hai0012
+Process 96 hai0015
+Process 97 hai0015
+Process 98 hai0015
+Process 99 hai0015
+Process 100 hai0015
+Process 101 hai0015
+Process 102 hai0015
+Process 103 hai0015
+Process 104 hai0016
+Process 105 hai0016
+Process 106 hai0016
+Process 107 hai0016
+Process 108 hai0016
+Process 109 hai0016
+Process 110 hai0016
+Process 111 hai0016
+Process 112 hai0021
+Process 113 hai0021
+Process 114 hai0021
+Process 115 hai0021
+Process 116 hai0021
+Process 117 hai0021
+Process 118 hai0021
+Process 119 hai0021
+Process 120 hai0009
+Process 121 hai0009
+Process 122 hai0009
+Process 123 hai0009
+Process 124 hai0009
+Process 125 hai0009
+Process 126 hai0009
+Process 127 hai0009
+Process 128 hai0001
+Process 129 hai0001
+Process 130 hai0001
+Process 131 hai0001
+Process 132 hai0001
+Process 133 hai0001
+Process 134 hai0001
+Process 135 hai0001
+Process 136 hai0018
+Process 137 hai0018
+Process 138 hai0018
+Process 139 hai0018
+Process 140 hai0018
+Process 141 hai0018
+Process 142 hai0018
+Process 143 hai0018
+Process 144 han0035
+Process 145 han0035
+Process 146 han0035
+Process 147 han0035
+Process 148 han0035
+Process 149 han0035
+Process 150 han0035
+Process 151 han0035
+Process 152 han0010
+Process 153 han0010
+Process 154 han0010
+Process 155 han0010
+Process 156 han0010
+Process 157 han0010
+Process 158 han0010
+Process 159 han0010
+Process 160 han0023
+Process 161 han0023
+Process 162 han0023
+Process 163 han0023
+Process 164 han0023
+Process 165 han0023
+Process 166 han0023
+Process 167 han0023
+Process 168 han0011
+Process 169 han0011
+Process 170 han0011
+Process 171 han0011
+Process 172 han0011
+Process 173 han0011
+Process 174 han0011
+Process 175 han0011
+Process 176 han0032
+Process 177 han0032
+Process 178 han0032
+Process 179 han0032
+Process 180 han0032
+Process 181 han0032
+Process 182 han0032
+Process 183 han0032
+Process 184 han0019
+Process 185 han0019
+Process 186 han0019
+Process 187 han0019
+Process 188 han0019
+Process 189 han0019
+Process 190 han0019
+Process 191 han0019
+Process 192 han0040
+Process 193 han0040
+Process 194 han0040
+Process 195 han0040
+Process 196 han0040
+Process 197 han0040
+Process 198 han0040
+Process 199 han0040
+Process 200 han0007
+Process 201 han0007
+Process 202 han0007
+Process 203 han0007
+Process 204 han0007
+Process 205 han0007
+Process 206 han0007
+Process 207 han0007
+Process 208 han0008
+Process 209 han0008
+Process 210 han0008
+Process 211 han0008
+Process 212 han0008
+Process 213 han0008
+Process 214 han0008
+Process 215 han0008
+Process 216 han0016
+Process 217 han0016
+Process 218 han0016
+Process 219 han0016
+Process 220 han0016
+Process 221 han0016
+Process 222 han0016
+Process 223 han0016
+Process 224 han0004
+Process 225 han0004
+Process 226 han0004
+Process 227 han0004
+Process 228 han0004
+Process 229 han0004
+Process 230 han0004
+Process 231 han0004
+Process 232 han0012
+Process 233 han0012
+Process 234 han0012
+Process 235 han0012
+Process 236 han0012
+Process 237 han0012
+Process 238 han0012
+Process 239 han0012
+Process 240 han0001
+Process 241 han0001
+Process 242 han0001
+Process 243 han0001
+Process 244 han0001
+Process 245 han0001
+Process 246 han0001
+Process 247 han0001
+Process 248 han0030
+Process 249 han0030
+Process 250 han0030
+Process 251 han0030
+Process 252 han0030
+Process 253 han0030
+Process 254 han0030
+Process 255 han0030
+Function      Rate (MB/s) 
+Copy:      1757575.5376
+Scale:     1771062.0814
+Add:       2201708.5722
+Triad:     2135626.4796
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option2/256.err.129485> for stderr output of this job.
+
