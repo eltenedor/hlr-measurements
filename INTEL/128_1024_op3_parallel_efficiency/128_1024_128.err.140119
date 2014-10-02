@@ -1,0 +1,7 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+ModuleCmd_Load.c(204):ERROR:105: Unable to locate a modulefile for 'null'
+Modules: loading openmpi/gnu/1.6.5
+From ssh://neptun.fnb.maschinenbau.tu-darmstadt.de/amd/home/gabel/share/caffa.MTM
+ * branch            master     -> FETCH_HEAD

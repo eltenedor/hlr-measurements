@@ -1,0 +1,4 @@
+Modules: loading openmpi/intel/1.8.2
+[hpa0493:03530] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+mpirun: Forwarding signal 12 to job
+User defined signal 2

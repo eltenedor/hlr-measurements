@@ -1,0 +1,700 @@
+Sender: LSF System <lsfadmin@hpa0575>
+Subject: Job 129647: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option3/512.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option3/512.out.%J; #BSUB -n 2048;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:4:node -map-by ppr:2:socket -report-bindings -n 512 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option3/512.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option3/512.out.%J; #BSUB -n 2048;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:4:node -map-by ppr:2:socket -report-bindings -n 512 ./MPIVersion> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0575>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0560>
+                            <16*hpa0680>
+                            <16*hpa0594>
+                            <16*hpa0574>
+                            <16*hpa0595>
+                            <16*hpa0631>
+                            <16*hpa0627>
+                            <16*hpa0602>
+                            <16*hpa0606>
+                            <16*hpa0697>
+                            <16*hpa0638>
+                            <16*hpa0582>
+                            <16*hpa0580>
+                            <16*hpa0615>
+                            <16*hpa0546>
+                            <16*hpa0695>
+                            <16*hpa0658>
+                            <16*hpa0643>
+                            <16*hpa0669>
+                            <16*hpa0571>
+                            <16*hpa0589>
+                            <16*hpa0701>
+                            <16*hpa0654>
+                            <16*hpa0616>
+                            <16*hpa0585>
+                            <16*hpa0626>
+                            <16*hpa0567>
+                            <16*hpa0661>
+                            <16*hpa0558>
+                            <16*hpa0598>
+                            <16*hpa0609>
+                            <16*hpa0587>
+                            <16*hpa0633>
+                            <16*hpa0635>
+                            <16*hpa0612>
+                            <16*hpa0556>
+                            <16*hpa0659>
+                            <16*hpa0684>
+                            <16*hpa0591>
+                            <16*hpa0568>
+                            <16*hpa0619>
+                            <16*hpa0637>
+                            <16*hpa0623>
+                            <16*hpa0673>
+                            <16*hpa0641>
+                            <16*hpa0547>
+                            <16*hpa0552>
+                            <16*hpa0545>
+                            <16*hpa0642>
+                            <16*hpa0646>
+                            <16*hpa0640>
+                            <16*hpa0699>
+                            <16*hpa0570>
+                            <16*hpa0559>
+                            <16*hpa0656>
+                            <16*hpa0581>
+                            <16*hpa0650>
+                            <16*hpa0557>
+                            <16*hpa0689>
+                            <16*hpa0657>
+                            <16*hpa0629>
+                            <16*hpa0622>
+                            <16*hpa0691>
+                            <16*hpa0614>
+                            <16*hpa0655>
+                            <16*hpa0573>
+                            <16*hpa0636>
+                            <16*hpa0613>
+                            <16*hpa0618>
+                            <16*hpa0648>
+                            <16*hpa0561>
+                            <16*hpa0553>
+                            <16*hpa0630>
+                            <16*hpa0644>
+                            <16*hpa0688>
+                            <16*hpa0608>
+                            <16*hpa0676>
+                            <16*hpa0605>
+                            <16*hpa0666>
+                            <16*hpa0687>
+                            <16*hpa0551>
+                            <16*hpa0675>
+                            <16*hpa0584>
+                            <16*hpa0671>
+                            <16*hpa0549>
+                            <16*hpa0620>
+                            <16*hpa0652>
+                            <16*hpa0663>
+                            <16*hpa0586>
+                            <16*hpa0672>
+                            <16*hpa0597>
+                            <16*hpa0698>
+                            <16*hpa0693>
+                            <16*hpa0662>
+                            <16*hpa0681>
+                            <16*hpa0600>
+                            <16*hpa0569>
+                            <16*hpa0604>
+                            <16*hpa0686>
+                            <16*hpa0634>
+                            <16*hpa0603>
+                            <16*hpa0624>
+                            <16*hpa0579>
+                            <16*hpa0596>
+                            <16*hpa0592>
+                            <16*hpa0577>
+                            <16*hpa0562>
+                            <16*hpa0649>
+                            <16*hpa0617>
+                            <16*hpa0651>
+                            <16*hpa0625>
+                            <16*hpa0548>
+                            <16*hpa0700>
+                            <16*hpa0667>
+                            <16*hpa0639>
+                            <16*hpa0588>
+                            <16*hpa0599>
+                            <16*hpa0645>
+                            <16*hpa0578>
+                            <16*hpa0670>
+                            <16*hpa0694>
+                            <16*hpa0677>
+                            <16*hpa0611>
+                            <16*hpa0565>
+                            <16*hpa0628>
+                            <16*hpa0621>
+                            <16*hpa0703>
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/scaling/option3> was used as the working directory.
+Started at Tue Sep 30 05:47:22 2014
+Results reported at Tue Sep 30 05:47:30 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option3/512.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option3/512.out.%J
+
+#BSUB -n 2048
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:4:node -map-by ppr:2:socket -report-bindings -n 512 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               1758.21 sec.
+    Max Memory :             39 MB
+    Average Memory :         39.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               1630 MB
+
+    Max Processes :          9
+    Max Threads :            19
+
+The output (if any) follows:
+
+Number of MPI processes 512
+Process 0 hpa0575
+Process 1 hpa0575
+Process 2 hpa0575
+Process 3 hpa0575
+Process 4 hpa0560
+Process 5 hpa0560
+Process 6 hpa0560
+Process 7 hpa0560
+Process 8 hpa0680
+Process 9 hpa0680
+Process 10 hpa0680
+Process 11 hpa0680
+Process 12 hpa0594
+Process 13 hpa0594
+Process 14 hpa0594
+Process 15 hpa0594
+Process 16 hpa0574
+Process 17 hpa0574
+Process 18 hpa0574
+Process 19 hpa0574
+Process 20 hpa0595
+Process 21 hpa0595
+Process 22 hpa0595
+Process 23 hpa0595
+Process 24 hpa0631
+Process 25 hpa0631
+Process 26 hpa0631
+Process 27 hpa0631
+Process 28 hpa0627
+Process 29 hpa0627
+Process 30 hpa0627
+Process 31 hpa0627
+Process 32 hpa0602
+Process 33 hpa0602
+Process 34 hpa0602
+Process 35 hpa0602
+Process 36 hpa0606
+Process 37 hpa0606
+Process 38 hpa0606
+Process 39 hpa0606
+Process 40 hpa0697
+Process 41 hpa0697
+Process 42 hpa0697
+Process 43 hpa0697
+Process 44 hpa0638
+Process 45 hpa0638
+Process 46 hpa0638
+Process 47 hpa0638
+Process 48 hpa0582
+Process 49 hpa0582
+Process 50 hpa0582
+Process 51 hpa0582
+Process 52 hpa0580
+Process 53 hpa0580
+Process 54 hpa0580
+Process 55 hpa0580
+Process 56 hpa0615
+Process 57 hpa0615
+Process 58 hpa0615
+Process 59 hpa0615
+Process 60 hpa0546
+Process 61 hpa0546
+Process 62 hpa0546
+Process 63 hpa0546
+Process 64 hpa0695
+Process 65 hpa0695
+Process 66 hpa0695
+Process 67 hpa0695
+Process 68 hpa0658
+Process 69 hpa0658
+Process 70 hpa0658
+Process 71 hpa0658
+Process 72 hpa0643
+Process 73 hpa0643
+Process 74 hpa0643
+Process 75 hpa0643
+Process 76 hpa0669
+Process 77 hpa0669
+Process 78 hpa0669
+Process 79 hpa0669
+Process 80 hpa0571
+Process 81 hpa0571
+Process 82 hpa0571
+Process 83 hpa0571
+Process 84 hpa0589
+Process 85 hpa0589
+Process 86 hpa0589
+Process 87 hpa0589
+Process 88 hpa0701
+Process 89 hpa0701
+Process 90 hpa0701
+Process 91 hpa0701
+Process 92 hpa0654
+Process 93 hpa0654
+Process 94 hpa0654
+Process 95 hpa0654
+Process 96 hpa0616
+Process 97 hpa0616
+Process 98 hpa0616
+Process 99 hpa0616
+Process 100 hpa0585
+Process 101 hpa0585
+Process 102 hpa0585
+Process 103 hpa0585
+Process 104 hpa0626
+Process 105 hpa0626
+Process 106 hpa0626
+Process 107 hpa0626
+Process 108 hpa0567
+Process 109 hpa0567
+Process 110 hpa0567
+Process 111 hpa0567
+Process 112 hpa0661
+Process 113 hpa0661
+Process 114 hpa0661
+Process 115 hpa0661
+Process 116 hpa0558
+Process 117 hpa0558
+Process 118 hpa0558
+Process 119 hpa0558
+Process 120 hpa0598
+Process 121 hpa0598
+Process 122 hpa0598
+Process 123 hpa0598
+Process 124 hpa0609
+Process 125 hpa0609
+Process 126 hpa0609
+Process 127 hpa0609
+Process 128 hpa0587
+Process 129 hpa0587
+Process 130 hpa0587
+Process 131 hpa0587
+Process 132 hpa0633
+Process 133 hpa0633
+Process 134 hpa0633
+Process 135 hpa0633
+Process 136 hpa0635
+Process 137 hpa0635
+Process 138 hpa0635
+Process 139 hpa0635
+Process 140 hpa0612
+Process 141 hpa0612
+Process 142 hpa0612
+Process 143 hpa0612
+Process 144 hpa0556
+Process 145 hpa0556
+Process 146 hpa0556
+Process 147 hpa0556
+Process 148 hpa0659
+Process 149 hpa0659
+Process 150 hpa0659
+Process 151 hpa0659
+Process 152 hpa0684
+Process 153 hpa0684
+Process 154 hpa0684
+Process 155 hpa0684
+Process 156 hpa0591
+Process 157 hpa0591
+Process 158 hpa0591
+Process 159 hpa0591
+Process 160 hpa0568
+Process 161 hpa0568
+Process 162 hpa0568
+Process 163 hpa0568
+Process 164 hpa0619
+Process 165 hpa0619
+Process 166 hpa0619
+Process 167 hpa0619
+Process 168 hpa0637
+Process 169 hpa0637
+Process 170 hpa0637
+Process 171 hpa0637
+Process 172 hpa0623
+Process 173 hpa0623
+Process 174 hpa0623
+Process 175 hpa0623
+Process 176 hpa0673
+Process 177 hpa0673
+Process 178 hpa0673
+Process 179 hpa0673
+Process 180 hpa0641
+Process 181 hpa0641
+Process 182 hpa0641
+Process 183 hpa0641
+Process 184 hpa0547
+Process 185 hpa0547
+Process 186 hpa0547
+Process 187 hpa0547
+Process 188 hpa0552
+Process 189 hpa0552
+Process 190 hpa0552
+Process 191 hpa0552
+Process 192 hpa0545
+Process 193 hpa0545
+Process 194 hpa0545
+Process 195 hpa0545
+Process 196 hpa0642
+Process 197 hpa0642
+Process 198 hpa0642
+Process 199 hpa0642
+Process 200 hpa0646
+Process 201 hpa0646
+Process 202 hpa0646
+Process 203 hpa0646
+Process 204 hpa0640
+Process 205 hpa0640
+Process 206 hpa0640
+Process 207 hpa0640
+Process 208 hpa0699
+Process 209 hpa0699
+Process 210 hpa0699
+Process 211 hpa0699
+Process 212 hpa0570
+Process 213 hpa0570
+Process 214 hpa0570
+Process 215 hpa0570
+Process 216 hpa0559
+Process 217 hpa0559
+Process 218 hpa0559
+Process 219 hpa0559
+Process 220 hpa0656
+Process 221 hpa0656
+Process 222 hpa0656
+Process 223 hpa0656
+Process 224 hpa0581
+Process 225 hpa0581
+Process 226 hpa0581
+Process 227 hpa0581
+Process 228 hpa0650
+Process 229 hpa0650
+Process 230 hpa0650
+Process 231 hpa0650
+Process 232 hpa0557
+Process 233 hpa0557
+Process 234 hpa0557
+Process 235 hpa0557
+Process 236 hpa0689
+Process 237 hpa0689
+Process 238 hpa0689
+Process 239 hpa0689
+Process 240 hpa0657
+Process 241 hpa0657
+Process 242 hpa0657
+Process 243 hpa0657
+Process 244 hpa0629
+Process 245 hpa0629
+Process 246 hpa0629
+Process 247 hpa0629
+Process 248 hpa0622
+Process 249 hpa0622
+Process 250 hpa0622
+Process 251 hpa0622
+Process 252 hpa0691
+Process 253 hpa0691
+Process 254 hpa0691
+Process 255 hpa0691
+Process 256 hpa0614
+Process 257 hpa0614
+Process 258 hpa0614
+Process 259 hpa0614
+Process 260 hpa0655
+Process 261 hpa0655
+Process 262 hpa0655
+Process 263 hpa0655
+Process 264 hpa0573
+Process 265 hpa0573
+Process 266 hpa0573
+Process 267 hpa0573
+Process 268 hpa0636
+Process 269 hpa0636
+Process 270 hpa0636
+Process 271 hpa0636
+Process 272 hpa0613
+Process 273 hpa0613
+Process 274 hpa0613
+Process 275 hpa0613
+Process 276 hpa0618
+Process 277 hpa0618
+Process 278 hpa0618
+Process 279 hpa0618
+Process 280 hpa0648
+Process 281 hpa0648
+Process 282 hpa0648
+Process 283 hpa0648
+Process 284 hpa0561
+Process 285 hpa0561
+Process 286 hpa0561
+Process 287 hpa0561
+Process 288 hpa0553
+Process 289 hpa0553
+Process 290 hpa0553
+Process 291 hpa0553
+Process 292 hpa0630
+Process 293 hpa0630
+Process 294 hpa0630
+Process 295 hpa0630
+Process 296 hpa0644
+Process 297 hpa0644
+Process 298 hpa0644
+Process 299 hpa0644
+Process 300 hpa0688
+Process 301 hpa0688
+Process 302 hpa0688
+Process 303 hpa0688
+Process 304 hpa0608
+Process 305 hpa0608
+Process 306 hpa0608
+Process 307 hpa0608
+Process 308 hpa0676
+Process 309 hpa0676
+Process 310 hpa0676
+Process 311 hpa0676
+Process 312 hpa0605
+Process 313 hpa0605
+Process 314 hpa0605
+Process 315 hpa0605
+Process 316 hpa0666
+Process 317 hpa0666
+Process 318 hpa0666
+Process 319 hpa0666
+Process 320 hpa0687
+Process 321 hpa0687
+Process 322 hpa0687
+Process 323 hpa0687
+Process 324 hpa0551
+Process 325 hpa0551
+Process 326 hpa0551
+Process 327 hpa0551
+Process 328 hpa0675
+Process 329 hpa0675
+Process 330 hpa0675
+Process 331 hpa0675
+Process 332 hpa0584
+Process 333 hpa0584
+Process 334 hpa0584
+Process 335 hpa0584
+Process 336 hpa0671
+Process 337 hpa0671
+Process 338 hpa0671
+Process 339 hpa0671
+Process 340 hpa0549
+Process 341 hpa0549
+Process 342 hpa0549
+Process 343 hpa0549
+Process 344 hpa0620
+Process 345 hpa0620
+Process 346 hpa0620
+Process 347 hpa0620
+Process 348 hpa0652
+Process 349 hpa0652
+Process 350 hpa0652
+Process 351 hpa0652
+Process 352 hpa0663
+Process 353 hpa0663
+Process 354 hpa0663
+Process 355 hpa0663
+Process 356 hpa0586
+Process 357 hpa0586
+Process 358 hpa0586
+Process 359 hpa0586
+Process 360 hpa0672
+Process 361 hpa0672
+Process 362 hpa0672
+Process 363 hpa0672
+Process 364 hpa0597
+Process 365 hpa0597
+Process 366 hpa0597
+Process 367 hpa0597
+Process 368 hpa0698
+Process 369 hpa0698
+Process 370 hpa0698
+Process 371 hpa0698
+Process 372 hpa0693
+Process 373 hpa0693
+Process 374 hpa0693
+Process 375 hpa0693
+Process 376 hpa0662
+Process 377 hpa0662
+Process 378 hpa0662
+Process 379 hpa0662
+Process 380 hpa0681
+Process 381 hpa0681
+Process 382 hpa0681
+Process 383 hpa0681
+Process 384 hpa0600
+Process 385 hpa0600
+Process 386 hpa0600
+Process 387 hpa0600
+Process 388 hpa0569
+Process 389 hpa0569
+Process 390 hpa0569
+Process 391 hpa0569
+Process 392 hpa0604
+Process 393 hpa0604
+Process 394 hpa0604
+Process 395 hpa0604
+Process 396 hpa0686
+Process 397 hpa0686
+Process 398 hpa0686
+Process 399 hpa0686
+Process 400 hpa0634
+Process 401 hpa0634
+Process 402 hpa0634
+Process 403 hpa0634
+Process 404 hpa0603
+Process 405 hpa0603
+Process 406 hpa0603
+Process 407 hpa0603
+Process 408 hpa0624
+Process 409 hpa0624
+Process 410 hpa0624
+Process 411 hpa0624
+Process 412 hpa0579
+Process 413 hpa0579
+Process 414 hpa0579
+Process 415 hpa0579
+Process 416 hpa0596
+Process 417 hpa0596
+Process 418 hpa0596
+Process 419 hpa0596
+Process 420 hpa0592
+Process 421 hpa0592
+Process 422 hpa0592
+Process 423 hpa0592
+Process 424 hpa0577
+Process 425 hpa0577
+Process 426 hpa0577
+Process 427 hpa0577
+Process 428 hpa0562
+Process 429 hpa0562
+Process 430 hpa0562
+Process 431 hpa0562
+Process 432 hpa0649
+Process 433 hpa0649
+Process 434 hpa0649
+Process 435 hpa0649
+Process 436 hpa0617
+Process 437 hpa0617
+Process 438 hpa0617
+Process 439 hpa0617
+Process 440 hpa0651
+Process 441 hpa0651
+Process 442 hpa0651
+Process 443 hpa0651
+Process 444 hpa0625
+Process 445 hpa0625
+Process 446 hpa0625
+Process 447 hpa0625
+Process 448 hpa0548
+Process 449 hpa0548
+Process 450 hpa0548
+Process 451 hpa0548
+Process 452 hpa0700
+Process 453 hpa0700
+Process 454 hpa0700
+Process 455 hpa0700
+Process 456 hpa0667
+Process 457 hpa0667
+Process 458 hpa0667
+Process 459 hpa0667
+Process 460 hpa0639
+Process 461 hpa0639
+Process 462 hpa0639
+Process 463 hpa0639
+Process 464 hpa0588
+Process 465 hpa0588
+Process 466 hpa0588
+Process 467 hpa0588
+Process 468 hpa0599
+Process 469 hpa0599
+Process 470 hpa0599
+Process 471 hpa0599
+Process 472 hpa0645
+Process 473 hpa0645
+Process 474 hpa0645
+Process 475 hpa0645
+Process 476 hpa0578
+Process 477 hpa0578
+Process 478 hpa0578
+Process 479 hpa0578
+Process 480 hpa0670
+Process 481 hpa0670
+Process 482 hpa0670
+Process 483 hpa0670
+Process 484 hpa0694
+Process 485 hpa0694
+Process 486 hpa0694
+Process 487 hpa0694
+Process 488 hpa0677
+Process 489 hpa0677
+Process 490 hpa0677
+Process 491 hpa0677
+Process 492 hpa0611
+Process 493 hpa0611
+Process 494 hpa0611
+Process 495 hpa0611
+Process 496 hpa0565
+Process 497 hpa0565
+Process 498 hpa0565
+Process 499 hpa0565
+Process 500 hpa0628
+Process 501 hpa0628
+Process 502 hpa0628
+Process 503 hpa0628
+Process 504 hpa0621
+Process 505 hpa0621
+Process 506 hpa0621
+Process 507 hpa0621
+Process 508 hpa0703
+Process 509 hpa0703
+Process 510 hpa0703
+Process 511 hpa0703
+Function      Rate (MB/s) 
+Copy:      5084395.1422
+Scale:     3980311.4930
+Add:       4977692.2389
+Triad:     4959162.6123
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option3/512.err.129647> for stderr output of this job.
+

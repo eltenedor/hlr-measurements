@@ -3,8 +3,12 @@ INTEL
   -128_128
   -128_1024
   -256_256
+  -256_2048 mit option2 PETSC_OPS="-momentum_redistribute_pc_bjacobi_blocks #NBLK -pressure_redistribute_pc_bjacobi_blocks #NBLK -pressure_redistribute_sub_pc_type icc"
+  -128_1024_op2 (siehe scaling)
+  -128_1024_op3 (siehe scaling)
+  -128_1024_op2_parallel_efficiency zuätzlich: "-momentum_redistribute_pc_bjacobi_blocks 1024 -pressure_redistribute_pc_bjacobi_blocks 1024 -pressure_redistribute_sub_pc_type icc" 
   -scaling: different options for petsc streams benchmark
     -option1: -report-bindings
-    -option2: -report-bindings -map-by ppr:8:node -map-by ppr:4:socket (Reihenfolge der Mapbefehle beachten!!) 
-    -option3: -report-bindings --map-by ppr:4:node -map-by ppr:2:socket (Reihenfolge der Mapbefehle beachten!!)
+    -option2: -report-bindings -map-by ppr:8:node -map-by ppr:4:socket
+    -option3: -report-bindings -map-by ppr:4:node -map-by ppr:2:socket
 RAND
