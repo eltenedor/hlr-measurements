@@ -1,0 +1,25 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+ModuleCmd_Load.c(204):ERROR:105: Unable to locate a modulefile for 'null'
+Modules: loading openmpi/gnu/1.6.5
+From ssh://neptun.fnb.maschinenbau.tu-darmstadt.de/amd/home/gabel/share/caffa.MTM
+ * branch            master     -> FETCH_HEAD
+   e5500f1..9e07fe7  master     -> origin/master
+/work/local/140112_0/tmp/ifortc2ZoL9.o: In function `MAIN__':
+caffa3d.MB.f:(.text+0x51): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+caffa3d.MB.f:(.text+0x1d32): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+caffa3d.MB.f:(.text+0x2fee): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+caffa3d.MB.f:(.text+0x3029): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+caffa3d.MB.f:(.text+0x3dc6): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+/work/local/140112_0/tmp/ifortc2ZoL9.o: In function `calcp_..0':
+caffa3d.MB.f:(.text+0x677f): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+/work/local/140112_0/tmp/ifortc2ZoL9.o: In function `solvesys_':
+caffa3d.MB.f:(.text+0x9248): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+caffa3d.MB.f:(.text+0x92c5): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+caffa3d.MB.f:(.text+0x94a8): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+/work/local/140112_0/tmp/ifortc2ZoL9.o: In function `calcp_':
+caffa3d.MB.f:(.text+0x18790): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/140112_0/tmp/ifortc2ZoL9.o
+/work/local/140112_0/tmp/ifortc2ZoL9.o: In function `bcin_':
+caffa3d.MB.f:(.text+0x1b147): additional relocation overflows omitted from the output
+make: *** [opt-intel-analytical] Error 1
