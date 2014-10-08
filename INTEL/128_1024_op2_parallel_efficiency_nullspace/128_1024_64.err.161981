@@ -1,0 +1,67 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+[hpa0391:15516] MCW rank 4 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0391:15516] MCW rank 5 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0391:15516] MCW rank 6 bound to socket 1[core 10[hwt 0]]: [./././././././.][././B/././././.]
+[hpa0391:15516] MCW rank 7 bound to socket 1[core 11[hwt 0]]: [./././././././.][./././B/./././.]
+[hpa0391:15516] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0391:15516] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0391:15516] MCW rank 2 bound to socket 0[core 2[hwt 0]]: [././B/././././.][./././././././.]
+[hpa0391:15516] MCW rank 3 bound to socket 0[core 3[hwt 0]]: [./././B/./././.][./././././././.]
+[hpa0390:19947] MCW rank 14 bound to socket 1[core 10[hwt 0-1]]: [../../../../../../../..][../../BB/../../../../..]
+[hpa0390:19947] MCW rank 15 bound to socket 1[core 11[hwt 0-1]]: [../../../../../../../..][../../../BB/../../../..]
+[hpa0390:19947] MCW rank 8 bound to socket 0[core 0[hwt 0-1]]: [BB/../../../../../../..][../../../../../../../..]
+[hpa0390:19947] MCW rank 9 bound to socket 0[core 1[hwt 0-1]]: [../BB/../../../../../..][../../../../../../../..]
+[hpa0390:19947] MCW rank 10 bound to socket 0[core 2[hwt 0-1]]: [../../BB/../../../../..][../../../../../../../..]
+[hpa0390:19947] MCW rank 11 bound to socket 0[core 3[hwt 0-1]]: [../../../BB/../../../..][../../../../../../../..]
+[hpa0390:19947] MCW rank 12 bound to socket 1[core 8[hwt 0-1]]: [../../../../../../../..][BB/../../../../../../..]
+[hpa0390:19947] MCW rank 13 bound to socket 1[core 9[hwt 0-1]]: [../../../../../../../..][../BB/../../../../../..]
+[hpa0410:11268] MCW rank 52 is not bound (or bound to all available processors)
+[hpa0410:11269] MCW rank 53 is not bound (or bound to all available processors)
+[hpa0410:11271] MCW rank 55 is not bound (or bound to all available processors)
+[hpa0410:11264] MCW rank 48 is not bound (or bound to all available processors)
+[hpa0397:18679] MCW rank 33 is not bound (or bound to all available processors)
+[hpa0397:18682] MCW rank 36 is not bound (or bound to all available processors)
+[hpa0397:18684] MCW rank 38 is not bound (or bound to all available processors)
+[hpa0397:18681] MCW rank 35 is not bound (or bound to all available processors)
+[hpa0410:11266] MCW rank 50 is not bound (or bound to all available processors)
+[hpa0410:11270] MCW rank 54 is not bound (or bound to all available processors)
+[hpa0410:11265] MCW rank 49 is not bound (or bound to all available processors)
+[hpa0397:18685] MCW rank 39 is not bound (or bound to all available processors)
+[hpa0397:18683] MCW rank 37 is not bound (or bound to all available processors)
+[hpa0397:18680] MCW rank 34 is not bound (or bound to all available processors)
+[hpa0410:11267] MCW rank 51 is not bound (or bound to all available processors)
+[hpa0397:18678] MCW rank 32 is not bound (or bound to all available processors)
+[hpa0394:19949] MCW rank 43 is not bound (or bound to all available processors)
+[hpa0394:19950] MCW rank 44 is not bound (or bound to all available processors)
+[hpa0394:19951] MCW rank 45 is not bound (or bound to all available processors)
+[hpa0394:19947] MCW rank 41 is not bound (or bound to all available processors)
+[hpa0394:19953] MCW rank 47 is not bound (or bound to all available processors)
+[hpa0394:19952] MCW rank 46 is not bound (or bound to all available processors)
+[hpa0394:19946] MCW rank 40 is not bound (or bound to all available processors)
+[hpa0394:19948] MCW rank 42 is not bound (or bound to all available processors)
+[hpa0412:08797] MCW rank 60 is not bound (or bound to all available processors)
+[hpa0412:08793] MCW rank 56 is not bound (or bound to all available processors)
+[hpa0412:08800] MCW rank 63 is not bound (or bound to all available processors)
+[hpa0412:08796] MCW rank 59 is not bound (or bound to all available processors)
+[hpa0412:08795] MCW rank 58 is not bound (or bound to all available processors)
+[hpa0412:08799] MCW rank 62 is not bound (or bound to all available processors)
+[hpa0412:08794] MCW rank 57 is not bound (or bound to all available processors)
+[hpa0412:08798] MCW rank 61 is not bound (or bound to all available processors)
+[hpa0396:12733] MCW rank 25 is not bound (or bound to all available processors)
+[hpa0396:12739] MCW rank 31 is not bound (or bound to all available processors)
+[hpa0396:12736] MCW rank 28 is not bound (or bound to all available processors)
+[hpa0396:12737] MCW rank 29 is not bound (or bound to all available processors)
+[hpa0396:12738] MCW rank 30 is not bound (or bound to all available processors)
+[hpa0396:12735] MCW rank 27 is not bound (or bound to all available processors)
+[hpa0396:12732] MCW rank 24 is not bound (or bound to all available processors)
+[hpa0396:12734] MCW rank 26 is not bound (or bound to all available processors)
+[hpa0408:27837] MCW rank 17 is not bound (or bound to all available processors)
+[hpa0408:27839] MCW rank 19 is not bound (or bound to all available processors)
+[hpa0408:27838] MCW rank 18 is not bound (or bound to all available processors)
+[hpa0408:27843] MCW rank 23 is not bound (or bound to all available processors)
+[hpa0408:27841] MCW rank 21 is not bound (or bound to all available processors)
+[hpa0408:27842] MCW rank 22 is not bound (or bound to all available processors)
+[hpa0408:27836] MCW rank 16 is not bound (or bound to all available processors)
+[hpa0408:27840] MCW rank 20 is not bound (or bound to all available processors)

@@ -7,6 +7,9 @@ INTEL
   -128_1024_op2 (siehe scaling)
   -128_1024_op3 (siehe scaling)
   -128_1024_op2_parallel_efficiency zuätzlich: "-momentum_redistribute_pc_bjacobi_blocks 1024 -pressure_redistribute_pc_bjacobi_blocks 1024 -pressure_redistribute_sub_pc_type icc" 
+  -128_1024_op2_parallel_efficiency_gamg
+  -128_1024_op2_parallel_efficiency_no_redistribute "not using nullspace, no pcredistribute"
+  -128_1024_op2_parallel_efficiency_nullspace "not using pcredistribute"
   -scaling: different options for petsc streams benchmark
     -option1: -report-bindings
     -option2: -report-bindings -map-by ppr:8:node -map-by ppr:4:socket
