@@ -10,8 +10,23 @@ INTEL
   -128_1024_op2_parallel_efficiency_gamg
   -128_1024_op2_parallel_efficiency_no_redistribute "not using nullspace, no pcredistribute"
   -128_1024_op2_parallel_efficiency_nullspace "not using pcredistribute"
+  -128_1024_op2_parallel_efficiency_nullspace_gamg "not using pcredistribute"
+  -128_1024_op3_parallel_efficiency_nullspace 
+  -128_1024_op2_speedup_nullspace 
+  -128_1024_op2_speedup_nullspace_gamg
   -scaling: different options for petsc streams benchmark
     -option1: -report-bindings
     -option2: -report-bindings -map-by ppr:8:node -map-by ppr:4:socket
     -option3: -report-bindings -map-by ppr:4:node -map-by ppr:2:socket
 RAND
+
+############
+ACHTUNG
+############
+
+Momentan sind die Bezeichnungen
+  -128_1024_op2_speedup_nullspace 
+  und
+  -128_1024_op2_parallel_efficiency_nullspace
+noch genau falschrum
+  
