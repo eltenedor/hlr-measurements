@@ -1,0 +1,66 @@
+Sender: LSF System <lsfadmin@hpa0047>
+Subject: Job 175255: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/4.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/4.out.%J; #BSUB -n 32;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 4 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/4.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/4.out.%J; #BSUB -n 32;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 4 ./MPIVersion> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0047>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0050>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling/option4> was used as the working directory.
+Started at Mon Oct 13 21:51:14 2014
+Results reported at Mon Oct 13 21:51:26 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/4.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/4.out.%J
+
+#BSUB -n 32
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 4 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               5.12 sec.
+    Max Memory :             3 MB
+    Average Memory :         3.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               155 MB
+
+    Max Processes :          10
+    Max Threads :            10
+
+The output (if any) follows:
+
+Number of MPI processes 4
+Process 0 hpa0047
+Process 1 hpa0047
+Process 2 hpa0050
+Process 3 hpa0050
+Function      Rate (MB/s) 
+Copy:       49217.1079
+Scale:      35352.4408
+Add:        46681.0631
+Triad:      43343.2633
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option4/4.err.175255> for stderr output of this job.
+
