@@ -1,0 +1,156 @@
+Sender: LSF System <lsfadmin@hpa0601>
+Subject: Job 175240: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/64.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/64.out.%J; #BSUB -n 512;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 64 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/64.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/64.out.%J; #BSUB -n 512;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 64 ./MPIVersion> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0601>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0618>
+                            <16*hpa0620>
+                            <16*hpa0643>
+                            <16*hpa0567>
+                            <16*hpa0568>
+                            <16*hpa0651>
+                            <16*hpa0657>
+                            <16*hpa0603>
+                            <16*hpa0606>
+                            <16*hpa0608>
+                            <16*hpa0661>
+                            <16*hpa0664>
+                            <16*hpa0669>
+                            <16*hpa0585>
+                            <16*hpa0619>
+                            <16*hpa0591>
+                            <16*hpa0628>
+                            <16*hpa0556>
+                            <16*hpa0679>
+                            <16*hpa0615>
+                            <16*hpa0697>
+                            <16*hpa0578>
+                            <16*hpa0690>
+                            <16*hpa0691>
+                            <16*hpa0693>
+                            <16*hpa0640>
+                            <16*hpa0642>
+                            <16*hpa0645>
+                            <16*hpa0647>
+                            <16*hpa0570>
+                            <16*hpa0573>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling/option4> was used as the working directory.
+Started at Tue Oct 14 09:34:40 2014
+Results reported at Tue Oct 14 09:35:12 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/64.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/64.out.%J
+
+#BSUB -n 512
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 64 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               152.07 sec.
+    Max Memory :             11 MB
+    Average Memory :         11.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               808 MB
+
+    Max Processes :          31
+    Max Threads :            31
+
+The output (if any) follows:
+
+Number of MPI processes 64
+Process 0 hpa0601
+Process 1 hpa0601
+Process 2 hpa0618
+Process 3 hpa0618
+Process 4 hpa0620
+Process 5 hpa0620
+Process 6 hpa0643
+Process 7 hpa0643
+Process 8 hpa0567
+Process 9 hpa0567
+Process 10 hpa0568
+Process 11 hpa0568
+Process 12 hpa0651
+Process 13 hpa0651
+Process 14 hpa0657
+Process 15 hpa0657
+Process 16 hpa0603
+Process 17 hpa0603
+Process 18 hpa0606
+Process 19 hpa0606
+Process 20 hpa0608
+Process 21 hpa0608
+Process 22 hpa0661
+Process 23 hpa0661
+Process 24 hpa0664
+Process 25 hpa0664
+Process 26 hpa0669
+Process 27 hpa0669
+Process 28 hpa0585
+Process 29 hpa0585
+Process 30 hpa0619
+Process 31 hpa0619
+Process 32 hpa0591
+Process 33 hpa0591
+Process 34 hpa0628
+Process 35 hpa0628
+Process 36 hpa0556
+Process 37 hpa0556
+Process 38 hpa0679
+Process 39 hpa0679
+Process 40 hpa0615
+Process 41 hpa0615
+Process 42 hpa0697
+Process 43 hpa0697
+Process 44 hpa0578
+Process 45 hpa0578
+Process 46 hpa0690
+Process 47 hpa0690
+Process 48 hpa0691
+Process 49 hpa0691
+Process 50 hpa0693
+Process 51 hpa0693
+Process 52 hpa0640
+Process 53 hpa0640
+Process 54 hpa0642
+Process 55 hpa0642
+Process 56 hpa0645
+Process 57 hpa0645
+Process 58 hpa0647
+Process 59 hpa0647
+Process 60 hpa0570
+Process 61 hpa0570
+Process 62 hpa0573
+Process 63 hpa0573
+Function      Rate (MB/s) 
+Copy:      758404.1296
+Scale:     553863.2874
+Add:       729658.7251
+Triad:     681095.3737
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option4/64.err.175240> for stderr output of this job.
+

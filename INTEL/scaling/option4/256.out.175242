@@ -1,0 +1,444 @@
+Sender: LSF System <lsfadmin@hpa0556>
+Subject: Job 175242: <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/256.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/256.out.%J; #BSUB -n 2048;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 256 ./MPIVersion> in cluster <lichtenberg> Done
+
+Job <#! /bin/bash; #BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/256.err.%J;#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/256.out.%J; #BSUB -n 2048;#BSUB -W 5;#BSUB -x; #BSUB -a openmpi; module load openmpi/intel/1.8.2;export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr; mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 256 ./MPIVersion> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0556>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0606>
+                            <16*hpa0685>
+                            <16*hpa0642>
+                            <16*hpa0605>
+                            <16*hpa0594>
+                            <16*hpa0604>
+                            <16*hpa0591>
+                            <16*hpa0578>
+                            <16*hpa0596>
+                            <16*hpa0643>
+                            <16*hpa0688>
+                            <16*hpa0699>
+                            <16*hpa0646>
+                            <16*hpa0576>
+                            <16*hpa0567>
+                            <16*hpa0683>
+                            <16*hpa0597>
+                            <16*hpa0700>
+                            <16*hpa0684>
+                            <16*hpa0677>
+                            <16*hpa0581>
+                            <16*hpa0633>
+                            <16*hpa0546>
+                            <16*hpa0561>
+                            <16*hpa0626>
+                            <16*hpa0639>
+                            <16*hpa0672>
+                            <16*hpa0602>
+                            <16*hpa0675>
+                            <16*hpa0623>
+                            <16*hpa0618>
+                            <16*hpa0655>
+                            <16*hpa0656>
+                            <16*hpa0571>
+                            <16*hpa0696>
+                            <16*hpa0682>
+                            <16*hpa0553>
+                            <16*hpa0673>
+                            <16*hpa0601>
+                            <16*hpa0582>
+                            <16*hpa0547>
+                            <16*hpa0663>
+                            <16*hpa0545>
+                            <16*hpa0607>
+                            <16*hpa0593>
+                            <16*hpa0569>
+                            <16*hpa0641>
+                            <16*hpa0555>
+                            <16*hpa0560>
+                            <16*hpa0692>
+                            <16*hpa0550>
+                            <16*hpa0595>
+                            <16*hpa0574>
+                            <16*hpa0622>
+                            <16*hpa0681>
+                            <16*hpa0638>
+                            <16*hpa0701>
+                            <16*hpa0687>
+                            <16*hpa0619>
+                            <16*hpa0637>
+                            <16*hpa0587>
+                            <16*hpa0652>
+                            <16*hpa0636>
+                            <16*hpa0661>
+                            <16*hpa0548>
+                            <16*hpa0644>
+                            <16*hpa0669>
+                            <16*hpa0614>
+                            <16*hpa0670>
+                            <16*hpa0648>
+                            <16*hpa0557>
+                            <16*hpa0651>
+                            <16*hpa0649>
+                            <16*hpa0658>
+                            <16*hpa0554>
+                            <16*hpa0679>
+                            <16*hpa0585>
+                            <16*hpa0664>
+                            <16*hpa0628>
+                            <16*hpa0584>
+                            <16*hpa0562>
+                            <16*hpa0645>
+                            <16*hpa0647>
+                            <16*hpa0570>
+                            <16*hpa0666>
+                            <16*hpa0588>
+                            <16*hpa0689>
+                            <16*hpa0694>
+                            <16*hpa0549>
+                            <16*hpa0640>
+                            <16*hpa0631>
+                            <16*hpa0603>
+                            <16*hpa0698>
+                            <16*hpa0568>
+                            <16*hpa0703>
+                            <16*hpa0573>
+                            <16*hpa0616>
+                            <16*hpa0617>
+                            <16*hpa0609>
+                            <16*hpa0613>
+                            <16*hpa0575>
+                            <16*hpa0579>
+                            <16*hpa0612>
+                            <16*hpa0650>
+                            <16*hpa0691>
+                            <16*hpa0690>
+                            <16*hpa0693>
+                            <16*hpa0667>
+                            <16*hpa0590>
+                            <16*hpa0565>
+                            <16*hpa0654>
+                            <16*hpa0635>
+                            <16*hpa0598>
+                            <16*hpa0697>
+                            <16*hpa0600>
+                            <16*hpa0558>
+                            <16*hpa0634>
+                            <16*hpa0559>
+                            <16*hpa0668>
+                            <16*hpa0615>
+                            <16*hpa0608>
+                            <16*hpa0657>
+                            <16*hpa0630>
+                            <16*hpa0583>
+                            <16*hpa0659>
+                            <16*hpa0627>
+                            <16*hpa0620>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/scaling/option4> was used as the working directory.
+Started at Tue Oct 14 10:38:56 2014
+Results reported at Tue Oct 14 10:39:28 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/bash
+
+#BSUB -e /home/gu08vomo/output/INTEL/scaling/option4/256.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/scaling/option4/256.out.%J
+
+#BSUB -n 2048
+#BSUB -W 5
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+
+mpirun -map-by ppr:2:node -map-by ppr:1:socket -report-bindings -n 256 ./MPIVersion
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               1166.44 sec.
+    Max Memory :             8 MB
+    Average Memory :         8.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               180 MB
+
+    Max Processes :          5
+    Max Threads :            7
+
+The output (if any) follows:
+
+Number of MPI processes 256
+Process 0 hpa0556
+Process 1 hpa0556
+Process 2 hpa0606
+Process 3 hpa0606
+Process 4 hpa0685
+Process 5 hpa0685
+Process 6 hpa0642
+Process 7 hpa0642
+Process 8 hpa0605
+Process 9 hpa0605
+Process 10 hpa0594
+Process 11 hpa0594
+Process 12 hpa0604
+Process 13 hpa0604
+Process 14 hpa0591
+Process 15 hpa0591
+Process 16 hpa0578
+Process 17 hpa0578
+Process 18 hpa0596
+Process 19 hpa0596
+Process 20 hpa0643
+Process 21 hpa0643
+Process 22 hpa0688
+Process 23 hpa0688
+Process 24 hpa0699
+Process 25 hpa0699
+Process 26 hpa0646
+Process 27 hpa0646
+Process 28 hpa0576
+Process 29 hpa0576
+Process 30 hpa0567
+Process 31 hpa0567
+Process 32 hpa0683
+Process 33 hpa0683
+Process 34 hpa0597
+Process 35 hpa0597
+Process 36 hpa0700
+Process 37 hpa0700
+Process 38 hpa0684
+Process 39 hpa0684
+Process 40 hpa0677
+Process 41 hpa0677
+Process 42 hpa0581
+Process 43 hpa0581
+Process 44 hpa0633
+Process 45 hpa0633
+Process 46 hpa0546
+Process 47 hpa0546
+Process 48 hpa0561
+Process 49 hpa0561
+Process 50 hpa0626
+Process 51 hpa0626
+Process 52 hpa0639
+Process 53 hpa0639
+Process 54 hpa0672
+Process 55 hpa0672
+Process 56 hpa0602
+Process 57 hpa0602
+Process 58 hpa0675
+Process 59 hpa0675
+Process 60 hpa0623
+Process 61 hpa0623
+Process 62 hpa0618
+Process 63 hpa0618
+Process 64 hpa0655
+Process 65 hpa0655
+Process 66 hpa0656
+Process 67 hpa0656
+Process 68 hpa0571
+Process 69 hpa0571
+Process 70 hpa0696
+Process 71 hpa0696
+Process 72 hpa0682
+Process 73 hpa0682
+Process 74 hpa0553
+Process 75 hpa0553
+Process 76 hpa0673
+Process 77 hpa0673
+Process 78 hpa0601
+Process 79 hpa0601
+Process 80 hpa0582
+Process 81 hpa0582
+Process 82 hpa0547
+Process 83 hpa0547
+Process 84 hpa0663
+Process 85 hpa0663
+Process 86 hpa0545
+Process 87 hpa0545
+Process 88 hpa0607
+Process 89 hpa0607
+Process 90 hpa0593
+Process 91 hpa0593
+Process 92 hpa0569
+Process 93 hpa0569
+Process 94 hpa0641
+Process 95 hpa0641
+Process 96 hpa0555
+Process 97 hpa0555
+Process 98 hpa0560
+Process 99 hpa0560
+Process 100 hpa0692
+Process 101 hpa0692
+Process 102 hpa0550
+Process 103 hpa0550
+Process 104 hpa0595
+Process 105 hpa0595
+Process 106 hpa0574
+Process 107 hpa0574
+Process 108 hpa0622
+Process 109 hpa0622
+Process 110 hpa0681
+Process 111 hpa0681
+Process 112 hpa0638
+Process 113 hpa0638
+Process 114 hpa0701
+Process 115 hpa0701
+Process 116 hpa0687
+Process 117 hpa0687
+Process 118 hpa0619
+Process 119 hpa0619
+Process 120 hpa0637
+Process 121 hpa0637
+Process 122 hpa0587
+Process 123 hpa0587
+Process 124 hpa0652
+Process 125 hpa0652
+Process 126 hpa0636
+Process 127 hpa0636
+Process 128 hpa0661
+Process 129 hpa0661
+Process 130 hpa0548
+Process 131 hpa0548
+Process 132 hpa0644
+Process 133 hpa0644
+Process 134 hpa0669
+Process 135 hpa0669
+Process 136 hpa0614
+Process 137 hpa0614
+Process 138 hpa0670
+Process 139 hpa0670
+Process 140 hpa0648
+Process 141 hpa0648
+Process 142 hpa0557
+Process 143 hpa0557
+Process 144 hpa0651
+Process 145 hpa0651
+Process 146 hpa0649
+Process 147 hpa0649
+Process 148 hpa0658
+Process 149 hpa0658
+Process 150 hpa0554
+Process 151 hpa0554
+Process 152 hpa0679
+Process 153 hpa0679
+Process 154 hpa0585
+Process 155 hpa0585
+Process 156 hpa0664
+Process 157 hpa0664
+Process 158 hpa0628
+Process 159 hpa0628
+Process 160 hpa0584
+Process 161 hpa0584
+Process 162 hpa0562
+Process 163 hpa0562
+Process 164 hpa0645
+Process 165 hpa0645
+Process 166 hpa0647
+Process 167 hpa0647
+Process 168 hpa0570
+Process 169 hpa0570
+Process 170 hpa0666
+Process 171 hpa0666
+Process 172 hpa0588
+Process 173 hpa0588
+Process 174 hpa0689
+Process 175 hpa0689
+Process 176 hpa0694
+Process 177 hpa0694
+Process 178 hpa0549
+Process 179 hpa0549
+Process 180 hpa0640
+Process 181 hpa0640
+Process 182 hpa0631
+Process 183 hpa0631
+Process 184 hpa0603
+Process 185 hpa0603
+Process 186 hpa0698
+Process 187 hpa0698
+Process 188 hpa0568
+Process 189 hpa0568
+Process 190 hpa0703
+Process 191 hpa0703
+Process 192 hpa0573
+Process 193 hpa0573
+Process 194 hpa0616
+Process 195 hpa0616
+Process 196 hpa0617
+Process 197 hpa0617
+Process 198 hpa0609
+Process 199 hpa0609
+Process 200 hpa0613
+Process 201 hpa0613
+Process 202 hpa0575
+Process 203 hpa0575
+Process 204 hpa0579
+Process 205 hpa0579
+Process 206 hpa0612
+Process 207 hpa0612
+Process 208 hpa0650
+Process 209 hpa0650
+Process 210 hpa0691
+Process 211 hpa0691
+Process 212 hpa0690
+Process 213 hpa0690
+Process 214 hpa0693
+Process 215 hpa0693
+Process 216 hpa0667
+Process 217 hpa0667
+Process 218 hpa0590
+Process 219 hpa0590
+Process 220 hpa0565
+Process 221 hpa0565
+Process 222 hpa0654
+Process 223 hpa0654
+Process 224 hpa0635
+Process 225 hpa0635
+Process 226 hpa0598
+Process 227 hpa0598
+Process 228 hpa0697
+Process 229 hpa0697
+Process 230 hpa0600
+Process 231 hpa0600
+Process 232 hpa0558
+Process 233 hpa0558
+Process 234 hpa0634
+Process 235 hpa0634
+Process 236 hpa0559
+Process 237 hpa0559
+Process 238 hpa0668
+Process 239 hpa0668
+Process 240 hpa0615
+Process 241 hpa0615
+Process 242 hpa0608
+Process 243 hpa0608
+Process 244 hpa0657
+Process 245 hpa0657
+Process 246 hpa0630
+Process 247 hpa0630
+Process 248 hpa0583
+Process 249 hpa0583
+Process 250 hpa0659
+Process 251 hpa0659
+Process 252 hpa0627
+Process 253 hpa0627
+Process 254 hpa0620
+Process 255 hpa0620
+Function      Rate (MB/s) 
+Copy:      2984864.8891
+Scale:     2190588.8134
+Add:       2877562.5862
+Triad:     2699160.7905
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/scaling/option4/256.err.175242> for stderr output of this job.
+
