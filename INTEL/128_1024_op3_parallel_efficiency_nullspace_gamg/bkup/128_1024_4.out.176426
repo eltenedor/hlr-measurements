@@ -1,0 +1,108 @@
+Sender: LSF System <lsfadmin@hpa0082>
+Subject: Job 176426: <INTEL_128_nullsp_4_op3_gamg> in cluster <lichtenberg> Exited
+
+Job <INTEL_128_nullsp_4_op3_gamg> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0082>, in queue <deflt>, as user <gu08vomo> in cluster <lichtenberg>.
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/performance/128_1024_op3_parallel_efficiency_nullspace_gamg> was used as the working directory.
+Started at Tue Oct 14 18:33:36 2014
+Results reported at Tue Oct 14 18:35:08 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_128_nullsp_4_op3_gamg
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/128_1024_op3_parallel_efficiency_nullspace_gamg/128_1024_4.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/128_1024_op3_parallel_efficiency_nullspace_gamg/128_1024_4.out.%J
+
+#BSUB -n 16
+#BSUB -W 6:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/128_1024_op3_parallel_efficiency_nullspace_gamg/128_1024_4/
+export PETSC_OPS="-pressure_pc_type gamg -pressure_mg_levels_ksp_type richardson -pressure_mg_levels_pc_type sor"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+cp control.cin ../../.
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+mpirun -report-bindings -map-by ppr:4:node -map-by ppr:2:socket -n 4 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/128_1024_op3_parallel_efficiency_nullspace_gamg/128_1024_4.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :               302.79 sec.
+    Max Memory :             4140 MB
+    Average Memory :         2716.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               7425 MB
+
+    Max Processes :          9
+    Max Threads :            23
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/128_1024_op3_parallel_efficiency_nullspace_gamg/128_1024_4/
+/work/scratch/gu08vomo/performance/128_1024_op3_parallel_efficiency_nullspace_gamg/128_1024_4
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/128_1024_op3_parallel_efficiency_nullspace_gamg/128_1024_4/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+ READING CONTROL SETTINGS
+ READING CONTROL SETTINGS
+ READING CONTROL SETTINGS
+ READING CONTROL SETTINGS
+ START SIMPLE RELAXATIONS
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+ 0000002  0.4012E+00  0.4170E+00  0.4149E+00  0.1754E+00
+ 0000003  0.2061E+00  0.2124E+00  0.2095E+00  0.1830E+00
+ 0000004  0.1314E+00  0.1341E+00  0.1318E+00  0.1351E+00
+ 0000005  0.9808E-01  0.9948E-01  0.9767E-01  0.9745E-01
+ 0000006  0.8014E-01  0.8095E-01  0.7949E-01  0.7258E-01
+ 0000007  0.6887E-01  0.6939E-01  0.6815E-01  0.5556E-01
+ 0000008  0.6101E-01  0.6137E-01  0.6030E-01  0.4356E-01
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD 
+with errorcode 59.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/128_1024_op3_parallel_efficiency_nullspace_gamg/128_1024_4.err.176426> for stderr output of this job.
+

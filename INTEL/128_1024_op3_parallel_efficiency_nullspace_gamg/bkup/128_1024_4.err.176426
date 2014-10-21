@@ -1,0 +1,93 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+[hpa0082:24262] MCW rank 2 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0082:24262] MCW rank 3 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0082:24262] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0082:24262] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+mpirun: Forwarding signal 18 to job
+forrtl: error (69): process interrupted (SIGINT)
+Image              PC                Routine            Line        Source             
+caffa3d.MB.lnx     00000000004CA6B1  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004C8E07  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000047F144  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000047EF56  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004424AF  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000446F27  Unknown               Unknown  Unknown
+libpthread.so.0    00002AB679C72800  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB67808E7B0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB67808E00B  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB678084D61  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB6785FAF56  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB6785EF90E  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB678589B99  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB67863FC27  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB67863C177  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB678652E62  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000415167  solvesys_                 691  petsc.user.f
+caffa3d.MB.lnx     0000000000413CB4  calcp_..0                2066  caffa3d.MB.f
+caffa3d.MB.lnx     000000000040F288  MAIN__                    376  caffa3d.MB.f
+caffa3d.MB.lnx     000000000040B8AE  Unknown               Unknown  Unknown
+libc.so.6          00002AB67A0A3C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000040B749  Unknown               Unknown  Unknown
+forrtl: error (69): process interrupted (SIGINT)
+Image              PC                Routine            Line        Source             
+caffa3d.MB.lnx     00000000004CA6B1  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004C8E07  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000047F144  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000047EF56  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004424AF  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000446F27  Unknown               Unknown  Unknown
+libpthread.so.0    00002AB416576800  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB41499278C  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB41499200B  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB414988D61  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB414EFEF56  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB414EF390E  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB414E8DB99  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB414F43C27  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB414F40177  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AB414F56E62  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000415167  solvesys_                 691  petsc.user.f
+caffa3d.MB.lnx     0000000000413CB4  calcp_..0                2066  caffa3d.MB.f
+caffa3d.MB.lnx     000000000040F288  MAIN__                    376  caffa3d.MB.f
+caffa3d.MB.lnx     000000000040B8AE  Unknown               Unknown  Unknown
+libc.so.6          00002AB4169A7C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000040B749  Unknown               Unknown  Unknown
+[0]PETSC ERROR: ------------------------------------------------------------------------
+[0]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[0]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[0]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[0]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[0]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[0]PETSC ERROR: to get more information on the crash.
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Signal received
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0082 by gu08vomo Tue Oct 14 18:33:48 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #1 User provided function() line 0 in  unknown file
+forrtl: error (69): process interrupted (SIGINT)
+Image              PC                Routine            Line        Source             
+caffa3d.MB.lnx     00000000004CA6B1  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004C8E07  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000047F144  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000047EF56  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004424AF  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000446F27  Unknown               Unknown  Unknown
+libpthread.so.0    00002B4AD993D800  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD7D5977C  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD7D5900B  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD7D4FD61  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD82C5F56  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD82BA90E  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD8254B99  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD830AC27  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD8307177  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B4AD831DE62  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000415167  solvesys_                 691  petsc.user.f
+caffa3d.MB.lnx     0000000000413CB4  calcp_..0                2066  caffa3d.MB.f
+caffa3d.MB.lnx     000000000040F288  MAIN__                    376  caffa3d.MB.f
+caffa3d.MB.lnx     000000000040B8AE  Unknown               Unknown  Unknown
+libc.so.6          00002B4AD9D6EC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000040B749  Unknown               Unknown  Unknown

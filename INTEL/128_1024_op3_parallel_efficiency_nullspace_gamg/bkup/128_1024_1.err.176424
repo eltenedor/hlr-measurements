@@ -1,0 +1,19 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+/work/local/176424_0/tmp/ifortM1vn7R.o: In function `MAIN__':
+caffa3d.MB.f:(.text+0x57): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+caffa3d.MB.f:(.text+0x1f7f): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+caffa3d.MB.f:(.text+0x1fab): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+caffa3d.MB.f:(.text+0x3237): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+caffa3d.MB.f:(.text+0x3272): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+caffa3d.MB.f:(.text+0x4100): relocation truncated to fit: R_X86_64_32S against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+/work/local/176424_0/tmp/ifortM1vn7R.o: In function `calcp_..0':
+caffa3d.MB.f:(.text+0x6abc): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+/work/local/176424_0/tmp/ifortM1vn7R.o: In function `solvesys_..0':
+caffa3d.MB.f:(.text+0x95a2): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+caffa3d.MB.f:(.text+0x961f): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+/work/local/176424_0/tmp/ifortM1vn7R.o: In function `solvesys_':
+caffa3d.MB.f:(.text+0x98d8): relocation truncated to fit: R_X86_64_32 against symbol `petscfortran9_' defined in COMMON section in /work/local/176424_0/tmp/ifortM1vn7R.o
+caffa3d.MB.f:(.text+0x9955): additional relocation overflows omitted from the output
+make: *** [opt-intel-analytical] Error 1

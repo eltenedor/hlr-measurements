@@ -1,0 +1,99 @@
+Sender: LSF System <lsfadmin@hpa0042>
+Subject: Job 161892: <INTEL_256_2048_4> in cluster <lichtenberg> Exited
+
+Job <INTEL_256_2048_4> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <8*hpa0042>, in queue <long>, as user <gu08vomo> in cluster <lichtenberg>.
+</home/gu08vomo> was used as the home directory.
+</work/scratch/gu08vomo/performance/256_2048> was used as the working directory.
+Started at Mon Oct 20 13:08:22 2014
+Results reported at Mon Oct 20 13:46:39 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_4
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048/256_2048_4.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048/256_2048_4.out.%J
+
+#BSUB -n 8
+#BSUB -W 168:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048/256_2048_4/
+export PETSC_OPS="-momentum_redistribute_pc_bjacobi_blocks 2048 -pressure_redistribute_pc_bjacobi_blocks 2048 -pressure_redistribute_sub_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:8:node -map-by ppr:4:socket -n 4 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048/256_2048_4.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Exited with exit code 137.
+
+Resource usage summary:
+
+    CPU time :               5264.13 sec.
+    Max Memory :             29646 MB
+    Average Memory :         19960.08 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               49034 MB
+
+    Max Processes :          9
+    Max Threads :            23
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048/256_2048_4/
+/work/scratch/gu08vomo/performance/256_2048/256_2048_4
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/256_2048/256_2048_4/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+ 0000002  0.4307E+00  0.4307E+00  0.4296E+00  0.3690E+00
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 3 in communicator MPI_COMM_WORLD 
+with errorcode 59.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 19087 on node hpa0042 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048/256_2048_4.err.161892> for stderr output of this job.
+
