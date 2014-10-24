@@ -1,0 +1,83 @@
+Sender: LSF System <lsfadmin@hpa0042>
+Subject: Job 187275: <INTEL_256_2048_1> in cluster <lichtenberg> Exited
+
+Job <INTEL_256_2048_1> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <hpa0042>, in queue <long>, as user <gu08vomo> in cluster <lichtenberg>.
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/performance/256_2048_op3_parallel_efficiency> was used as the working directory.
+Started at Thu Oct 23 23:52:05 2014
+Results reported at Thu Oct 23 23:52:09 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_1
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency/256_2048_1.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency/256_2048_1.out.%J
+
+#BSUB -n 1
+#BSUB -W 128:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency/256_2048_1/
+export PETSC_OPS="-momentum_bjacobi_blocks 2048 -pressure_pc_bjacobi_blocks 2048 -pressure_sub_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+#cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+#cd caffa3d.MB
+# prepare binary
+#cp ../../param3d.inc .
+#make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:4:node -map-by ppr:2:socket -n 1 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency/256_2048_1.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Exited with exit code 137.
+
+Resource usage summary:
+
+    CPU time :               0.38 sec.
+    Max Memory :             2 MB
+    Average Memory :         2.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               59 MB
+
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency/256_2048_1/
+/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency/256_2048_1
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 12550 on node hpa0042 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency/256_2048_1.err.187275> for stderr output of this job.
+

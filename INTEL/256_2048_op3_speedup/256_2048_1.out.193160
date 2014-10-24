@@ -1,0 +1,93 @@
+Sender: LSF System <lsfadmin@hpa0067>
+Subject: Job 193160: <INTEL_256_2048_1> in cluster <lichtenberg> Done
+
+Job <INTEL_256_2048_1> was submitted from host <hla0002> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <hpa0067>, in queue <deflt>, as user <gu08vomo> in cluster <lichtenberg>.
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/performance/256_2048_op3_speedup/256_2048_1> was used as the working directory.
+Started at Fri Oct 24 19:29:04 2014
+Results reported at Fri Oct 24 19:36:03 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_1
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_speedup/256_2048_1.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_speedup/256_2048_1.out.%J
+
+#BSUB -n 1
+#BSUB -W 24:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup/256_2048_1/
+export PETSC_OPS="-pressure_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+#cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+#cd caffa3d.MB
+# prepare binary
+#cp ../../param3d.inc .
+#make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+#cd ${MYWORKDIR}
+#cp ../control.cin .
+mpirun -report-bindings -n 1 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_speedup/256_2048_1.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               355.61 sec.
+    Max Memory :             18796 MB
+    Average Memory :         15326.14 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               22697 MB
+
+    Max Processes :          6
+    Max Threads :            11
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup/256_2048_1/
+/work/scratch/gu08vomo/performance/256_2048_op3_speedup/256_2048_1
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+ 0000002  0.4025E+00  0.4161E+00  0.4146E+00  0.1973E+00
+TIME FOR CALCULATION:  0.3355E+03
+   0.00000D+00  -0.13621D+00 686  -0.98828D+00  -0.99609D+00  -0.98828D+00
+ FEHLER ZUR ANALYTISCHEN LÖSUNG GESCHW.  0.378775812701280     
+ FEHLER ZUR ANALYTISCHEN LÖSUNG DRUCK   9.46407667442244     
+ REFERENZDRUCK  0.000000000000000E+000 -0.136210924685323     
+      *** CALCULATION FINISHED - SEE RESULTS ***
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_speedup/256_2048_1.err.193160> for stderr output of this job.
+

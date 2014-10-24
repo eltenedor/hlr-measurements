@@ -1,0 +1,85 @@
+Sender: LSF System <lsfadmin@hea0002>
+Subject: Job 193035: <INTEL_256_2048_1> in cluster <lichtenberg> Exited
+
+Job <INTEL_256_2048_1> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <hea0002>, in queue <testmem>, as user <gu08vomo> in cluster <lichtenberg>.
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/performance/256_2048_op3_speedup/256_2048_1> was used as the working directory.
+Started at Fri Oct 24 13:34:37 2014
+Results reported at Fri Oct 24 13:34:39 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_1
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_speedup/256_2048_1.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_speedup/256_2048_1.out.%J
+
+#BSUB -n 1
+#BSUB -W 24:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup/256_2048_1/
+export PETSC_OPS="-pressure_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+#cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+#cd caffa3d.MB
+# prepare binary
+#cp ../../param3d.inc .
+#make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+#cd ${MYWORKDIR}
+#cp ../control.cin .
+mpirun -report-bindings -n 1 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_speedup/256_2048_1.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Exited with exit code 168.
+
+Resource usage summary:
+
+    CPU time :               0.56 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup/256_2048_1/
+/work/scratch/gu08vomo/performance/256_2048_op3_speedup/256_2048_1
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[47329,1],0]
+  Exit code:    168
+--------------------------------------------------------------------------
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_speedup/256_2048_1.err.193035> for stderr output of this job.
+
