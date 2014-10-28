@@ -1,0 +1,241 @@
+Modules: loading openmpi/intel/1.8.2
+[hea0002:40534] MCW rank 15 bound to socket 7[core 57[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./B/./././././.]
+[hea0002:40534] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 2 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 3 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 4 bound to socket 2[core 16[hwt 0]]: [./././././././.][./././././././.][B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 5 bound to socket 2[core 17[hwt 0]]: [./././././././.][./././././././.][./B/./././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 6 bound to socket 3[core 24[hwt 0]]: [./././././././.][./././././././.][./././././././.][B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 7 bound to socket 3[core 25[hwt 0]]: [./././././././.][./././././././.][./././././././.][./B/./././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 8 bound to socket 4[core 32[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][B/././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 9 bound to socket 4[core 33[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./B/./././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 10 bound to socket 5[core 40[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][B/././././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 11 bound to socket 5[core 41[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./B/./././././.][./././././././.][./././././././.]
+[hea0002:40534] MCW rank 12 bound to socket 6[core 48[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][B/././././././.][./././././././.]
+[hea0002:40534] MCW rank 13 bound to socket 6[core 49[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./B/./././././.][./././././././.]
+[hea0002:40534] MCW rank 14 bound to socket 7[core 56[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][B/././././././.]
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B59E17B9721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B59E17B7E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B59E019D4C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B59E019D316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B59E0108DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B59E011A432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B59E1A167C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B59DE418362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B59E1E47C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002ACC0DD3E721  Unknown               Unknown  Unknown
+libintlc.so.5      00002ACC0DD3CE77  Unknown               Unknown  Unknown
+libifcore.so.5     00002ACC0C7224C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002ACC0C722316  Unknown               Unknown  Unknown
+libifcore.so.5     00002ACC0C68DDBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002ACC0C69F432  Unknown               Unknown  Unknown
+libpthread.so.0    00002ACC0DF9B7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002ACC0A99D362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002ACC0E3CCC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B969BFB8721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B969BFB6E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B969A99C4C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B969A99C316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B969A907DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B969A919432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B969C2157C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B9698C17362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B969C646C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B0C94257721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B0C94255E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B0C92C3B4C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B0C92C3B316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B0C92BA6DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B0C92BB8432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B0C944B47C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B0C90EB6362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+
+Stack trace terminated abnormally.
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B6DF7B22721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B6DF7B20E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B6DF65064C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B6DF6506316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B6DF6471DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B6DF6483432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B6DF7D7F7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B6DF4781362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B6DF81B0C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B2E2FEF2721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B2E2FEF0E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B2E2E8D64C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B2E2E8D6316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B2E2E841DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B2E2E853432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B2E3014F7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B2E2CB51362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B2E30580C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B4080DE3721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B4080DE1E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B407F7C74C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B407F7C7316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B407F732DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B407F744432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B40810407C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B407DA42362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B4081471C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B39323EB721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B39323E9E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3930DCF4C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3930DCF316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3930D3ADBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3930D4C432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B39326487C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B392F04A362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B3932A79C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B3DB32DD721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B3DB32DBE77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3DB1CC14C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3DB1CC1316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3DB1C2CDBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3DB1C3E432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B3DB353A7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B3DAFF3C362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B3DB396BC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002AF271B23721  Unknown               Unknown  Unknown
+libintlc.so.5      00002AF271B21E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF2705074C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF270507316  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF270472DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF270484432  Unknown               Unknown  Unknown
+libpthread.so.0    00002AF271D807C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AF26E782362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AF2721B1C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002AF9B81CF721  Unknown               Unknown  Unknown
+libintlc.so.5      00002AF9B81CDE77  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF9B6BB34C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF9B6BB3316  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF9B6B1EDBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF9B6B30432  Unknown               Unknown  Unknown
+libpthread.so.0    00002AF9B842C7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AF9B4E2E362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AF9B885DC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B3EEE32D721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B3EEE32BE77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3EECD114C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3EECD11316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3EECC7CDBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3EECC8E432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B3EEE58A7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B3EEAF8C362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B3EEE9BBC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B918FBCF721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B918FBCDE77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B918E5B34C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B918E5B3316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B918E51EDBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B918E530432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B918FE2C7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B918C82E362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B919025DC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B47BCB6F721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B47BCB6DE77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B47BB5534C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B47BB553316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B47BB4BEDBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B47BB4D0432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B47BCDCC7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B47B97CE362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B47BD1FDC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B342D966721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B342D964E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B342C34A4C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B342C34A316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B342C2B5DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B342C2C7432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B342DBC37C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B342A5C5362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B342DFF4C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B38C89E9721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B38C89E7E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B38C73CD4C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B38C73CD316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B38C7338DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B38C734A432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B38C8C467C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B38C5648362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+
+Stack trace terminated abnormally.

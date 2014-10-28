@@ -1,0 +1,40 @@
+Modules: loading openmpi/intel/1.8.2
+[hea0002:43080] MCW rank 15 bound to socket 7[core 57[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./B/./././././.]
+[hea0002:43080] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 2 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 3 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 4 bound to socket 2[core 16[hwt 0]]: [./././././././.][./././././././.][B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 5 bound to socket 2[core 17[hwt 0]]: [./././././././.][./././././././.][./B/./././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 6 bound to socket 3[core 24[hwt 0]]: [./././././././.][./././././././.][./././././././.][B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 7 bound to socket 3[core 25[hwt 0]]: [./././././././.][./././././././.][./././././././.][./B/./././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 8 bound to socket 4[core 32[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][B/././././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 9 bound to socket 4[core 33[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./B/./././././.][./././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 10 bound to socket 5[core 40[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][B/././././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 11 bound to socket 5[core 41[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./B/./././././.][./././././././.][./././././././.]
+[hea0002:43080] MCW rank 12 bound to socket 6[core 48[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][B/././././././.][./././././././.]
+[hea0002:43080] MCW rank 13 bound to socket 6[core 49[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./B/./././././.][./././././././.]
+[hea0002:43080] MCW rank 14 bound to socket 7[core 56[hwt 0]]: [./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][B/././././././.]
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002AECC1177721  Unknown               Unknown  Unknown
+libintlc.so.5      00002AECC1175E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002AECBFB5B4C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002AECBFB5B316  Unknown               Unknown  Unknown
+libifcore.so.5     00002AECBFAC6DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002AECBFAD8432  Unknown               Unknown  Unknown
+libpthread.so.0    00002AECC13D47C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002AECBDDD6362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403670  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AECC1805C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002AB3119B4721  Unknown               Unknown  Unknown
+libintlc.so.5      00002AB3119B2E77  Unknown               Unknown  Unknown
+libifcore.so.5     00002AB3103984C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002AB310398316  Unknown               Unknown  Unknown
+libifcore.so.5     00002AB310303DBC  Unknown               Unknown  Unknown
+
+Stack trace terminated abnormally.

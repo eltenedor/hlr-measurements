@@ -1,0 +1,16 @@
+Modules: loading openmpi/intel/1.8.2
+[hea0002:26544] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.][./././././././.]
+forrtl: severe (168): Program Exception - illegal instruction
+Image              PC                Routine            Line        Source             
+libintlc.so.5      00002B8EC96F1721  Unknown               Unknown  Unknown
+libintlc.so.5      00002B8EC96EFE77  Unknown               Unknown  Unknown
+libifcore.so.5     00002B8EC80D54C2  Unknown               Unknown  Unknown
+libifcore.so.5     00002B8EC80D5316  Unknown               Unknown  Unknown
+libifcore.so.5     00002B8EC8040DBC  Unknown               Unknown  Unknown
+libifcore.so.5     00002B8EC8052432  Unknown               Unknown  Unknown
+libpthread.so.0    00002B8EC994E7C0  Unknown               Unknown  Unknown
+libpetsc.so.3.5    00002B8EC6350362  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403667  MAIN__                    110  caffa3d.MB.f
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B8EC9D7FC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown

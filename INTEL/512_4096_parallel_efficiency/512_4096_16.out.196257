@@ -1,0 +1,103 @@
+Sender: LSF System <lsfadmin@hpa0606>
+Subject: Job 196257: <INTEL_512_4096_16> in cluster <lichtenberg> Exited
+
+Job <INTEL_512_4096_16> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0606>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0584>
+                            <16*hpa0703>
+                            <16*hpa0576>
+                            <16*hpa0671>
+                            <16*hpa0575>
+                            <16*hpa0667>
+                            <16*hpa0650>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/performance/512_4096/512_4096_16> was used as the working directory.
+Started at Sat Oct 25 18:56:33 2014
+Results reported at Sat Oct 25 19:06:52 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_512_4096_16
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/512_4096_parallel_efficiency/512_4096_16.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/512_4096_parallel_efficiency/512_4096_16.out.%J
+
+#BSUB -n 128
+#BSUB -W 0:10
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/512_4096/512_4096_16/
+export PETSC_OPS="-momentum_pc_type bjacobi -momentum_pc_bjacobi_blocks 4096 -pressure_pc_type bjacobi -pressure_pc_bjacobi_blocks 4096 -pressure_sub_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:2:node -map-by ppr:1:socket -n 16 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/512_4096_parallel_efficiency/512_4096_16.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :               7985.23 sec.
+    Max Memory :             172868 MB
+    Average Memory :         142832.03 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               203817 MB
+
+    Max Processes :          28
+    Max Threads :            78
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/512_4096/512_4096_16/
+/work/scratch/gu08vomo/performance/512_4096/512_4096_16
+mpif90 caffa3d.MB.f -fpp -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/512_4096/512_4096_16/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc 
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+ 0000002  0.3994E+00  0.4172E+00  0.4162E+00  0.3758E+00
+ 0000003  0.2036E+00  0.2111E+00  0.2100E+00  0.2324E+00
+ 0000004  0.1282E+00  0.1317E+00  0.1309E+00  0.1646E+00
+ 0000005  0.9435E-01  0.9618E-01  0.9553E-01  0.1334E+00
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 18834 on node hpa0606 exited on signal 12 (User defined signal 2).
+--------------------------------------------------------------------------
+12 total processes killed (some possibly by mpirun during cleanup)
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/512_4096_parallel_efficiency/512_4096_16.err.196257> for stderr output of this job.
+

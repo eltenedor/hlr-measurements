@@ -1,0 +1,133 @@
+Sender: LSF System <lsfadmin@hpa0582>
+Subject: Job 196236: <INTEL_512_4096_128> in cluster <lichtenberg> Done
+
+Job <INTEL_512_4096_128> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0582>, in queue <deflt>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0583>
+                            <16*hpa0587>
+                            <16*hpa0612>
+                            <16*hpa0618>
+                            <16*hpa0671>
+                            <16*hpa0701>
+                            <16*hpa0590>
+                            <16*hpa0595>
+                            <16*hpa0596>
+                            <16*hpa0597>
+                            <16*hpa0598>
+                            <16*hpa0620>
+                            <16*hpa0622>
+                            <16*hpa0626>
+                            <16*hpa0627>
+                            <16*hpa0631>
+                            <16*hpa0552>
+                            <16*hpa0617>
+                            <16*hpa0642>
+                            <16*hpa0581>
+                            <16*hpa0670>
+                            <16*hpa0679>
+                            <16*hpa0592>
+                            <16*hpa0623>
+                            <16*hpa0624>
+                            <16*hpa0682>
+                            <16*hpa0635>
+                            <16*hpa0636>
+                            <16*hpa0608>
+                            <16*hpa0656>
+                            <16*hpa0561>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/performance/512_4096> was used as the working directory.
+Started at Sat Oct 25 19:40:39 2014
+Results reported at Sat Oct 25 19:44:36 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_512_4096_128
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/512_4096_parallel_efficiency/512_4096_128.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/512_4096_parallel_efficiency/512_4096_128.out.%J
+
+#BSUB -n 512
+#BSUB -W 2:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/512_4096/512_4096_128/
+export PETSC_OPS="-momentum_pc_type bjacobi -momentum_pc_bjacobi_blocks 4096 -pressure_pc_type bjacobi -pressure_pc_bjacobi_blocks 4096 -pressure_sub_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:4:node -map-by ppr:2:socket -n 128 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/512_4096_parallel_efficiency/512_4096_128.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               25023.23 sec.
+    Max Memory :             179526 MB
+    Average Memory :         60276.27 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               251343 MB
+
+    Max Processes :          164
+    Max Threads :            550
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/512_4096/512_4096_128/
+/work/scratch/gu08vomo/performance/512_4096/512_4096_128
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/512_4096/512_4096_128/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc 
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+ 0000002  0.3994E+00  0.4172E+00  0.4162E+00  0.3758E+00
+ 0000003  0.2036E+00  0.2111E+00  0.2100E+00  0.2324E+00
+ 0000004  0.1282E+00  0.1317E+00  0.1309E+00  0.1646E+00
+ 0000005  0.9435E-01  0.9618E-01  0.9553E-01  0.1334E+00
+ 0000006  0.7596E-01  0.7705E-01  0.7651E-01  0.1046E+00
+ 0000007  0.6438E-01  0.6509E-01  0.6460E-01  0.7829E-01
+ 0000008  0.5630E-01  0.5679E-01  0.5634E-01  0.5753E-01
+ 0000009  0.5029E-01  0.5065E-01  0.5022E-01  0.4262E-01
+ 0000010  0.4561E-01  0.4588E-01  0.4547E-01  0.3245E-01
+TIME FOR CALCULATION:  0.1404E+03
+   0.00000D+00  -0.14263D+002382  -0.99414D+00  -0.99805D+00  -0.99414D+00
+ FEHLER ZUR ANALYTISCHEN LÖSUNG GESCHW.  0.376282730160470     
+ FEHLER ZUR ANALYTISCHEN LÖSUNG DRUCK   6.43473138619126     
+ REFERENZDRUCK  0.000000000000000E+000 -0.142631518373301     
+      *** CALCULATION FINISHED - SEE RESULTS ***
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/512_4096_parallel_efficiency/512_4096_128.err.196236> for stderr output of this job.
+

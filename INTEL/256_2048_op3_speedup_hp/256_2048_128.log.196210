@@ -1,0 +1,173 @@
+************************************************************************************************************************
+***             WIDEN YOUR WINDOW TO 120 CHARACTERS.  Use 'enscript -r -fCourier9' to print this document            ***
+************************************************************************************************************************
+
+---------------------------------------------- PETSc Performance Summary: ----------------------------------------------
+
+./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0691 with 128 processors, by gu08vomo Sat Oct 25 19:47:32 2014
+Using Petsc Release Version 3.5.2, Sep, 08, 2014 
+
+                         Max       Max/Min        Avg      Total 
+Time (sec):           3.862e+02      1.00001   3.862e+02
+Objects:              4.716e+03      1.00000   4.716e+03
+Flops:                2.680e+11      1.00397   2.678e+11  3.428e+13
+Flops/sec:            6.940e+08      1.00397   6.935e+08  8.877e+10
+MPI Messages:         1.940e+05      2.00000   1.758e+05  2.250e+07
+MPI Message Lengths:  9.495e+09      2.00000   4.951e+04  1.114e+12
+MPI Reductions:       1.682e+05      1.00000
+
+Flop counting convention: 1 flop = 1 real number operation of type (multiply/divide/add/subtract)
+                            e.g., VecAXPY() for real vectors of length N --> 2N flops
+                            and VecAXPY() for complex vectors of length N --> 8N flops
+
+Summary of Stages:   ----- Time ------  ----- Flops -----  --- Messages ---  -- Message Lengths --  -- Reductions --
+                        Avg     %Total     Avg     %Total   counts   %Total     Avg         %Total   counts   %Total 
+ 0:      Main Stage: 1.0687e+02  27.7%  6.7682e+07   0.0%  2.509e+06  11.1%  5.335e+03       10.8%  8.310e+02   0.5% 
+ 1:        MOMENTUM: 2.8539e+01   7.4%  1.7039e+12   5.0%  1.113e+06   4.9%  2.459e+03        5.0%  4.799e+03   2.9% 
+ 2:        PRESCORR: 2.5075e+02  64.9%  3.2578e+13  95.0%  1.888e+07  83.9%  4.171e+04       84.3%  1.626e+05  96.7% 
+
+------------------------------------------------------------------------------------------------------------------------
+See the 'Profiling' chapter of the users' manual for details on interpreting output.
+Phase summary info:
+   Count: number of times phase was executed
+   Time and Flops: Max - maximum over all processors
+                   Ratio - ratio of maximum to minimum over all processors
+   Mess: number of messages sent
+   Avg. len: average message length (bytes)
+   Reduct: number of global reductions
+   Global: entire computation
+   Stage: stages of a computation. Set stages with PetscLogStagePush() and PetscLogStagePop().
+      %T - percent time in this phase         %F - percent flops in this phase
+      %M - percent messages in this phase     %L - percent message lengths in this phase
+      %R - percent reductions in this phase
+   Total Mflop/s: 10e-6 * (sum of flops over all processors)/(max time over all processors)
+------------------------------------------------------------------------------------------------------------------------
+Event                Count      Time (sec)     Flops                             --- Global ---  --- Stage ---   Total
+                   Max Ratio  Max     Ratio   Max  Ratio  Mess   Avg len Reduct  %T %F %M %L %R  %T %F %M %L %R Mflop/s
+------------------------------------------------------------------------------------------------------------------------
+
+--- Event Stage 0: Main Stage
+
+ThreadCommRunKer    1001 1.0 4.8199e+0160.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  3  0  0  0  0  12  0  0  0  0     0
+VecNorm                1 1.0 4.5331e-03 1.0 3.53e+05 1.0 0.0e+00 0.0e+00 1.0e+00  0  0  0  0  0   0 67  0  0  0  9954
+VecScale               1 1.0 1.1110e-04 1.4 1.76e+05 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0 33  0  0  0 203062
+VecSet              8005 1.0 1.1818e+00 1.1 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   1  0  0  0  0     0
+VecScatterBegin     9605 1.0 2.6443e-01 2.9 0.00e+00 0.0 2.2e+06 5.0e+04 0.0e+00  0  0 10 10  0   0  0 89 92  0     0
+VecScatterEnd       9605 1.0 4.8871e+0140.1 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  8  0  0  0  0  28  0  0  0  0     0
+VecNormalize           1 1.0 1.1301e-04 1.4 1.76e+05 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0 33  0  0  0 199634
+MatAssemblyBegin     400 1.0 3.4994e+00 5.3 0.00e+00 0.0 2.8e+05 3.3e+04 8.0e+02  0  0  1  1  0   2  0 11  8 96     0
+MatAssemblyEnd       400 1.0 1.7318e+00 1.5 0.00e+00 0.0 9.3e+02 1.2e+04 8.0e+00  0  0  0  0  0   1  0  0  0  1     0
+
+--- Event Stage 1: MOMENTUM
+
+VecDot              1200 1.0 4.8023e-01 1.3 4.23e+08 1.0 0.0e+00 0.0e+00 1.2e+03  0  0  0  0  1   1  3  0  0 25 112750
+VecDotNorm2          600 1.0 4.4422e-01 1.4 4.23e+08 1.0 0.0e+00 0.0e+00 6.0e+02  0  0  0  0  0   1  3  0  0 13 121889
+VecNorm             2399 1.0 1.3719e+00 1.6 8.46e+08 1.0 0.0e+00 0.0e+00 2.4e+03  0  0  0  0  1   4  6  0  0 50 78901
+VecCopy             1800 1.0 3.9549e-01 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   1  0  0  0  0     0
+VecSet              3600 1.0 4.4432e-01 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   2  0  0  0  0     0
+VecAXPY             1199 1.0 1.8242e-01 1.1 4.23e+08 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   1  3  0  0  0 296568
+VecAXPBYCZ          1200 1.0 2.6130e-01 1.1 8.46e+08 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   1  6  0  0  0 414441
+VecWAXPY            1200 1.0 2.9049e-01 1.0 4.23e+08 1.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   1  3  0  0  0 186393
+VecScatterBegin     2399 1.0 3.2942e-01 3.3 0.00e+00 0.0 1.1e+06 5.0e+04 0.0e+00  0  0  5  5  0   1  0100100  0     0
+VecScatterEnd       2399 1.0 8.3043e-01 3.8 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   2  0  0  0  0     0
+MatMult             2399 1.0 5.8511e+00 1.2 4.19e+09 1.0 1.1e+06 5.0e+04 0.0e+00  1  2  5  5  0  19 31100100  0 91473
+MatSolve            2399 1.0 5.5649e+00 1.0 4.07e+09 1.0 0.0e+00 0.0e+00 0.0e+00  1  2  0  0  0  19 31  0  0  0 93691
+MatLUFactorNum       600 1.0 6.1131e+00 1.1 1.67e+09 1.0 0.0e+00 0.0e+00 0.0e+00  2  1  0  0  0  21 13  0  0  0 35041
+MatILUFactorSym      600 1.0 3.7001e+00 1.1 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  1  0  0  0  0  12  0  0  0  0     0
+MatGetRowIJ          600 1.0 2.7609e-04 1.9 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatGetOrdering       600 1.0 5.7997e-01 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   2  0  0  0  0     0
+KSPSetUp            1200 1.0 3.9432e-03 1.1 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+KSPSolve             600 1.0 2.3424e+01 1.0 1.19e+10 1.0 8.3e+05 5.0e+04 3.6e+03  6  4  4  4  2  82 89 75 75 75 64716
+PCSetUp             1200 1.0 1.0714e+01 1.1 1.67e+09 1.0 0.0e+00 0.0e+00 0.0e+00  3  1  0  0  0  36 13  0  0  0 19994
+PCSetUpOnBlocks      600 1.0 1.0711e+01 1.1 1.67e+09 1.0 0.0e+00 0.0e+00 0.0e+00  3  1  0  0  0  36 13  0  0  0 19999
+PCApply             2399 1.0 5.8896e+00 1.0 4.07e+09 1.0 0.0e+00 0.0e+00 0.0e+00  2  2  0  0  0  20 31  0  0  0 88527
+
+--- Event Stage 2: PRESCORR
+
+VecMDot            40690 1.0 1.8464e+01 1.2 1.43e+10 1.0 0.0e+00 0.0e+00 4.1e+04  4  5  0  0 24   7  6  0  0 25 99437
+VecTDot            80980 1.0 2.6912e+01 1.4 2.85e+10 1.0 0.0e+00 0.0e+00 8.1e+04  5 11  0  0 48   8 11  0  0 50 135774
+VecNorm            40890 1.0 5.6191e+00 1.1 1.44e+10 1.0 0.0e+00 0.0e+00 4.1e+04  1  5  0  0 24   2  6  0  0 25 328348
+VecCopy              600 1.0 1.2645e-01 1.1 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+VecSet             40890 1.0 2.6420e+00 1.0 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  1  0  0  0  0   1  0  0  0  0     0
+VecAXPY            81180 1.0 1.4159e+01 1.0 2.86e+10 1.0 0.0e+00 0.0e+00 0.0e+00  4 11  0  0  0   5 11  0  0  0 258704
+VecAYPX            40290 1.0 6.7907e+00 1.1 1.42e+10 1.0 0.0e+00 0.0e+00 0.0e+00  2  5  0  0  0   3  6  0  0  0 267709
+VecMAXPY           40690 1.0 4.5904e+00 1.0 1.43e+10 1.0 0.0e+00 0.0e+00 0.0e+00  1  5  0  0  0   2  6  0  0  0 399968
+VecScatterBegin    40690 1.0 2.2211e+00 2.0 0.00e+00 0.0 1.9e+07 5.0e+04 0.0e+00  0  0 84 84  0   1  0100100  0     0
+VecScatterEnd      40690 1.0 7.6329e+00 2.4 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  2  0  0  0  0   2  0  0  0  0     0
+MatMult            40690 1.0 8.7443e+01 1.1 7.11e+10 1.0 1.9e+07 5.0e+04 0.0e+00 22 26 84 84  0  34 28100100  0 103816
+MatSolve           40690 1.0 9.1615e+01 1.0 6.91e+10 1.0 0.0e+00 0.0e+00 0.0e+00 23 26  0  0  0  36 27  0  0  0 96527
+MatCholFctrNum       200 1.0 2.3716e+00 1.1 3.53e+07 1.0 0.0e+00 0.0e+00 0.0e+00  1  0  0  0  0   1  0  0  0  0  1903
+MatICCFactorSym      200 1.0 6.5326e-01 1.4 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatGetRowIJ          200 1.0 9.4891e-05 2.3 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+MatGetOrdering       200 1.0 1.9943e-01 1.1 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+KSPSetUp             400 1.0 1.9698e-03 1.1 0.00e+00 0.0 0.0e+00 0.0e+00 0.0e+00  0  0  0  0  0   0  0  0  0  0     0
+KSPSolve             200 1.0 2.4995e+02 1.0 2.54e+11 1.0 1.9e+07 5.0e+04 1.6e+05 65 95 83 84 97 100100100100100 130087
+PCSetUp              400 1.0 3.3710e+00 1.1 3.53e+07 1.0 0.0e+00 0.0e+00 0.0e+00  1  0  0  0  0   1  0  0  0  0  1339
+PCSetUpOnBlocks      200 1.0 3.3703e+00 1.1 3.53e+07 1.0 0.0e+00 0.0e+00 0.0e+00  1  0  0  0  0   1  0  0  0  0  1339
+PCApply            40690 1.0 9.4776e+01 1.0 6.91e+10 1.0 0.0e+00 0.0e+00 0.0e+00 24 26  0  0  0  37 27  0  0  0 93307
+------------------------------------------------------------------------------------------------------------------------
+
+Memory usage is given in bytes:
+
+Object Type          Creations   Destructions     Memory  Descendants' Mem.
+Reports information only for process 0.
+
+--- Event Stage 0: Main Stage
+
+              Vector    69             94     68020912     0
+      Vector Scatter     3              3         3252     0
+           Index Set     6             11      2976264     0
+   IS L to G Mapping     2              2      1509544     0
+              Matrix     3              5     37840372     0
+   Matrix Null Space     0              1          620     0
+       Krylov Solver     0              4         4744     0
+      Preconditioner     0              4         3808     0
+              Viewer     1              0            0     0
+
+--- Event Stage 1: MOMENTUM
+
+              Vector  1216           1198    905352560     0
+           Index Set  1800           1797    846041976     0
+              Matrix   600            599   8426645744     0
+       Krylov Solver     3              0            0     0
+      Preconditioner     3              0            0     0
+
+--- Event Stage 2: PRESCORR
+
+              Vector     8              0            0     0
+           Index Set   600            598    281073168     0
+              Matrix   200            199   1329872424     0
+   Matrix Null Space   200            199       123380     0
+       Krylov Solver     1              0            0     0
+      Preconditioner     1              0            0     0
+========================================================================================================================
+Average time to get PetscTime(): 0
+Average time for MPI_Barrier(): 3.51906e-05
+Average time for zero size MPI_Send(): 0.00107951
+#PETSc Option Table entries:
+-log_summary /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp/256_2048_128.log.196210
+-pressure_sub_pc_type icc
+#End of PETSc Option Table entries
+Compiled without FORTRAN kernels
+Compiled with full precision matrices (default)
+sizeof(short) 2 sizeof(int) 4 sizeof(long) 8 sizeof(void*) 8 sizeof(PetscScalar) 8 sizeof(PetscInt) 4
+Configure options: PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+-----------------------------------------
+Libraries compiled on Sun Sep 28 00:06:35 2014 on hla0002 
+Machine characteristics: Linux-3.0.101-0.35-default-x86_64-with-SuSE-11-x86_64
+Using PETSc directory: /home/gu08vomo/soft/petsc/3.5.2
+Using PETSc arch: arch-openmpi-opt-intel-hlr
+-----------------------------------------
+
+Using C compiler: /shared/apps/openmpi/1.8.2_intel/bin/mpicc  -fPIC -wd1572 -O3 -xHost  ${COPTFLAGS} ${CFLAGS}
+Using Fortran compiler: /shared/apps/openmpi/1.8.2_intel/bin/mpif90  -fPIC -O3 -xHost   ${FOPTFLAGS} ${FFLAGS} 
+-----------------------------------------
+
+Using include paths: -I/home/gu08vomo/soft/petsc/3.5.2/arch-openmpi-opt-intel-hlr/include -I/home/gu08vomo/soft/petsc/3.5.2/include -I/home/gu08vomo/soft/petsc/3.5.2/include -I/home/gu08vomo/soft/petsc/3.5.2/arch-openmpi-opt-intel-hlr/include -I/shared/apps/openmpi/1.8.2_intel/include
+-----------------------------------------
+
+Using C linker: /shared/apps/openmpi/1.8.2_intel/bin/mpicc
+Using Fortran linker: /shared/apps/openmpi/1.8.2_intel/bin/mpif90
+Using libraries: -Wl,-rpath,/home/gu08vomo/soft/petsc/3.5.2/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/arch-openmpi-opt-intel-hlr/lib -lpetsc -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -lX11 -lpthread -lssl -lcrypto -Wl,-rpath,/shared/apps/openmpi/1.8.2_intel/lib -L/shared/apps/openmpi/1.8.2_intel/lib -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -L/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib/gcc/x86_64-unknown-linux-gnu/4.8.3 -L/shared/apps/gcc/4.8.3/lib/gcc/x86_64-unknown-linux-gnu/4.8.3 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib64 -L/shared/apps/gcc/4.8.3/lib64 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib -L/shared/apps/gcc/4.8.3/lib -lmpi_usempi_ignore_tkr -lmpi_mpifh -lifport -lifcore -lm -lmpi_cxx -ldl -Wl,-rpath,/shared/apps/openmpi/1.8.2_intel/lib -L/shared/apps/openmpi/1.8.2_intel/lib -lmpi -Wl,-rpath,/shared/apps/openmpi/1.8.2_intel/lib -L/shared/apps/openmpi/1.8.2_intel/lib -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -L/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib/gcc/x86_64-unknown-linux-gnu/4.8.3 -L/shared/apps/gcc/4.8.3/lib/gcc/x86_64-unknown-linux-gnu/4.8.3 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib64 -L/shared/apps/gcc/4.8.3/lib64 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib64 -L/shared/apps/gcc/4.8.3/lib64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -L/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib -L/shared/apps/gcc/4.8.3/lib -Wl,-rpath,/shared/apps/openmpi/1.8.2_intel/lib -limf -lsvml -lirng -lipgo -ldecimal -lcilkrts -lstdc++ -lgcc_s -lirc -lpthread -lirc_s -Wl,-rpath,/shared/apps/openmpi/1.8.2_intel/lib -L/shared/apps/openmpi/1.8.2_intel/lib -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -L/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib/gcc/x86_64-unknown-linux-gnu/4.8.3 -L/shared/apps/gcc/4.8.3/lib/gcc/x86_64-unknown-linux-gnu/4.8.3 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib64 -L/shared/apps/gcc/4.8.3/lib64 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib64 -L/shared/apps/gcc/4.8.3/lib64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/compiler/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/ipp/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -L/shared/apps/intel/2015/composer_xe_2015.0.090/mkl/lib/intel64 -Wl,-rpath,/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -L/shared/apps/intel/2015/composer_xe_2015.0.090/tbb/lib/intel64/gcc4.4 -Wl,-rpath,/shared/apps/gcc/4.8.3/lib -L/shared/apps/gcc/4.8.3/lib -ldl  
+-----------------------------------------
+
