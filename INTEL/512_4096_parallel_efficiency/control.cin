@@ -1,0 +1,16 @@
+Testcase                                          TITLE
+F F F F F F F F                                   LREAD,LWRITE,LPOST,LTEST,LOUTS,LOUTE,LTIME,LGRAD
+02 02 02 01 00 2 2 3 01 1 1                       IMON,JMON,KMON,MMON,RMON,IPR,JPR,KPR,MPR,NPCOR,NIGRAD
+1.e-8 1.e30 0.92                                  SORMAX,SLARGE,ALFA
+1.00E+0 1.00E+0 1.00                              DENSIT,VISC,PRANL
++0.0 +0.0 +0.0 +0.0 283.0 283.0 283.0             GRAVX,GRAVY,GRAVZ,BETA,TH,TC,TREF
++0.0 +0.0 +0.0 +0.0 278.0 +0.0 +0.0               UIN,VIN,WIN,PIN,TIN,TEIN,EDIN
+1.00   0.0   0.0                                  ULID,TPER,TGEN
+1 10  1.  0.                                      ITSTEP,NOTT,DT,GAMT
+T    T    T    T     F     F    F    F    F       (LCAL(I),I=1,NFI)
+0.8  0.8  0.8  0.2   0.8   1.0  0.5  0.5  0.5     (URF(I),I=1,NFI)
+0.1 0.1 0.1  0.02  0.1   0.0  0.1  0.1  0.0       (SOR(I),I=1,NFI)
+1    1    1    6    3     1    3    3    1        (NSW(I),I=1,NFI)
+1.0  1.0  1.0  0.6   0.7   0.0  0.0  0.0  0.0     (GDS(I),I=1,NFI)
+10                                                LSG
+0
