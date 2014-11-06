@@ -1,0 +1,43 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+cp: cannot stat `../../param3d.inc': No such file or directory
+caffa3d.MB.f(71): #error: can't find include file: param3d.inc
+caffa3d.MB.f(716): #error: can't find include file: param3d.inc
+caffa3d.MB.f(1486): #error: can't find include file: param3d.inc
+caffa3d.MB.f(1617): #error: can't find include file: param3d.inc
+caffa3d.MB.f(2467): #error: can't find include file: param3d.inc
+caffa3d.MB.f(2568): #error: can't find include file: param3d.inc
+caffa3d.MB.f(2644): #error: can't find include file: param3d.inc
+caffa3d.MB.f(2742): #error: can't find include file: param3d.inc
+caffa3d.MB.f(3092): #error: can't find include file: param3d.inc
+caffa3d.MB.f(3189): #error: can't find include file: param3d.inc
+caffa3d.MB.f(3293): #error: can't find include file: param3d.inc
+caffa3d.MB.f(3344): #error: can't find include file: param3d.inc
+caffa3d.MB.f(3737): #error: can't find include file: param3d.inc
+caffa3d.MB.f(3840): #error: can't find include file: param3d.inc
+caffa3d.MB.f(3918): #error: can't find include file: param3d.inc
+caffa3d.MB.f(3977): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4175): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4389): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4504): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4563): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4640): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4679): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4765): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4886): #error: can't find include file: param3d.inc
+caffa3d.MB.f(4961): #error: can't find include file: param3d.inc
+user.f(22): #error: can't find include file: param3d.inc
+user.f(188): #error: can't find include file: param3d.inc
+user.f(227): #error: can't find include file: param3d.inc
+user.f(255): #error: can't find include file: param3d.inc
+user.f(283): #error: can't find include file: param3d.inc
+vtkpost.f(10): #error: can't find include file: param3d.inc
+petsc.user.f(12): #error: can't find include file: param3d.inc
+petsc.user.f(327): #error: can't find include file: param3d.inc
+petsc.user.f(560): #error: can't find include file: param3d.inc
+petsc.user.f(739): #error: can't find include file: param3d.inc
+make: *** [opt-intel-analytical] Error 35
+cp: cannot stat `../control.cin': No such file or directory
+[hpa0202:29186] [[49259,0],0] ORTE_ERROR_LOG: The specified application failed to start in file ../../../../../openmpi-1.8.2/orte/mca/plm/lsf/plm_lsf_module.c at line 342
+[hpa0202:29186] lsb_launch failed: 0

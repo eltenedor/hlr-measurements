@@ -1,0 +1,217 @@
+Sender: LSF System <lsfadmin@hpa0097>
+Subject: Job 222463: <INTEL_256_2048_512_pe> in cluster <lichtenberg> Done
+
+Job <INTEL_256_2048_512_pe> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <1*hpa0097>, in queue <multi>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0420>
+                            <16*hpa0442>
+                            <16*hpa0270>
+                            <16*hpa0292>
+                            <16*hpa0458>
+                            <16*hpa0473>
+                            <16*hpa0260>
+                            <16*hpa0460>
+                            <16*hpa0287>
+                            <16*hpa0308>
+                            <16*hpa0441>
+                            <16*hpa0462>
+                            <16*hpa0102>
+                            <16*hpa0314>
+                            <16*hpa0257>
+                            <16*hpa0277>
+                            <16*hpa0421>
+                            <16*hpa0116>
+                            <16*hpa0109>
+                            <16*hpa0115>
+                            <16*hpa0264>
+                            <16*hpa0275>
+                            <16*hpa0114>
+                            <16*hpa0125>
+                            <16*hpa0126>
+                            <16*hpa0123>
+                            <16*hpa0465>
+                            <16*hpa0439>
+                            <16*hpa0106>
+                            <16*hpa0279>
+                            <16*hpa0127>
+                            <16*hpa0302>
+                            <16*hpa0271>
+                            <16*hpa0443>
+                            <16*hpa0454>
+                            <16*hpa0417>
+                            <16*hpa0423>
+                            <16*hpa0449>
+                            <16*hpa0451>
+                            <16*hpa0472>
+                            <16*hpa0422>
+                            <16*hpa0452>
+                            <16*hpa0477>
+                            <16*hpa0457>
+                            <16*hpa0318>
+                            <16*hpa0274>
+                            <16*hpa0475>
+                            <16*hpa0301>
+                            <16*hpa0298>
+                            <16*hpa0470>
+                            <16*hpa0272>
+                            <16*hpa0289>
+                            <16*hpa0310>
+                            <16*hpa0463>
+                            <16*hpa0286>
+                            <16*hpa0113>
+                            <16*hpa0479>
+                            <16*hpa0461>
+                            <16*hpa0438>
+                            <16*hpa0459>
+                            <16*hpa0467>
+                            <16*hpa0273>
+                            <16*hpa0266>
+                            <16*hpa0430>
+                            <16*hpa0478>
+                            <16*hpa0261>
+                            <16*hpa0455>
+                            <16*hpa0476>
+                            <16*hpa0313>
+                            <16*hpa0320>
+                            <16*hpa0281>
+                            <16*hpa0431>
+                            <16*hpa0291>
+                            <16*hpa0424>
+                            <16*hpa0268>
+                            <16*hpa0464>
+                            <16*hpa0305>
+                            <16*hpa0288>
+                            <16*hpa0456>
+                            <16*hpa0293>
+                            <16*hpa0434>
+                            <16*hpa0278>
+                            <16*hpa0263>
+                            <16*hpa0466>
+                            <16*hpa0469>
+                            <16*hpa0282>
+                            <16*hpa0300>
+                            <16*hpa0276>
+                            <16*hpa0471>
+                            <16*hpa0317>
+                            <16*hpa0436>
+                            <16*hpa0445>
+                            <16*hpa0448>
+                            <16*hpa0444>
+                            <16*hpa0425>
+                            <16*hpa0315>
+                            <16*hpa0269>
+                            <16*hpa0303>
+                            <16*hpa0312>
+                            <16*hpa0296>
+                            <16*hpa0453>
+                            <16*hpa0429>
+                            <16*hpa0262>
+                            <16*hpa0267>
+                            <16*hpa0435>
+                            <16*hpa0283>
+                            <16*hpa0306>
+                            <16*hpa0295>
+                            <16*hpa0304>
+                            <16*hpa0297>
+                            <16*hpa0474>
+                            <16*hpa0440>
+                            <16*hpa0426>
+                            <16*hpa0433>
+                            <16*hpa0432>
+                            <16*hpa0309>
+                            <16*hpa0311>
+                            <16*hpa0259>
+                            <16*hpa0446>
+                            <16*hpa0437>
+                            <16*hpa0280>
+                            <16*hpa0480>
+                            <16*hpa0419>
+                            <16*hpa0307>
+                            <16*hpa0258>
+                            <16*hpa0418>
+                            <16*hpa0285>
+                            <15*hpa0428>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/performance/256_2048_op3_parallel_efficiency_hp/256_2048_512> was used as the working directory.
+Started at Wed Nov  5 11:25:44 2014
+Results reported at Wed Nov  5 11:25:59 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_512_pe
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency_hp/256_2048_512.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency_hp/256_2048_512.out.%J
+
+#BSUB -n 2048
+#BSUB -W 1:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency_hp/256_2048_512/
+export PETSC_OPS="-momentum_pc_type bjacobi -pressure_pc_type bjacobi -momentum_pc_bjacobi_blocks 2048 -pressure_pc_bjacobi_blocks 2048 -pressure_sub_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:4:node -map-by ppr:2:socket -n 512 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency_hp/256_2048_512.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               24.58 sec.
+    Max Memory :             11 MB
+    Average Memory :         11.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               240 MB
+
+    Max Processes :          8
+    Max Threads :            10
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency_hp/256_2048_512/
+/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency_hp/256_2048_512
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency_hp/256_2048_512/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc -DUSE_INTERPOLATION
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 4 slots 
+that were requested by the application:
+  ./caffa3d.MB.lnx
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency_hp/256_2048_512.err.222463> for stderr output of this job.
+

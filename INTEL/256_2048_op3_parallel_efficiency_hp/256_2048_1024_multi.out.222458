@@ -1,0 +1,337 @@
+Sender: LSF System <lsfadmin@hpa0202>
+Subject: Job 222458: <256_2048_1024_multi> in cluster <lichtenberg> Exited
+
+Job <256_2048_1024_multi> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0202>, in queue <multi>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0392>
+                            <16*hpa0315>
+                            <16*hpa0310>
+                            <16*hpa0441>
+                            <16*hpa0371>
+                            <16*hpa0295>
+                            <16*hpa0385>
+                            <16*hpa0430>
+                            <16*hpa0324>
+                            <16*hpa0317>
+                            <16*hpa0365>
+                            <16*hpa0359>
+                            <16*hpa0364>
+                            <16*hpa0356>
+                            <16*hpa0228>
+                            <16*hpa0326>
+                            <16*hpa0269>
+                            <16*hpa0288>
+                            <16*hpa0427>
+                            <16*hpa0302>
+                            <16*hpa0323>
+                            <16*hpa0417>
+                            <16*hpa0320>
+                            <16*hpa0312>
+                            <16*hpa0414>
+                            <16*hpa0346>
+                            <16*hpa0340>
+                            <16*hpa0368>
+                            <16*hpa0208>
+                            <16*hpa0231>
+                            <16*hpa0377>
+                            <16*hpa0426>
+                            <16*hpa0403>
+                            <16*hpa0412>
+                            <16*hpa0438>
+                            <16*hpa0287>
+                            <16*hpa0221>
+                            <16*hpa0198>
+                            <16*hpa0249>
+                            <16*hpa0218>
+                            <16*hpa0199>
+                            <16*hpa0396>
+                            <16*hpa0214>
+                            <16*hpa0296>
+                            <16*hpa0384>
+                            <16*hpa0410>
+                            <16*hpa0227>
+                            <16*hpa0446>
+                            <16*hpa0423>
+                            <16*hpa0400>
+                            <16*hpa0252>
+                            <16*hpa0344>
+                            <16*hpa0349>
+                            <16*hpa0213>
+                            <16*hpa0318>
+                            <16*hpa0246>
+                            <16*hpa0253>
+                            <16*hpa0352>
+                            <16*hpa0420>
+                            <16*hpa0415>
+                            <16*hpa0211>
+                            <16*hpa0307>
+                            <16*hpa0220>
+                            <16*hpa0370>
+                            <16*hpa0342>
+                            <16*hpa0444>
+                            <16*hpa0363>
+                            <16*hpa0339>
+                            <16*hpa0284>
+                            <16*hpa0330>
+                            <16*hpa0290>
+                            <16*hpa0431>
+                            <16*hpa0303>
+                            <16*hpa0286>
+                            <16*hpa0197>
+                            <16*hpa0369>
+                            <16*hpa0313>
+                            <16*hpa0391>
+                            <16*hpa0439>
+                            <16*hpa0308>
+                            <16*hpa0428>
+                            <16*hpa0445>
+                            <16*hpa0380>
+                            <16*hpa0238>
+                            <16*hpa0193>
+                            <16*hpa0407>
+                            <16*hpa0233>
+                            <16*hpa0361>
+                            <16*hpa0348>
+                            <16*hpa0292>
+                            <16*hpa0413>
+                            <16*hpa0230>
+                            <16*hpa0360>
+                            <16*hpa0267>
+                            <16*hpa0341>
+                            <16*hpa0389>
+                            <16*hpa0232>
+                            <16*hpa0239>
+                            <16*hpa0205>
+                            <16*hpa0210>
+                            <16*hpa0247>
+                            <16*hpa0277>
+                            <16*hpa0226>
+                            <16*hpa0268>
+                            <16*hpa0376>
+                            <16*hpa0258>
+                            <16*hpa0334>
+                            <16*hpa0264>
+                            <16*hpa0421>
+                            <16*hpa0212>
+                            <16*hpa0386>
+                            <16*hpa0327>
+                            <16*hpa0390>
+                            <16*hpa0276>
+                            <16*hpa0279>
+                            <16*hpa0305>
+                            <16*hpa0447>
+                            <16*hpa0362>
+                            <16*hpa0322>
+                            <16*hpa0338>
+                            <16*hpa0424>
+                            <16*hpa0265>
+                            <16*hpa0321>
+                            <16*hpa0319>
+                            <16*hpa0219>
+                            <16*hpa0263>
+                            <16*hpa0448>
+                            <16*hpa0404>
+                            <16*hpa0398>
+                            <16*hpa0304>
+                            <16*hpa0419>
+                            <16*hpa0293>
+                            <16*hpa0408>
+                            <16*hpa0357>
+                            <16*hpa0409>
+                            <16*hpa0405>
+                            <16*hpa0299>
+                            <16*hpa0416>
+                            <16*hpa0411>
+                            <16*hpa0194>
+                            <16*hpa0437>
+                            <16*hpa0443>
+                            <16*hpa0273>
+                            <16*hpa0216>
+                            <16*hpa0440>
+                            <16*hpa0261>
+                            <16*hpa0195>
+                            <16*hpa0422>
+                            <16*hpa0301>
+                            <16*hpa0282>
+                            <16*hpa0237>
+                            <16*hpa0278>
+                            <16*hpa0372>
+                            <16*hpa0367>
+                            <16*hpa0289>
+                            <16*hpa0235>
+                            <16*hpa0272>
+                            <16*hpa0283>
+                            <16*hpa0224>
+                            <16*hpa0281>
+                            <16*hpa0325>
+                            <16*hpa0274>
+                            <16*hpa0242>
+                            <16*hpa0333>
+                            <16*hpa0275>
+                            <16*hpa0251>
+                            <16*hpa0270>
+                            <16*hpa0266>
+                            <16*hpa0355>
+                            <16*hpa0300>
+                            <16*hpa0335>
+                            <16*hpa0203>
+                            <16*hpa0399>
+                            <16*hpa0262>
+                            <16*hpa0435>
+                            <16*hpa0350>
+                            <16*hpa0306>
+                            <16*hpa0402>
+                            <16*hpa0200>
+                            <16*hpa0225>
+                            <16*hpa0260>
+                            <16*hpa0425>
+                            <16*hpa0297>
+                            <16*hpa0215>
+                            <16*hpa0240>
+                            <16*hpa0207>
+                            <16*hpa0388>
+                            <16*hpa0332>
+                            <16*hpa0329>
+                            <16*hpa0387>
+                            <16*hpa0223>
+                            <16*hpa0234>
+                            <16*hpa0395>
+                            <16*hpa0401>
+                            <16*hpa0347>
+                            <16*hpa0434>
+                            <16*hpa0196>
+                            <16*hpa0314>
+                            <16*hpa0382>
+                            <16*hpa0345>
+                            <16*hpa0442>
+                            <16*hpa0256>
+                            <16*hpa0222>
+                            <16*hpa0381>
+                            <16*hpa0383>
+                            <16*hpa0406>
+                            <16*hpa0285>
+                            <16*hpa0280>
+                            <16*hpa0271>
+                            <16*hpa0374>
+                            <16*hpa0206>
+                            <16*hpa0209>
+                            <16*hpa0393>
+                            <16*hpa0351>
+                            <16*hpa0354>
+                            <16*hpa0418>
+                            <16*hpa0257>
+                            <16*hpa0436>
+                            <16*hpa0250>
+                            <16*hpa0309>
+                            <16*hpa0433>
+                            <16*hpa0331>
+                            <16*hpa0229>
+                            <16*hpa0337>
+                            <16*hpa0429>
+                            <16*hpa0432>
+                            <16*hpa0463>
+                            <16*hpa0470>
+                            <16*hpa0474>
+                            <16*hpa0471>
+                            <16*hpa0473>
+                            <16*hpa0472>
+                            <16*hpa0468>
+                            <16*hpa0469>
+                            <16*hpa0449>
+                            <16*hpa0460>
+                            <16*hpa0459>
+                            <16*hpa0465>
+                            <16*hpa0451>
+                            <16*hpa0454>
+                            <16*hpa0461>
+                            <16*hpa0462>
+                            <16*hpa0476>
+                            <16*hpa0477>
+                            <16*hpa0464>
+                            <16*hpa0479>
+                            <16*hpa0452>
+                            <16*hpa0456>
+                            <16*hpa0478>
+                            <16*hpa0466>
+                            <16*hpa0467>
+                            <16*hpa0458>
+                            <16*hpa0453>
+                            <16*hpa0457>
+                            <16*hpa0455>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/scratch/performance/256_2048_op3_parallel_efficiency_hp/256_2048_1024> was used as the working directory.
+Started at Tue Nov  4 19:51:12 2014
+Results reported at Tue Nov  4 19:51:34 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J 256_2048_1024_multi
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency_hp/256_2048_1024_multi.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency_hp/256_2048_1024_multi.out.%J
+
+#BSUB -n 4096
+#BSUB -W 0:15
+#BSUB -x
+#BSUB -q multi
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency_hp
+export PETSC_OPS="-momentum_pc_bjacobi_blocks 2048 -pressure_pc_bjacobi_blocks 2048 -pressure_sub_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:4:node -map-by ppr:2:socket -n 1024 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency_hp/256_2048_1024.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :               2.09 sec.
+    Max Memory :             12 MB
+    Average Memory :         12.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               232 MB
+
+    Max Processes :          8
+    Max Threads :            10
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency_hp
+/work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency_hp
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/256_2048_op3_parallel_efficiency_hpcaffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc -DUSE_INTERPOLATION
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_parallel_efficiency_hp/256_2048_1024_multi.err.222458> for stderr output of this job.
+
