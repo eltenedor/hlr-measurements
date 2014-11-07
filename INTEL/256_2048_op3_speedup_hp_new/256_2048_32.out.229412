@@ -1,0 +1,184 @@
+Sender: LSF System <lsfadmin@hpa0420>
+Subject: Job 229412: <INTEL_256_2048_32_new> in cluster <lichtenberg> Done
+
+Job <INTEL_256_2048_32_new> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0420>, in queue <deflt>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0421>
+                            <16*hpa0424>
+                            <16*hpa0425>
+                            <16*hpa0427>
+                            <16*hpa0443>
+                            <16*hpa0445>
+                            <16*hpa0418>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/performance/256_2048_op3_speedup_hp_new> was used as the working directory.
+Started at Thu Nov  6 20:32:53 2014
+Results reported at Thu Nov  6 20:46:50 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_32_new
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_32.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_32.out.%J
+
+#BSUB -n 128
+#BSUB -W 4:00
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_32/
+export PETSC_OPS="-pressure_sub_pc_type icc"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:4:node -map-by ppr:2:socket -n 32 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_32.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               25998.78 sec.
+    Max Memory :             21600 MB
+    Average Memory :         19319.50 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               36853 MB
+
+    Max Processes :          44
+    Max Threads :            142
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_32/
+/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_32
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_32/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc -DUSE_INTERPOLATION
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+ 0000002  0.4105E+00  0.4105E+00  0.4090E+00  0.2196E+00
+ 0000003  0.2057E+00  0.2057E+00  0.2042E+00  0.1775E+00
+ 0000004  0.1287E+00  0.1287E+00  0.1274E+00  0.1163E+00
+ 0000005  0.9464E-01  0.9463E-01  0.9353E-01  0.7953E-01
+ 0000006  0.7629E-01  0.7629E-01  0.7530E-01  0.5799E-01
+ 0000007  0.6478E-01  0.6478E-01  0.6388E-01  0.4443E-01
+ 0000008  0.5679E-01  0.5679E-01  0.5596E-01  0.3525E-01
+ 0000009  0.5087E-01  0.5087E-01  0.5010E-01  0.2869E-01
+ 0000010  0.4628E-01  0.4628E-01  0.4555E-01  0.2381E-01
+ 0000011  0.4260E-01  0.4260E-01  0.4191E-01  0.2008E-01
+ 0000012  0.3957E-01  0.3957E-01  0.3891E-01  0.1717E-01
+ 0000013  0.3703E-01  0.3703E-01  0.3640E-01  0.1485E-01
+ 0000014  0.3486E-01  0.3486E-01  0.3426E-01  0.1298E-01
+ 0000015  0.3299E-01  0.3299E-01  0.3241E-01  0.1146E-01
+ 0000016  0.3135E-01  0.3135E-01  0.3080E-01  0.1020E-01
+ 0000017  0.2991E-01  0.2991E-01  0.2938E-01  0.9155E-02
+ 0000018  0.2862E-01  0.2862E-01  0.2811E-01  0.8275E-02
+ 0000019  0.2747E-01  0.2747E-01  0.2698E-01  0.7528E-02
+ 0000020  0.2643E-01  0.2643E-01  0.2595E-01  0.6890E-02
+ 0000021  0.2549E-01  0.2549E-01  0.2503E-01  0.6339E-02
+ 0000022  0.2463E-01  0.2463E-01  0.2418E-01  0.5861E-02
+ 0000023  0.2384E-01  0.2384E-01  0.2340E-01  0.5442E-02
+ 0000024  0.2311E-01  0.2311E-01  0.2269E-01  0.5074E-02
+ 0000025  0.2244E-01  0.2244E-01  0.2203E-01  0.4747E-02
+ 0000026  0.2182E-01  0.2182E-01  0.2142E-01  0.4456E-02
+ 0000027  0.2124E-01  0.2124E-01  0.2086E-01  0.4196E-02
+ 0000028  0.2070E-01  0.2070E-01  0.2033E-01  0.3961E-02
+ 0000029  0.2020E-01  0.2020E-01  0.1983E-01  0.3749E-02
+ 0000030  0.1973E-01  0.1973E-01  0.1937E-01  0.3556E-02
+ 0000031  0.1928E-01  0.1928E-01  0.1893E-01  0.3380E-02
+ 0000032  0.1886E-01  0.1886E-01  0.1852E-01  0.3219E-02
+ 0000033  0.1847E-01  0.1847E-01  0.1814E-01  0.3071E-02
+ 0000034  0.1809E-01  0.1809E-01  0.1777E-01  0.2935E-02
+ 0000035  0.1774E-01  0.1774E-01  0.1742E-01  0.2809E-02
+ 0000036  0.1740E-01  0.1740E-01  0.1709E-01  0.2693E-02
+ 0000037  0.1708E-01  0.1708E-01  0.1678E-01  0.2585E-02
+ 0000038  0.1678E-01  0.1678E-01  0.1648E-01  0.2484E-02
+ 0000039  0.1649E-01  0.1649E-01  0.1620E-01  0.2390E-02
+ 0000040  0.1621E-01  0.1621E-01  0.1593E-01  0.2302E-02
+ 0000041  0.1595E-01  0.1595E-01  0.1567E-01  0.2220E-02
+ 0000042  0.1569E-01  0.1569E-01  0.1542E-01  0.2143E-02
+ 0000043  0.1545E-01  0.1545E-01  0.1519E-01  0.2070E-02
+ 0000044  0.1522E-01  0.1522E-01  0.1496E-01  0.2002E-02
+ 0000045  0.1500E-01  0.1499E-01  0.1474E-01  0.1937E-02
+ 0000046  0.1478E-01  0.1478E-01  0.1453E-01  0.1877E-02
+ 0000047  0.1457E-01  0.1457E-01  0.1433E-01  0.1819E-02
+ 0000048  0.1437E-01  0.1437E-01  0.1414E-01  0.1765E-02
+ 0000049  0.1418E-01  0.1418E-01  0.1395E-01  0.1713E-02
+ 0000050  0.1400E-01  0.1400E-01  0.1377E-01  0.1664E-02
+ 0000051  0.1382E-01  0.1382E-01  0.1360E-01  0.1617E-02
+ 0000052  0.1365E-01  0.1365E-01  0.1343E-01  0.1573E-02
+ 0000053  0.1348E-01  0.1348E-01  0.1326E-01  0.1531E-02
+ 0000054  0.1332E-01  0.1332E-01  0.1311E-01  0.1490E-02
+ 0000055  0.1316E-01  0.1316E-01  0.1295E-01  0.1452E-02
+ 0000056  0.1301E-01  0.1301E-01  0.1281E-01  0.1415E-02
+ 0000057  0.1286E-01  0.1286E-01  0.1266E-01  0.1380E-02
+ 0000058  0.1272E-01  0.1272E-01  0.1253E-01  0.1347E-02
+ 0000059  0.1258E-01  0.1258E-01  0.1239E-01  0.1314E-02
+ 0000060  0.1245E-01  0.1245E-01  0.1226E-01  0.1284E-02
+ 0000061  0.1232E-01  0.1232E-01  0.1213E-01  0.1254E-02
+ 0000062  0.1219E-01  0.1219E-01  0.1201E-01  0.1226E-02
+ 0000063  0.1207E-01  0.1207E-01  0.1189E-01  0.1198E-02
+ 0000064  0.1195E-01  0.1195E-01  0.1177E-01  0.1172E-02
+ 0000065  0.1183E-01  0.1183E-01  0.1166E-01  0.1147E-02
+ 0000066  0.1172E-01  0.1171E-01  0.1155E-01  0.1123E-02
+ 0000067  0.1160E-01  0.1160E-01  0.1144E-01  0.1099E-02
+ 0000068  0.1150E-01  0.1150E-01  0.1133E-01  0.1077E-02
+ 0000069  0.1139E-01  0.1139E-01  0.1123E-01  0.1055E-02
+ 0000070  0.1129E-01  0.1129E-01  0.1113E-01  0.1034E-02
+ 0000071  0.1119E-01  0.1119E-01  0.1103E-01  0.1014E-02
+ 0000072  0.1109E-01  0.1109E-01  0.1094E-01  0.9947E-03
+ 0000073  0.1099E-01  0.1099E-01  0.1084E-01  0.9758E-03
+ 0000074  0.1090E-01  0.1090E-01  0.1075E-01  0.9576E-03
+ 0000075  0.1081E-01  0.1081E-01  0.1066E-01  0.9400E-03
+ 0000076  0.1072E-01  0.1072E-01  0.1058E-01  0.9229E-03
+ 0000077  0.1063E-01  0.1063E-01  0.1049E-01  0.9064E-03
+ 0000078  0.1054E-01  0.1054E-01  0.1041E-01  0.8905E-03
+ 0000079  0.1046E-01  0.1046E-01  0.1032E-01  0.8750E-03
+ 0000080  0.1038E-01  0.1038E-01  0.1024E-01  0.8599E-03
+ 0000081  0.1030E-01  0.1030E-01  0.1017E-01  0.8454E-03
+ 0000082  0.1022E-01  0.1022E-01  0.1009E-01  0.8313E-03
+ 0000083  0.1014E-01  0.1014E-01  0.1001E-01  0.8175E-03
+ 0000084  0.1006E-01  0.1006E-01  0.9939E-02  0.8042E-03
+ 0000085  0.9989E-02  0.9988E-02  0.9866E-02  0.7913E-03
+TIME FOR CALCULATION:  0.8119E+03
+ -0.984375250000000      -0.992187750000000      -0.984375250000000     
+ FEHLER ZUR ANALYTISCHEN LÖSUNG GESCHW.  0.281902296561175     
+ FEHLER ZUR ANALYTISCHEN LÖSUNG DRUCK   1.10238726616352     
+ REFERENZDRUCK  0.000000000000000E+000 -0.130870995700581     
+      *** CALCULATION FINISHED - SEE RESULTS ***
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_32.err.229412> for stderr output of this job.
+
