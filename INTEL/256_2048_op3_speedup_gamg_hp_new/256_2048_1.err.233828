@@ -1,0 +1,905 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+[hpa0019:30158] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187149312
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #1 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #2 maxIndSetAgg() line 82 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/coarsen/impls/mis/mis.c
+[0]PETSC ERROR: #3 MatCoarsenApply_MIS() line 298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/coarsen/impls/mis/mis.c
+[0]PETSC ERROR: #4 MatCoarsenApply() line 117 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/coarsen/coarsen.c
+[0]PETSC ERROR: #5 PCGAMGCoarsen_AGG() line 1034 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #6 PCSetUp_GAMG() line 596 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #7 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #8 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #9 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187194368
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #10 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #11 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #12 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #13 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #14 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #15 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #16 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187210752
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #17 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #18 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #19 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #20 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #21 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #22 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #23 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187210752
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #24 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #25 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #26 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #27 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #28 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #29 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #30 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187038720
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #31 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #32 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #33 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #34 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #35 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #36 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #37 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #38 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #39 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #40 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187235328
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #41 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #42 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #43 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #44 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #45 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #46 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #47 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187235328
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #48 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #49 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #50 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #51 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #52 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #53 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #54 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187235328
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #55 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #56 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #57 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #58 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #59 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #60 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #61 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187059200
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #62 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #63 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #64 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #65 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #66 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #67 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #68 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #69 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #70 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #71 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187239424
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #72 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #73 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #74 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #75 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #76 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #77 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #78 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187239424
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #79 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #80 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #81 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #82 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #83 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #84 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #85 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187239424
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #86 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #87 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #88 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #89 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #90 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #91 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #92 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187063296
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #93 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #94 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #95 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #96 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #97 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #98 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #99 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #100 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #101 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #102 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187243520
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #103 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #104 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #105 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #106 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #107 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #108 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #109 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187243520
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #110 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #111 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #112 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #113 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #114 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #115 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #116 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187243520
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #117 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #118 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #119 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #120 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #121 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #122 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #123 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187067392
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #124 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #125 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #126 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #127 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #128 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #129 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #130 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #131 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #132 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #133 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187059200
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #134 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #135 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #136 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #137 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #138 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #139 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #140 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187112448
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #141 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #142 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #143 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #144 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #145 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #146 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #147 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187112448
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #148 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #149 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #150 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #151 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #152 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #153 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #154 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26186964992
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #155 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #156 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #157 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #158 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #159 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #160 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #161 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #162 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #163 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #164 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187145216
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #165 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #166 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #167 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #168 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #169 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #170 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #171 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187161600
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #172 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #173 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #174 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #175 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #176 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #177 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #178 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187161600
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #179 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #180 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #181 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #182 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #183 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #184 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #185 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26186985472
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #186 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #187 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #188 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #189 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #190 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #191 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #192 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #193 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #194 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #195 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187165696
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #196 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #197 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #198 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #199 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #200 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #201 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #202 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187165696
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #203 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #204 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #205 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #206 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #207 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #208 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #209 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187165696
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #210 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #211 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #212 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #213 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #214 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #215 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #216 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26186989568
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #217 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #218 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #219 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #220 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #221 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #222 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #223 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #224 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #225 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #226 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187169792
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #227 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #228 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #229 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #230 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #231 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #232 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #233 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187169792
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #234 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #235 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #236 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #237 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #238 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #239 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #240 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187169792
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #241 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #242 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #243 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #244 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #245 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #246 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #247 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26186993664
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #248 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #249 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #250 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #251 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #252 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #253 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #254 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #255 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #256 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #257 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187173888
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #258 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #259 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #260 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #261 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #262 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #263 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #264 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187173888
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #265 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #266 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #267 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #268 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #269 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #270 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #271 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187173888
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #272 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #273 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #274 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #275 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #276 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #277 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #278 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26186997760
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #279 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #280 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #281 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #282 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #283 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #284 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #285 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #286 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #287 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #288 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187177984
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #289 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #290 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #291 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #292 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #293 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #294 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #295 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187177984
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #296 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #297 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #298 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #299 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #300 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #301 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #302 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187177984
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #303 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #304 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #305 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #306 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #307 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #308 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #309 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187001856
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #310 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #311 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #312 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #313 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #314 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #315 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #316 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #317 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #318 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #319 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187186176
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #320 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #321 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #322 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #323 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #324 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #325 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #326 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187186176
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #327 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #328 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #329 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #330 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #331 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #332 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #333 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187186176
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #334 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #335 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #336 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #337 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #338 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #339 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #340 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187010048
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 180486159
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #341 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #342 MatDuplicateNoCreate_SeqAIJ() line 4215 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #343 MatDuplicate_SeqAIJ() line 4298 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/impls/aij/seq/aij.c
+[0]PETSC ERROR: #344 MatDuplicate() line 4058 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/interface/matrix.c
+[0]PETSC ERROR: #345 PCGAMGCreateGraph() line 207 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/tools.c
+[0]PETSC ERROR: #346 PCGAMGgraph_AGG() line 936 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #347 PCSetUp_GAMG() line 595 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #348 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #349 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #350 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187190272
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #351 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #352 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #353 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #354 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #355 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #356 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #357 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187190272
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #358 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #359 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #360 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #361 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #362 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #363 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #364 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 0 Memory used by process 26187190272
+[0]PETSC ERROR: Try running with -malloc_dump or -malloc_log for info.
+[0]PETSC ERROR: Memory requested 90243072
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0019 by gu08vomo Sun Nov  9 12:21:55 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #365 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/3.5.2/src/sys/memory/mal.c
+[0]PETSC ERROR: #366 MatGetOrdering_Natural() line 45 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #367 MatGetOrdering() line 260 in /home/gu08vomo/soft/petsc/3.5.2/src/mat/order/sorder.c
+[0]PETSC ERROR: #368 PCSetUp_ILU() line 217 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/impls/factor/ilu/ilu.c
+[0]PETSC ERROR: #369 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #370 KSPSetUp() line 305 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #371 KSPSolve() line 417 in /home/gu08vomo/soft/petsc/3.5.2/src/ksp/ksp/interface/itfunc.c
+mpirun: Forwarding signal 12 to job
+User defined signal 2

@@ -1,0 +1,644 @@
+Sender: LSF System <lsfadmin@hpa0675>
+Subject: Job 233419: <INTEL_256_2048_512_new> in cluster <lichtenberg> Done
+
+Job <INTEL_256_2048_512_new> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0675>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0573>
+                            <16*hpa0654>
+                            <16*hpa0645>
+                            <16*hpa0557>
+                            <16*hpa0648>
+                            <16*hpa0562>
+                            <16*hpa0627>
+                            <16*hpa0569>
+                            <16*hpa0691>
+                            <16*hpa0658>
+                            <16*hpa0637>
+                            <16*hpa0563>
+                            <16*hpa0650>
+                            <16*hpa0655>
+                            <16*hpa0571>
+                            <16*hpa0583>
+                            <16*hpa0611>
+                            <16*hpa0703>
+                            <16*hpa0595>
+                            <16*hpa0551>
+                            <16*hpa0559>
+                            <16*hpa0685>
+                            <16*hpa0695>
+                            <16*hpa0670>
+                            <16*hpa0598>
+                            <16*hpa0603>
+                            <16*hpa0690>
+                            <16*hpa0606>
+                            <16*hpa0600>
+                            <16*hpa0616>
+                            <16*hpa0662>
+                            <16*hpa0580>
+                            <16*hpa0564>
+                            <16*hpa0697>
+                            <16*hpa0566>
+                            <16*hpa0613>
+                            <16*hpa0644>
+                            <16*hpa0653>
+                            <16*hpa0572>
+                            <16*hpa0577>
+                            <16*hpa0601>
+                            <16*hpa0586>
+                            <16*hpa0615>
+                            <16*hpa0618>
+                            <16*hpa0673>
+                            <16*hpa0701>
+                            <16*hpa0545>
+                            <16*hpa0556>
+                            <16*hpa0587>
+                            <16*hpa0693>
+                            <16*hpa0641>
+                            <16*hpa0682>
+                            <16*hpa0630>
+                            <16*hpa0688>
+                            <16*hpa0609>
+                            <16*hpa0617>
+                            <16*hpa0646>
+                            <16*hpa0647>
+                            <16*hpa0578>
+                            <16*hpa0607>
+                            <16*hpa0585>
+                            <16*hpa0671>
+                            <16*hpa0591>
+                            <16*hpa0628>
+                            <16*hpa0638>
+                            <16*hpa0588>
+                            <16*hpa0665>
+                            <16*hpa0592>
+                            <16*hpa0579>
+                            <16*hpa0604>
+                            <16*hpa0636>
+                            <16*hpa0549>
+                            <16*hpa0597>
+                            <16*hpa0680>
+                            <16*hpa0692>
+                            <16*hpa0664>
+                            <16*hpa0560>
+                            <16*hpa0567>
+                            <16*hpa0643>
+                            <16*hpa0674>
+                            <16*hpa0639>
+                            <16*hpa0552>
+                            <16*hpa0649>
+                            <16*hpa0589>
+                            <16*hpa0668>
+                            <16*hpa0548>
+                            <16*hpa0640>
+                            <16*hpa0686>
+                            <16*hpa0663>
+                            <16*hpa0547>
+                            <16*hpa0661>
+                            <16*hpa0599>
+                            <16*hpa0582>
+                            <16*hpa0565>
+                            <16*hpa0612>
+                            <16*hpa0614>
+                            <16*hpa0608>
+                            <16*hpa0575>
+                            <16*hpa0610>
+                            <16*hpa0634>
+                            <16*hpa0651>
+                            <16*hpa0622>
+                            <16*hpa0584>
+                            <16*hpa0602>
+                            <16*hpa0574>
+                            <16*hpa0570>
+                            <16*hpa0624>
+                            <16*hpa0683>
+                            <16*hpa0629>
+                            <16*hpa0621>
+                            <16*hpa0666>
+                            <16*hpa0561>
+                            <16*hpa0667>
+                            <16*hpa0700>
+                            <16*hpa0568>
+                            <16*hpa0546>
+                            <16*hpa0631>
+                            <16*hpa0672>
+                            <16*hpa0694>
+                            <16*hpa0696>
+                            <16*hpa0669>
+                            <16*hpa0676>
+                            <16*hpa0656>
+                            <16*hpa0635>
+                            <16*hpa0619>
+                            <16*hpa0625>
+                            <16*hpa0605>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_512> was used as the working directory.
+Started at Sun Nov  9 20:23:19 2014
+Results reported at Sun Nov  9 20:25:49 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_512_new
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_512.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_512.out.%J
+
+#BSUB -n 2048
+#BSUB -W 0:05
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_512/
+export PETSC_OPS="-pressure_sub_pc_type icc -momentum_ksp_converged_reason -pressure_ksp_converged_reason"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:4:node -map-by ppr:2:socket -n 512 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_512.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               40301.34 sec.
+    Max Memory :             33807 MB
+    Average Memory :         7768.11 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               139598 MB
+
+    Max Processes :          349
+    Max Threads :            1179
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_512/
+/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_512
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_512/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc -DUSE_INTERPOLATION
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 226
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 250
+ 0000002  0.4106E+00  0.4106E+00  0.4090E+00  0.2195E+00
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 177
+ 0000003  0.2057E+00  0.2057E+00  0.2042E+00  0.1777E+00
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 253
+ 0000004  0.1287E+00  0.1287E+00  0.1275E+00  0.1165E+00
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 197
+ 0000005  0.9465E-01  0.9464E-01  0.9354E-01  0.7971E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 203
+ 0000006  0.7630E-01  0.7630E-01  0.7531E-01  0.5814E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 218
+ 0000007  0.6479E-01  0.6479E-01  0.6389E-01  0.4454E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 293
+ 0000008  0.5681E-01  0.5680E-01  0.5597E-01  0.3533E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 228
+ 0000009  0.5088E-01  0.5088E-01  0.5011E-01  0.2875E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 252
+ 0000010  0.4629E-01  0.4629E-01  0.4556E-01  0.2386E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 256
+ 0000011  0.4261E-01  0.4260E-01  0.4191E-01  0.2011E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 256
+ 0000012  0.3958E-01  0.3958E-01  0.3892E-01  0.1719E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 256
+ 0000013  0.3704E-01  0.3703E-01  0.3641E-01  0.1487E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 257
+ 0000014  0.3487E-01  0.3487E-01  0.3427E-01  0.1300E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 259
+ 0000015  0.3300E-01  0.3299E-01  0.3242E-01  0.1147E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 261
+ 0000016  0.3136E-01  0.3136E-01  0.3081E-01  0.1021E-01
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 262
+ 0000017  0.2992E-01  0.2991E-01  0.2938E-01  0.9166E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 271
+ 0000018  0.2863E-01  0.2863E-01  0.2812E-01  0.8284E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 272
+ 0000019  0.2748E-01  0.2748E-01  0.2698E-01  0.7537E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 273
+ 0000020  0.2644E-01  0.2644E-01  0.2596E-01  0.6897E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 274
+ 0000021  0.2550E-01  0.2549E-01  0.2503E-01  0.6346E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 275
+ 0000022  0.2464E-01  0.2463E-01  0.2418E-01  0.5867E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 276
+ 0000023  0.2385E-01  0.2384E-01  0.2341E-01  0.5448E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 277
+ 0000024  0.2312E-01  0.2312E-01  0.2269E-01  0.5079E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 277
+ 0000025  0.2245E-01  0.2245E-01  0.2204E-01  0.4752E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 278
+ 0000026  0.2183E-01  0.2182E-01  0.2143E-01  0.4461E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 279
+ 0000027  0.2125E-01  0.2125E-01  0.2086E-01  0.4200E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 279
+ 0000028  0.2071E-01  0.2071E-01  0.2033E-01  0.3965E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 280
+ 0000029  0.2021E-01  0.2020E-01  0.1984E-01  0.3752E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 281
+ 0000030  0.1973E-01  0.1973E-01  0.1937E-01  0.3559E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 307
+ 0000031  0.1929E-01  0.1928E-01  0.1894E-01  0.3383E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 281
+ 0000032  0.1887E-01  0.1886E-01  0.1853E-01  0.3222E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 330
+ 0000033  0.1847E-01  0.1847E-01  0.1814E-01  0.3074E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 296
+ 0000034  0.1810E-01  0.1809E-01  0.1777E-01  0.2938E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 331
+ 0000035  0.1774E-01  0.1774E-01  0.1743E-01  0.2812E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 299
+ 0000036  0.1741E-01  0.1740E-01  0.1710E-01  0.2695E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 332
+ 0000037  0.1709E-01  0.1708E-01  0.1678E-01  0.2587E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 301
+ 0000038  0.1678E-01  0.1678E-01  0.1649E-01  0.2486E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 332
+ 0000039  0.1649E-01  0.1649E-01  0.1620E-01  0.2392E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 305
+ 0000040  0.1622E-01  0.1621E-01  0.1593E-01  0.2304E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 333
+ 0000041  0.1595E-01  0.1595E-01  0.1567E-01  0.2222E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 307
+ 0000042  0.1570E-01  0.1570E-01  0.1543E-01  0.2144E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 333
+ 0000043  0.1546E-01  0.1545E-01  0.1519E-01  0.2072E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 332
+ 0000044  0.1522E-01  0.1522E-01  0.1496E-01  0.2003E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 333
+ 0000045  0.1500E-01  0.1500E-01  0.1474E-01  0.1939E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 333
+ 0000046  0.1478E-01  0.1478E-01  0.1454E-01  0.1878E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 334
+ 0000047  0.1458E-01  0.1457E-01  0.1433E-01  0.1820E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 334
+ 0000048  0.1438E-01  0.1438E-01  0.1414E-01  0.1766E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 335
+ 0000049  0.1419E-01  0.1418E-01  0.1395E-01  0.1714E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 335
+ 0000050  0.1400E-01  0.1400E-01  0.1377E-01  0.1665E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 336
+ 0000051  0.1382E-01  0.1382E-01  0.1360E-01  0.1618E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 336
+ 0000052  0.1365E-01  0.1365E-01  0.1343E-01  0.1574E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 336
+ 0000053  0.1348E-01  0.1348E-01  0.1327E-01  0.1531E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 337
+ 0000054  0.1332E-01  0.1332E-01  0.1311E-01  0.1491E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 338
+ 0000055  0.1316E-01  0.1316E-01  0.1296E-01  0.1453E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 339
+ 0000056  0.1301E-01  0.1301E-01  0.1281E-01  0.1416E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 344
+ 0000057  0.1287E-01  0.1286E-01  0.1267E-01  0.1381E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 345
+ 0000058  0.1272E-01  0.1272E-01  0.1253E-01  0.1347E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 345
+ 0000059  0.1259E-01  0.1258E-01  0.1239E-01  0.1315E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 346
+ 0000060  0.1245E-01  0.1245E-01  0.1226E-01  0.1284E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 347
+ 0000061  0.1232E-01  0.1232E-01  0.1213E-01  0.1255E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 347
+ 0000062  0.1219E-01  0.1219E-01  0.1201E-01  0.1226E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 347
+ 0000063  0.1207E-01  0.1207E-01  0.1189E-01  0.1199E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 348
+ 0000064  0.1195E-01  0.1195E-01  0.1177E-01  0.1173E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 348
+ 0000065  0.1183E-01  0.1183E-01  0.1166E-01  0.1148E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 348
+ 0000066  0.1172E-01  0.1172E-01  0.1155E-01  0.1123E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 348
+ 0000067  0.1161E-01  0.1161E-01  0.1144E-01  0.1100E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 349
+ 0000068  0.1150E-01  0.1150E-01  0.1134E-01  0.1077E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 349
+ 0000069  0.1139E-01  0.1139E-01  0.1123E-01  0.1056E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 350
+ 0000070  0.1129E-01  0.1129E-01  0.1113E-01  0.1035E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 350
+ 0000071  0.1119E-01  0.1119E-01  0.1103E-01  0.1015E-02
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 351
+ 0000072  0.1109E-01  0.1109E-01  0.1094E-01  0.9950E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 351
+ 0000073  0.1100E-01  0.1099E-01  0.1085E-01  0.9762E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 351
+ 0000074  0.1090E-01  0.1090E-01  0.1075E-01  0.9579E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 352
+ 0000075  0.1081E-01  0.1081E-01  0.1066E-01  0.9403E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 352
+ 0000076  0.1072E-01  0.1072E-01  0.1058E-01  0.9233E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 353
+ 0000077  0.1063E-01  0.1063E-01  0.1049E-01  0.9067E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 354
+ 0000078  0.1055E-01  0.1054E-01  0.1041E-01  0.8907E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 357
+ 0000079  0.1046E-01  0.1046E-01  0.1033E-01  0.8752E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 359
+ 0000080  0.1038E-01  0.1038E-01  0.1025E-01  0.8602E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 360
+ 0000081  0.1030E-01  0.1030E-01  0.1017E-01  0.8456E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 361
+ 0000082  0.1022E-01  0.1022E-01  0.1009E-01  0.8315E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 362
+ 0000083  0.1014E-01  0.1014E-01  0.1001E-01  0.8178E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 364
+ 0000084  0.1007E-01  0.1006E-01  0.9941E-02  0.8045E-03
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 365
+ 0000085  0.9992E-02  0.9990E-02  0.9868E-02  0.7915E-03
+TIME FOR CALCULATION:  0.5381E+02
+ -0.984375250000000      -0.992187750000000      -0.984375250000000     
+ FEHLER ZUR ANALYTISCHEN LÖSUNG GESCHW.  0.281939167470876     
+ FEHLER ZUR ANALYTISCHEN LÖSUNG DRUCK   1.10282126607063     
+ REFERENZDRUCK  0.000000000000000E+000 -0.130870995700581     
+      *** CALCULATION FINISHED - SEE RESULTS ***
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_512.err.233419> for stderr output of this job.
+

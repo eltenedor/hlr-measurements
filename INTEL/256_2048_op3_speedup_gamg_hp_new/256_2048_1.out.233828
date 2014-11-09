@@ -1,0 +1,105 @@
+Sender: LSF System <lsfadmin@hpa0019>
+Subject: Job 233828: <INTEL_256_2048_1_new_gamg> in cluster <lichtenberg> Exited
+
+Job <INTEL_256_2048_1_new_gamg> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <hpa0019>, in queue <short>, as user <gu08vomo> in cluster <lichtenberg>.
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/performance/256_2048_op3_speedup_gamg_hp_new/256_2048_1> was used as the working directory.
+Started at Sun Nov  9 12:21:43 2014
+Results reported at Sun Nov  9 12:32:02 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_1_new_gamg
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_speedup_gamg_hp_new/256_2048_1.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_speedup_gamg_hp_new/256_2048_1.out.%J
+
+#BSUB -n 1
+#BSUB -W 00:10
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup_gamg_hp_new/256_2048_1/
+export PETSC_OPS="-pressure_ksp_monitor_true_residual -pressure_pc_type gamg -pressure_mg_levels_ksp_type richardson -ressure_mg_levels_pc_type sor -pressure_ksp_view -momentum_ksp_converged_reason -pressure_ksp_converged_reason"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -n 1 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_speedup_gamg_hp_new/256_2048_1.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :               530.00 sec.
+    Max Memory :             24979 MB
+    Average Memory :         20861.04 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               28969 MB
+
+    Max Processes :          8
+    Max Threads :            11
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup_gamg_hp_new/256_2048_1/
+/work/scratch/gu08vomo/performance/256_2048_op3_speedup_gamg_hp_new/256_2048_1
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/256_2048_op3_speedup_gamg_hp_new/256_2048_1/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc -DUSE_INTERPOLATION
+  ENTER PROBLEM NAME (SIX CHARACTERS):  
+ ****************************************************
+ NAME OF PROBLEM SOLVED control
+ 
+ ****************************************************
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+Linear solve converged due to CONVERGED_RTOL iterations 2
+ 0000001  0.1000E+01  0.1000E+01  0.1000E+01  0.1000E+01
+ 0000002  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000003  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000004  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000005  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000006  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000007  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000008  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000009  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000010  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000011  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+ 0000012  0.4087E+00  0.4086E+00  0.4086E+00  0.1000E+01
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 30160 on node hpa0019 exited on signal 12 (User defined signal 2).
+--------------------------------------------------------------------------
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_speedup_gamg_hp_new/256_2048_1.err.233828> for stderr output of this job.
+
