@@ -1,0 +1,4 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+[hpa0197:25576] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]

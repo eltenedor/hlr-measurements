@@ -1,0 +1,661 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+[hpa0691:21552] MCW rank 2 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0691:21552] MCW rank 3 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0691:21552] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0691:21552] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0580:19003] MCW rank 9 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0590:04862] MCW rank 32 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0580:19003] MCW rank 10 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0607:25799] MCW rank 16 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0590:04862] MCW rank 33 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0580:19003] MCW rank 11 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0607:25799] MCW rank 17 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0590:04862] MCW rank 34 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0607:25799] MCW rank 18 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0590:04862] MCW rank 35 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0580:19003] MCW rank 8 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0607:25799] MCW rank 19 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0651:02691] MCW rank 14 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0651:02691] MCW rank 15 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0651:02691] MCW rank 12 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0651:02691] MCW rank 13 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0661:03143] MCW rank 22 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0545:28474] MCW rank 39 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0547:23472] MCW rank 43 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0547:23472] MCW rank 40 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0661:03143] MCW rank 23 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0545:28474] MCW rank 36 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0547:23472] MCW rank 41 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0661:03143] MCW rank 20 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0545:28474] MCW rank 37 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0661:03143] MCW rank 21 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0545:28474] MCW rank 38 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0547:23472] MCW rank 42 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0582:21792] MCW rank 26 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0582:21792] MCW rank 27 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0582:21792] MCW rank 24 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0582:21792] MCW rank 25 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0552:04094] MCW rank 51 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0552:04094] MCW rank 48 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0552:04094] MCW rank 49 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0552:04094] MCW rank 50 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0611:18934] MCW rank 30 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0639:12778] MCW rank 47 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0577:16891] MCW rank 5 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0611:18934] MCW rank 31 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0639:12778] MCW rank 44 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0577:16891] MCW rank 6 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0611:18934] MCW rank 28 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0639:12778] MCW rank 45 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0577:16891] MCW rank 7 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0611:18934] MCW rank 29 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0639:12778] MCW rank 46 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0577:16891] MCW rank 4 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0629:19759] MCW rank 55 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0629:19759] MCW rank 52 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0629:19759] MCW rank 53 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0629:19759] MCW rank 54 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0699:11195] MCW rank 59 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0699:11195] MCW rank 56 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0699:11195] MCW rank 57 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0699:11195] MCW rank 58 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0648:28267] MCW rank 63 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0648:28267] MCW rank 60 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0648:28267] MCW rank 61 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0648:28267] MCW rank 62 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002BA19EA572EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002BA19EA90423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002BA1A0796C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B719D3E62EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B719D41F423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B719F125C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B90DE8D52EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B90DE90E423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B90E0614C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B5EDC6D02EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B5EDC709423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B5EDE40FC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B87371BA2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B87371F3423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B8738EF9C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B5B40F842EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B5B40FBD423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B5B42CC3C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B0FEADBD2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B0FEADF6423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B0FECAFCC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AC423B872EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AC423BC0423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AC4258C6C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AABBC4532EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AABBC48C423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AABBE192C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B4C650412EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B4C6507A423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B4C66D80C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AE62914C2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AE629185423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AE62AE8BC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B09D89E62EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B09D8A1F423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B09DA725C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B4C25F342EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B4C25F6D423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B4C27C73C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AE5C041E2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AE5C0457423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AE5C215DC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002BA5CF0AB2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002BA5CF0E4423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002BA5D0DEAC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B641582F2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B6415868423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B641756EC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B8BFFDE62EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B8BFFE1F423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B8C01B25C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B8A1D9A12EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B8A1D9DA423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B8A1F6E0C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B6FF52BE2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B6FF52F7423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B6FF6FFDC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B3FAE4E92EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B3FAE522423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B3FB0228C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002ADCD375F2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002ADCD3798423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002ADCD549EC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B1944C2E2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B1944C67423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B194696DC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002ACA41EBB2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002ACA41EF4423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002ACA43BFAC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AEDF254F2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AEDF2588423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AEDF428EC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B379AB332EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B379AB6C423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B379C872C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B4A6B4B42EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B4A6B4ED423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B4A6D1F3C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AD056B172EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AD056B50423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AD058856C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B59F07512EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B59F078A423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B59F2490C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B4C11D5C2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B4C11D95423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B4C13A9BC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B590DA8D2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B590DAC6423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B590F7CCC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B1188A052EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B1188A3E423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B118A744C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B614BA032EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B614BA3C423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B614D742C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B60BBBDC2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B60BBC15423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B60BD91BC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B5F5283B2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B5F52874423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B5F5457AC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B74A64B82EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B74A64F1423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B74A81F7C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AF971F1B2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AF971F54423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AF973C5AC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002ABB6F4262EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002ABB6F45F423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002ABB71165C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B8429B5B2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B8429B94423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B842B89AC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B83FB0902EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B83FB0C9423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B83FCDCFC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B7E4908C2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B7E490C5423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B7E4ADCBC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B2AB92F22EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B2AB932B423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B2ABB031C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AB3BD2F02EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AB3BD329423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AB3BF02FC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B7D3D3582EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B7D3D391423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B7D3F097C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B87DB9D82EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B87DBA11423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B87DD717C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B03C525A2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B03C5293423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B03C6F99C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B68C5D432EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B68C5D7C423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B68C7A82C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002ADDF159A2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002ADDF15D3423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002ADDF32D9C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B782E4C42EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B782E4FD423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B7830203C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B6072CA02EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B6072CD9423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B60749DFC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002ADEEC6122EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002ADEEC64B423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002ADEEE351C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AFF95F0F2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AFF95F48423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AFF97C4EC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B169A0F52EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B169A12E423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B169BE34C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+[3]PETSC ERROR: ------------------------------------------------------------------------
+[3]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[3]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[3]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[3]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[3]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[3]PETSC ERROR: to get more information on the crash.
+[3]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[3]PETSC ERROR: Signal received
+[3]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[3]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[3]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0691 by gu08vomo Sun Nov  9 23:37:26 2014
+[3]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[3]PETSC ERROR: #1 User provided function() line 0 in  unknown file
+[0]PETSC ERROR: ------------------------------------------------------------------------
+[0]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[0]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[0]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[0]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[0]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[0]PETSC ERROR: to get more information on the crash.
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Signal received
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0691 by gu08vomo Sun Nov  9 23:37:26 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[0]PETSC ERROR: #1 User provided function() line 0 in  unknown file
+[2]PETSC ERROR: ------------------------------------------------------------------------
+[2]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[2]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[2]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[2]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[2]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[2]PETSC ERROR: to get more information on the crash.
+[2]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[2]PETSC ERROR: Signal received
+[2]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[2]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[2]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0691 by gu08vomo Sun Nov  9 23:37:26 2014
+[2]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[2]PETSC ERROR: #1 User provided function() line 0 in  unknown file
+[1]PETSC ERROR: ------------------------------------------------------------------------
+[1]PETSC ERROR: Caught signal number 15 Terminate: Some process (or the batch system) has told this process to end
+[1]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[1]PETSC ERROR: or see http://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind[1]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[1]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[1]PETSC ERROR: to get more information on the crash.
+[1]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[1]PETSC ERROR: Signal received
+[1]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[1]PETSC ERROR: Petsc Release Version 3.5.2, Sep, 08, 2014 
+[1]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-opt-intel-hlr named hpa0691 by gu08vomo Sun Nov  9 23:37:26 2014
+[1]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2 PETSC_ARCH=arch-openmpi-opt-intel-hlr -prefix=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel COPTFLAGS="-O3 -xHost" FOPTFLAGS="-O3 -xHost" CXXOPTFLAGS="-O3 -xHost" --with-debugging=0
+[1]PETSC ERROR: #1 User provided function() line 0 in  unknown file
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B362897F2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B36289B8423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B362A6BEC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B1E69B642EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B1E69B9D423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B1E6B8A3C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002AEDEF59F2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002AEDEF5D8423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002AEDF12DEC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B8039B702EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B8039BA9423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B803B8AFC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B0CCDF5F2EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B0CCDF98423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B0CCFC9EC36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B97FBAA32EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B97FBADC423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B97FD7E2C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B30CF2A22EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B30CF2DB423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B30D0FE1C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 5, file /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_64/control.cin
+Image              PC                Routine            Line        Source             
+libifcore.so.5     00002B1E87AE82EB  Unknown               Unknown  Unknown
+libifcore.so.5     00002B1E87B21423  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     000000000043BAD2  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403E8D  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     00000000004035FE  Unknown               Unknown  Unknown
+libc.so.6          00002B1E89827C36  Unknown               Unknown  Unknown
+caffa3d.MB.lnx     0000000000403499  Unknown               Unknown  Unknown
+[hpa0691:21552] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
+[hpa0691:21552] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
