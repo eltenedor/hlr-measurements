@@ -1,0 +1,85 @@
+Sender: LSF System <lsfadmin@hpa0329>
+Subject: Job 235096: <INTEL_256_2048_16_new> in cluster <lichtenberg> Exited
+
+Job <INTEL_256_2048_16_new> was submitted from host <hla0003> by user <gu08vomo> in cluster <lichtenberg>.
+Job was executed on host(s) <16*hpa0329>, in queue <deflt>, as user <gu08vomo> in cluster <lichtenberg>.
+                            <16*hpa0338>
+                            <16*hpa0333>
+                            <16*hpa0322>
+</home/gu08vomo> was used as the home directory.
+</home/gu08vomo/performance/256_2048_op3_speedup_hp_new_more_its> was used as the working directory.
+Started at Mon Nov 10 11:04:45 2014
+Results reported at Mon Nov 10 11:05:11 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#! /bin/sh
+
+#BSUB -J INTEL_256_2048_16_new
+#BSUB -u fabian.gabel@stud.tu-darmstadt.de
+##BSUB -B -N
+
+#BSUB -e /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_16.err.%J
+#BSUB -o /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_16.out.%J
+
+#BSUB -n 64
+#BSUB -W 0:40
+#BSUB -x
+
+#BSUB -a openmpi
+
+module load openmpi/intel/1.8.2
+export PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+export MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_16/
+export PETSC_OPS="-pressure_sub_pc_type icc -momentum_ksp_converged_reason -pressure_ksp_converged_reason"
+
+echo "PETSC_DIR="$PETSC_DIR
+echo "MYWORKDIR="$MYWORKDIR
+
+cd ${MYWORKDIR}
+pwd
+#get newest caffa
+cd caffa.MTM
+#git checkout -- .
+#git pull origin master
+cd caffa3d.MB
+# prepare binary
+cp ../../param3d.inc .
+make opt-intel-analytical EXPATH=${MYWORKDIR}
+#run the case
+cd ${MYWORKDIR}
+cp ../control.cin .
+mpirun -report-bindings -map-by ppr:4:node -map-by ppr:2:socket -n 16 ./caffa3d.MB.lnx ${PETSC_OPS} -log_summary /home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_16.log.${LSB_JOBID}
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :               0.59 sec.
+    Max Memory :             4 MB
+    Average Memory :         4.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               255 MB
+
+    Max Processes :          13
+    Max Threads :            13
+
+The output (if any) follows:
+
+PETSC_DIR=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr
+MYWORKDIR=/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_16/
+/work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_16
+mpif90 caffa3d.MB.f -fpp -O3 -DUSE_INTEL_COMPILER -traceback -mcmodel=medium -DUSE_ANALYTICAL -I/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/include -IsolverSIP -I. -o /work/scratch/gu08vomo/performance/256_2048_op3_speedup_hp_new/256_2048_16/caffa3d.MB.lnx -Wl,-rpath=/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -L/home/gu08vomo/soft/petsc/3.5.2/build/arch-openmpi-opt-intel-hlr/lib -lpetsc -DUSE_INTERPOLATION
+
+
+PS:
+
+Read file </home/gu08vomo/output/INTEL/256_2048_op3_speedup_hp_new/256_2048_16.err.235096> for stderr output of this job.
+

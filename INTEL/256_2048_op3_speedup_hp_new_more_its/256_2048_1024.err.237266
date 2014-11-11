@@ -1,0 +1,5 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+[hpa0309:11713] [[17369,0],0] ORTE_ERROR_LOG: The specified application failed to start in file ../../../../../openmpi-1.8.2/orte/mca/plm/lsf/plm_lsf_module.c at line 342
+[hpa0309:11713] lsb_launch failed: 0

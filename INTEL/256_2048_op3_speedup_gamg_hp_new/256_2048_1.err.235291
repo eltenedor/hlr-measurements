@@ -1,0 +1,26 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+[hpa0043:29052] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[0]PETSC ERROR: --------------------- Error Message --------------------------------------------------------------
+[0]PETSC ERROR: Out of memory. This could be due to allocating
+[0]PETSC ERROR: too large an object or bleeding by not properly
+[0]PETSC ERROR: destroying unneeded objects.
+[0]PETSC ERROR: Memory allocated 20140448720 Memory used by process 26186940416
+[0]PETSC ERROR: Memory requested 90244676
+[0]PETSC ERROR: See http://www.mcs.anl.gov/petsc/documentation/faq.html for trouble shooting.
+[0]PETSC ERROR: Petsc Development GIT revision: v3.5.2-1090-ged2dcc2  GIT Date: 2014-11-08 14:29:00 -0600
+[0]PETSC ERROR: ./caffa3d.MB.lnx on a arch-openmpi-dbg-intel-hlr named hpa0043 by gu08vomo Mon Nov 10 11:43:26 2014
+[0]PETSC ERROR: Configure options PETSC_DIR=/home/gu08vomo/soft/petsc/petsc PETSC_ARCH=arch-openmpi-dbg-intel-hlr -prefix=/home/gu08vomo/soft/petsc/git/build/arch-openmpi-dbg-intel-hlr --with-blas-lapack-dir=/shared/apps/intel/2015/composer_xe_2015/mkl/lib/intel64/ --with-mpi-dir=/shared/apps/openmpi/1.8.2_intel --with-debugging=true --with-c2html=false
+[0]PETSC ERROR: #1 PetscMallocAlign() line 46 in /home/gu08vomo/soft/petsc/petsc/src/sys/memory/mal.c
+[0]PETSC ERROR: #2 PetscTrMallocDefault() line 184 in /home/gu08vomo/soft/petsc/petsc/src/sys/memory/mtr.c
+[0]PETSC ERROR: #3 maxIndSetAgg() line 82 in /home/gu08vomo/soft/petsc/petsc/src/mat/coarsen/impls/mis/mis.c
+[0]PETSC ERROR: #4 MatCoarsenApply_MIS() line 298 in /home/gu08vomo/soft/petsc/petsc/src/mat/coarsen/impls/mis/mis.c
+[0]PETSC ERROR: #5 MatCoarsenApply() line 117 in /home/gu08vomo/soft/petsc/petsc/src/mat/coarsen/coarsen.c
+[0]PETSC ERROR: #6 PCGAMGCoarsen_AGG() line 1017 in /home/gu08vomo/soft/petsc/petsc/src/ksp/pc/impls/gamg/agg.c
+[0]PETSC ERROR: #7 PCSetUp_GAMG() line 596 in /home/gu08vomo/soft/petsc/petsc/src/ksp/pc/impls/gamg/gamg.c
+[0]PETSC ERROR: #8 PCSetUp() line 902 in /home/gu08vomo/soft/petsc/petsc/src/ksp/pc/interface/precon.c
+[0]PETSC ERROR: #9 KSPSetUp() line 306 in /home/gu08vomo/soft/petsc/petsc/src/ksp/ksp/interface/itfunc.c
+[0]PETSC ERROR: #10 KSPSolve() line 419 in /home/gu08vomo/soft/petsc/petsc/src/ksp/ksp/interface/itfunc.c
+mpirun: Forwarding signal 12 to job
+User defined signal 2

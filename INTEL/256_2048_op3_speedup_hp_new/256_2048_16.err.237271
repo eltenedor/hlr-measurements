@@ -1,0 +1,19 @@
+Modules: loading gcc/4.8.3
+Modules: loading intel/2015
+Modules: loading openmpi/intel/1.8.2
+[hpa0180:05771] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0180:05771] MCW rank 1 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0180:05771] MCW rank 2 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0180:05771] MCW rank 3 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0185:26611] MCW rank 15 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0185:26611] MCW rank 12 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0185:26611] MCW rank 13 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0185:26611] MCW rank 14 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0191:29553] MCW rank 4 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0191:29553] MCW rank 5 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0191:29553] MCW rank 6 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0191:29553] MCW rank 7 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
+[hpa0189:12025] MCW rank 8 bound to socket 0[core 0[hwt 0]]: [B/././././././.][./././././././.]
+[hpa0189:12025] MCW rank 9 bound to socket 0[core 1[hwt 0]]: [./B/./././././.][./././././././.]
+[hpa0189:12025] MCW rank 10 bound to socket 1[core 8[hwt 0]]: [./././././././.][B/././././././.]
+[hpa0189:12025] MCW rank 11 bound to socket 1[core 9[hwt 0]]: [./././././././.][./B/./././././.]
